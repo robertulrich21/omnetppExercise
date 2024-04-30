@@ -28,19 +28,21 @@ void Generator::initialize(){
 
     cMessage* selfMsg = new cMessage("self Message",0);
     WATCH(customer_count);
-    scheduleAt(uniform((double)par("min_customer_spawn_time"),(double)(par("max_customer_spawn_time"))),selfMsg);
+    scheduleAt(uniform((double)par("min_customer_spawn_time"),(double)(par("max_customer_spawn_time")),5),selfMsg);
 }
 
 void Generator::handleMessage(cMessage* msg){
     if(msg->getKind() == 0){
         // generate Customer
         Customer* cst = new Customer("customer",1);
+        //generate items
         cst->setItems(intuniform((int)par("min_item_count"), (int)par("max_item_count")));
         cst->setWaitingTime(simTime());
         send(cst,gate("out"));
         EV << "Generated Customer with: " << cst->getItems() << " Items" <<std::endl;
         customer_count++;
-        //Self Message
+
+        //Self message runs 1000 times
         if(customer_count < (long)par("rounds")){
             cMessage* m = new cMessage(*msg);
             simtime_t time = uniform((double)par("min_customer_spawn_time"),(double)(par("max_customer_spawn_time")));

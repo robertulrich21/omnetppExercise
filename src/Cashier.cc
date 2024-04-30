@@ -25,13 +25,17 @@ Cashier::~Cashier() {
 }
 
 void Cashier::initialize() {
+
     queue = new cQueue();
     selfMessage = new cMessage("self Message", 0);
+
+    //init signals for statistic
     finished_signal = registerSignal("customerFinished");
     update_queue = registerSignal("updateQueue");
     update_serviceTime = registerSignal("updateServiceTime");
     update_idleTime = registerSignal("updateIdleTime");
 
+    //variables to determine if cashier is in idle or not
     isIdle = true;
     startIdle = simTime();
     startService = simTime();
@@ -41,6 +45,7 @@ void Cashier::initialize() {
 
 }
 void Cashier::handleMessage(cMessage *msg){
+    // if msg is a self message, update customer queue and stats
     if (msg->getKind() == 0){
         if(queue->getLength() > 0){
             if (isIdle){
@@ -49,24 +54,31 @@ void Cashier::handleMessage(cMessage *msg){
                 startService = simTime();
 
             }
+            //get first customer in queue
             Customer * cst = check_and_cast<Customer *>(queue->get(0));
 
+            //take item from customer
             if(cst->getItems() >0){
                 cst->setItems(cst->getItems()-1);
                 cMessage* m = new cMessage(*selfMessage);
-                scheduleAt(simTime()+uniform((simtime_t)par("min_time_per_item"),(simtime_t)par("max_time_per_item")),m);
+                scheduleAt(simTime()+uniform((simtime_t)par("min_time_per_item"),(simtime_t)par("max_time_per_item"),3),m);
             }
             else{
+                // if no item left, update stats
                 bubble("Customer finished");
-                simtime_t waitingTime =simTime()-cst->getWaitingTime();
 
-                emit(finished_signal,(waitingTime));
                 queue->pop();
+
+                simtime_t waitingTime =simTime()-cst->getWaitingTime();
+                emit(finished_signal,(waitingTime));
                 emit(update_queue, queue->length());
+
+                //cast self message
                 cMessage* m = new cMessage(*selfMessage);
                 scheduleAt(simTime(),m);
             }
         }
+        //If the customer queue is empty go into idle mode
         else{
             if(isIdle == false){
                 isIdle = true;
@@ -76,12 +88,13 @@ void Cashier::handleMessage(cMessage *msg){
         }
 
     }
+    // If message comes from balancer
     else if(msg->getKind() == 1){
 
         Customer* cst = check_and_cast<Customer *>(msg);
         if(queue->getLength() == 0){
             cMessage* m = new cMessage(*selfMessage);
-            scheduleAt(simTime()+uniform((double)par("min_time_per_item"),(double)par("max_time_per_item")),m);
+            scheduleAt(simTime()+uniform((double)par("min_time_per_item"),(double)par("max_time_per_item"),2),m);
         }
         queue->insert(cst);
         emit(update_queue, queue->length());

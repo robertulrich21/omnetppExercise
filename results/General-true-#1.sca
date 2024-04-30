@@ -1,8 +1,8 @@
 version 3
-run General-1-20240428-16:41:48-11296
+run General-1-20240430-20:30:43-5480
 attr configname General
-attr datetime 20240428-16:41:48
-attr datetimef 20240428-164148
+attr datetime 20240430-20:30:43
+attr datetimef 20240430-203043
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars $0=true
@@ -10,7 +10,7 @@ attr iterationvarsd true
 attr iterationvarsf true-
 attr measurement $0=true
 attr network Supermarket
-attr processid 11296
+attr processid 5480
 attr repetition 1
 attr replication #1
 attr resultdir results
@@ -18,7 +18,6 @@ attr runnumber 1
 attr seedset 1
 config network Supermarket
 config repeat 10
-config seed-set 1
 config num-rngs 10
 config **.use_random_strategy true
 
@@ -31,57 +30,57 @@ par Supermarket.generator rounds 1000
 par Supermarket.cashiers[0] typename "\"Cashier\""
 par Supermarket.cashiers[0] min_time_per_item 0.5
 par Supermarket.cashiers[0] max_time_per_item 2
-scalar Supermarket.cashiers[0] idleTimePerCashier:mean 17.21347570226
-attr recordingmode mean
+scalar Supermarket.cashiers[0] idleTimePerCashier:sum 1547.985918749
+attr recordingmode sum
 attr source updateIdleTime
-attr title "IdleTimePerCashier, mean"
-scalar Supermarket.cashiers[0] serviceTimePerCashier:mean 49.634331709011
-attr recordingmode mean
+attr title "IdleTimePerCashier, sum"
+scalar Supermarket.cashiers[0] serviceTimePerCashier:sum 3916.7745827429
+attr recordingmode sum
 attr source updateServiceTime
-attr title "ServiceTimePerCashier, mean"
+attr title "ServiceTimePerCashier, sum"
 par Supermarket.cashiers[1] typename "\"Cashier\""
 par Supermarket.cashiers[1] min_time_per_item 0.5
 par Supermarket.cashiers[1] max_time_per_item 2
-scalar Supermarket.cashiers[1] idleTimePerCashier:mean 19.111432337294
-attr recordingmode mean
+scalar Supermarket.cashiers[1] idleTimePerCashier:sum 1859.6319616474
+attr recordingmode sum
 attr source updateIdleTime
-attr title "IdleTimePerCashier, mean"
-scalar Supermarket.cashiers[1] serviceTimePerCashier:mean 36.42481020105
-attr recordingmode mean
+attr title "IdleTimePerCashier, sum"
+scalar Supermarket.cashiers[1] serviceTimePerCashier:sum 3666.6754564458
+attr recordingmode sum
 attr source updateServiceTime
-attr title "ServiceTimePerCashier, mean"
+attr title "ServiceTimePerCashier, sum"
 par Supermarket.cashiers[2] typename "\"Cashier\""
 par Supermarket.cashiers[2] min_time_per_item 0.5
 par Supermarket.cashiers[2] max_time_per_item 2
-scalar Supermarket.cashiers[2] idleTimePerCashier:mean 20.777318687996
-attr recordingmode mean
+scalar Supermarket.cashiers[2] idleTimePerCashier:sum 1400.0863691982
+attr recordingmode sum
 attr source updateIdleTime
-attr title "IdleTimePerCashier, mean"
-scalar Supermarket.cashiers[2] serviceTimePerCashier:mean 65.190012052828
-attr recordingmode mean
+attr title "IdleTimePerCashier, sum"
+scalar Supermarket.cashiers[2] serviceTimePerCashier:sum 4129.765358149
+attr recordingmode sum
 attr source updateServiceTime
-attr title "ServiceTimePerCashier, mean"
+attr title "ServiceTimePerCashier, sum"
 par Supermarket.cashiers[3] typename "\"Cashier\""
 par Supermarket.cashiers[3] min_time_per_item 0.5
 par Supermarket.cashiers[3] max_time_per_item 2
-scalar Supermarket.cashiers[3] idleTimePerCashier:mean 17.906764307639
-attr recordingmode mean
+scalar Supermarket.cashiers[3] idleTimePerCashier:sum 1207.1119940632
+attr recordingmode sum
 attr source updateIdleTime
-attr title "IdleTimePerCashier, mean"
-scalar Supermarket.cashiers[3] serviceTimePerCashier:mean 62.490038106714
-attr recordingmode mean
+attr title "IdleTimePerCashier, sum"
+scalar Supermarket.cashiers[3] serviceTimePerCashier:sum 4370.0815272954
+attr recordingmode sum
 attr source updateServiceTime
-attr title "ServiceTimePerCashier, mean"
+attr title "ServiceTimePerCashier, sum"
 par Supermarket.balancer typename "\"Balancer\""
 par Supermarket.balancer cashier_count 4
 par Supermarket.balancer use_random_strategy true
 par Supermarket typename "\"Supermarket\""
 par Supermarket cashier_count 4
-scalar Supermarket custTotalWaitingTime:sum 42590.099960833
+scalar Supermarket custTotalWaitingTime:sum 40474.210438368
 attr recordingmode sum
 attr source customerFinished
 attr title "cust total waiting time, sum"
-scalar Supermarket custMeanWaitingTime:mean 42.590099960833
+scalar Supermarket custMeanWaitingTime:mean 40.474210438368
 attr recordingmode mean
 attr source customerFinished
 attr title "Cust mean waiting time, mean"

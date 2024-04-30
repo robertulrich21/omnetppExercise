@@ -1,9 +1,9 @@
-file 95813 1714315308                                           
+file 95713 1714501842                                           
 version 3
-run General-12-20240428-16:41:48-11297
+run General-12-20240430-20:30:42-5483
 attr configname General
-attr datetime 20240428-16:41:48
-attr datetimef 20240428-164148
+attr datetime 20240430-20:30:42
+attr datetimef 20240430-203042
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars $0=false
@@ -11,15 +11,14 @@ attr iterationvarsd false
 attr iterationvarsf false-
 attr measurement $0=false
 attr network Supermarket
-attr processid 11297
+attr processid 5483
 attr repetition 2
 attr replication #2
 attr resultdir results
 attr runnumber 12
-attr seedset 2
+attr seedset 12
 config network Supermarket
 config repeat 10
-config seed-set 2
 config num-rngs 10
 config **.use_random_strategy false
 
@@ -32,6 +31,6 @@ attr interpolationmode none
 attr recordingmode vector
 attr source customerFinished
 attr title "cust waiting time"
-0	845 54164 7 18213 5.588130795164 5538.20311704848 2000 0 2 1426 1852
-1	55009 40803 60 18213 28.742575801327 5538.20311704848 1000 1.200088435668 55.933383221971 20185.17294528 517587.29535181
+0	826 54163 7 17638 5.506726010935 5518.49744268647 2000 0 2 1366 1732
+1	54989 40723 26 17638 16.620274244224 5518.49744268647 1000 1.296736032702 59.786949757256 18800.805579844 461321.476695
 
