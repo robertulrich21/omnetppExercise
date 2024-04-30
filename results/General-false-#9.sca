@@ -1,0 +1,88 @@
+version 3
+run General-19-20240428-16:41:49-11318
+attr configname General
+attr datetime 20240428-16:41:49
+attr datetimef 20240428-164149
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars $0=false
+attr iterationvarsd false
+attr iterationvarsf false-
+attr measurement $0=false
+attr network Supermarket
+attr processid 11318
+attr repetition 9
+attr replication #9
+attr resultdir results
+attr runnumber 19
+attr seedset 9
+config network Supermarket
+config repeat 10
+config seed-set 9
+config num-rngs 10
+config **.use_random_strategy false
+
+par Supermarket.generator typename "\"Generator\""
+par Supermarket.generator min_item_count 1
+par Supermarket.generator max_item_count 25
+par Supermarket.generator min_customer_spawn_time 5
+par Supermarket.generator max_customer_spawn_time 6
+par Supermarket.generator rounds 1000
+par Supermarket.cashiers[0] typename "\"Cashier\""
+par Supermarket.cashiers[0] min_time_per_item 0.5
+par Supermarket.cashiers[0] max_time_per_item 2
+scalar Supermarket.cashiers[0] idleTimePerCashier:mean 3.9924016739298
+attr recordingmode mean
+attr source updateIdleTime
+attr title "IdleTimePerCashier, mean"
+scalar Supermarket.cashiers[0] serviceTimePerCashier:mean 29.252309685926
+attr recordingmode mean
+attr source updateServiceTime
+attr title "ServiceTimePerCashier, mean"
+par Supermarket.cashiers[1] typename "\"Cashier\""
+par Supermarket.cashiers[1] min_time_per_item 0.5
+par Supermarket.cashiers[1] max_time_per_item 2
+scalar Supermarket.cashiers[1] idleTimePerCashier:mean 5.0089406511771
+attr recordingmode mean
+attr source updateIdleTime
+attr title "IdleTimePerCashier, mean"
+scalar Supermarket.cashiers[1] serviceTimePerCashier:mean 19.431582120738
+attr recordingmode mean
+attr source updateServiceTime
+attr title "ServiceTimePerCashier, mean"
+par Supermarket.cashiers[2] typename "\"Cashier\""
+par Supermarket.cashiers[2] min_time_per_item 0.5
+par Supermarket.cashiers[2] max_time_per_item 2
+scalar Supermarket.cashiers[2] idleTimePerCashier:mean 7.2292895851773
+attr recordingmode mean
+attr source updateIdleTime
+attr title "IdleTimePerCashier, mean"
+scalar Supermarket.cashiers[2] serviceTimePerCashier:mean 16.175538509566
+attr recordingmode mean
+attr source updateServiceTime
+attr title "ServiceTimePerCashier, mean"
+par Supermarket.cashiers[3] typename "\"Cashier\""
+par Supermarket.cashiers[3] min_time_per_item 0.5
+par Supermarket.cashiers[3] max_time_per_item 2
+scalar Supermarket.cashiers[3] idleTimePerCashier:mean 13.320159770663
+attr recordingmode mean
+attr source updateIdleTime
+attr title "IdleTimePerCashier, mean"
+scalar Supermarket.cashiers[3] serviceTimePerCashier:mean 17.670462706981
+attr recordingmode mean
+attr source updateServiceTime
+attr title "ServiceTimePerCashier, mean"
+par Supermarket.balancer typename "\"Balancer\""
+par Supermarket.balancer cashier_count 4
+par Supermarket.balancer use_random_strategy false
+par Supermarket typename "\"Supermarket\""
+par Supermarket cashier_count 4
+scalar Supermarket custTotalWaitingTime:sum 19208.570249048
+attr recordingmode sum
+attr source customerFinished
+attr title "cust total waiting time, sum"
+scalar Supermarket custMeanWaitingTime:mean 19.208570249048
+attr recordingmode mean
+attr source customerFinished
+attr title "Cust mean waiting time, mean"
+

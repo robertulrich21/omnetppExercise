@@ -1,0 +1,1681 @@
+run,type,module,name,attrname,attrvalue,value
+General-11-20240428-16:41:48-11298,runattr,,,configname,General,
+General-11-20240428-16:41:48-11298,runattr,,,datetime,20240428-16:41:48,
+General-11-20240428-16:41:48-11298,runattr,,,datetimef,20240428-164148,
+General-11-20240428-16:41:48-11298,runattr,,,experiment,General,
+General-11-20240428-16:41:48-11298,runattr,,,inifile,omnetpp.ini,
+General-11-20240428-16:41:48-11298,runattr,,,iterationvars,$0=false,
+General-11-20240428-16:41:48-11298,runattr,,,iterationvarsd,false,
+General-11-20240428-16:41:48-11298,runattr,,,iterationvarsf,false-,
+General-11-20240428-16:41:48-11298,runattr,,,measurement,$0=false,
+General-11-20240428-16:41:48-11298,runattr,,,network,Supermarket,
+General-11-20240428-16:41:48-11298,runattr,,,processid,11298,
+General-11-20240428-16:41:48-11298,runattr,,,repetition,1,
+General-11-20240428-16:41:48-11298,runattr,,,replication,#1,
+General-11-20240428-16:41:48-11298,runattr,,,resultdir,results,
+General-11-20240428-16:41:48-11298,runattr,,,runnumber,11,
+General-11-20240428-16:41:48-11298,runattr,,,seedset,1,
+General-11-20240428-16:41:48-11298,config,,,network,Supermarket,
+General-11-20240428-16:41:48-11298,config,,,repeat,10,
+General-11-20240428-16:41:48-11298,config,,,seed-set,1,
+General-11-20240428-16:41:48-11298,config,,,num-rngs,10,
+General-11-20240428-16:41:48-11298,config,,,**.use_random_strategy,false,
+General-10-20240428-16:41:48-11298,runattr,,,configname,General,
+General-10-20240428-16:41:48-11298,runattr,,,datetime,20240428-16:41:48,
+General-10-20240428-16:41:48-11298,runattr,,,datetimef,20240428-164148,
+General-10-20240428-16:41:48-11298,runattr,,,experiment,General,
+General-10-20240428-16:41:48-11298,runattr,,,inifile,omnetpp.ini,
+General-10-20240428-16:41:48-11298,runattr,,,iterationvars,$0=false,
+General-10-20240428-16:41:48-11298,runattr,,,iterationvarsd,false,
+General-10-20240428-16:41:48-11298,runattr,,,iterationvarsf,false-,
+General-10-20240428-16:41:48-11298,runattr,,,measurement,$0=false,
+General-10-20240428-16:41:48-11298,runattr,,,network,Supermarket,
+General-10-20240428-16:41:48-11298,runattr,,,processid,11298,
+General-10-20240428-16:41:48-11298,runattr,,,repetition,0,
+General-10-20240428-16:41:48-11298,runattr,,,replication,#0,
+General-10-20240428-16:41:48-11298,runattr,,,resultdir,results,
+General-10-20240428-16:41:48-11298,runattr,,,runnumber,10,
+General-10-20240428-16:41:48-11298,runattr,,,seedset,0,
+General-10-20240428-16:41:48-11298,config,,,network,Supermarket,
+General-10-20240428-16:41:48-11298,config,,,repeat,10,
+General-10-20240428-16:41:48-11298,config,,,seed-set,0,
+General-10-20240428-16:41:48-11298,config,,,num-rngs,10,
+General-10-20240428-16:41:48-11298,config,,,**.use_random_strategy,false,
+General-12-20240428-16:41:48-11297,runattr,,,configname,General,
+General-12-20240428-16:41:48-11297,runattr,,,datetime,20240428-16:41:48,
+General-12-20240428-16:41:48-11297,runattr,,,datetimef,20240428-164148,
+General-12-20240428-16:41:48-11297,runattr,,,experiment,General,
+General-12-20240428-16:41:48-11297,runattr,,,inifile,omnetpp.ini,
+General-12-20240428-16:41:48-11297,runattr,,,iterationvars,$0=false,
+General-12-20240428-16:41:48-11297,runattr,,,iterationvarsd,false,
+General-12-20240428-16:41:48-11297,runattr,,,iterationvarsf,false-,
+General-12-20240428-16:41:48-11297,runattr,,,measurement,$0=false,
+General-12-20240428-16:41:48-11297,runattr,,,network,Supermarket,
+General-12-20240428-16:41:48-11297,runattr,,,processid,11297,
+General-12-20240428-16:41:48-11297,runattr,,,repetition,2,
+General-12-20240428-16:41:48-11297,runattr,,,replication,#2,
+General-12-20240428-16:41:48-11297,runattr,,,resultdir,results,
+General-12-20240428-16:41:48-11297,runattr,,,runnumber,12,
+General-12-20240428-16:41:48-11297,runattr,,,seedset,2,
+General-12-20240428-16:41:48-11297,config,,,network,Supermarket,
+General-12-20240428-16:41:48-11297,config,,,repeat,10,
+General-12-20240428-16:41:48-11297,config,,,seed-set,2,
+General-12-20240428-16:41:48-11297,config,,,num-rngs,10,
+General-12-20240428-16:41:48-11297,config,,,**.use_random_strategy,false,
+General-13-20240428-16:41:48-11297,runattr,,,configname,General,
+General-13-20240428-16:41:48-11297,runattr,,,datetime,20240428-16:41:48,
+General-13-20240428-16:41:48-11297,runattr,,,datetimef,20240428-164148,
+General-13-20240428-16:41:48-11297,runattr,,,experiment,General,
+General-13-20240428-16:41:48-11297,runattr,,,inifile,omnetpp.ini,
+General-13-20240428-16:41:48-11297,runattr,,,iterationvars,$0=false,
+General-13-20240428-16:41:48-11297,runattr,,,iterationvarsd,false,
+General-13-20240428-16:41:48-11297,runattr,,,iterationvarsf,false-,
+General-13-20240428-16:41:48-11297,runattr,,,measurement,$0=false,
+General-13-20240428-16:41:48-11297,runattr,,,network,Supermarket,
+General-13-20240428-16:41:48-11297,runattr,,,processid,11297,
+General-13-20240428-16:41:48-11297,runattr,,,repetition,3,
+General-13-20240428-16:41:48-11297,runattr,,,replication,#3,
+General-13-20240428-16:41:48-11297,runattr,,,resultdir,results,
+General-13-20240428-16:41:48-11297,runattr,,,runnumber,13,
+General-13-20240428-16:41:48-11297,runattr,,,seedset,3,
+General-13-20240428-16:41:48-11297,config,,,network,Supermarket,
+General-13-20240428-16:41:48-11297,config,,,repeat,10,
+General-13-20240428-16:41:48-11297,config,,,seed-set,3,
+General-13-20240428-16:41:48-11297,config,,,num-rngs,10,
+General-13-20240428-16:41:48-11297,config,,,**.use_random_strategy,false,
+General-14-20240428-16:41:48-11297,runattr,,,configname,General,
+General-14-20240428-16:41:48-11297,runattr,,,datetime,20240428-16:41:48,
+General-14-20240428-16:41:48-11297,runattr,,,datetimef,20240428-164148,
+General-14-20240428-16:41:48-11297,runattr,,,experiment,General,
+General-14-20240428-16:41:48-11297,runattr,,,inifile,omnetpp.ini,
+General-14-20240428-16:41:48-11297,runattr,,,iterationvars,$0=false,
+General-14-20240428-16:41:48-11297,runattr,,,iterationvarsd,false,
+General-14-20240428-16:41:48-11297,runattr,,,iterationvarsf,false-,
+General-14-20240428-16:41:48-11297,runattr,,,measurement,$0=false,
+General-14-20240428-16:41:48-11297,runattr,,,network,Supermarket,
+General-14-20240428-16:41:48-11297,runattr,,,processid,11297,
+General-14-20240428-16:41:48-11297,runattr,,,repetition,4,
+General-14-20240428-16:41:48-11297,runattr,,,replication,#4,
+General-14-20240428-16:41:48-11297,runattr,,,resultdir,results,
+General-14-20240428-16:41:48-11297,runattr,,,runnumber,14,
+General-14-20240428-16:41:48-11297,runattr,,,seedset,4,
+General-14-20240428-16:41:48-11297,config,,,network,Supermarket,
+General-14-20240428-16:41:48-11297,config,,,repeat,10,
+General-14-20240428-16:41:48-11297,config,,,seed-set,4,
+General-14-20240428-16:41:48-11297,config,,,num-rngs,10,
+General-14-20240428-16:41:48-11297,config,,,**.use_random_strategy,false,
+General-15-20240428-16:41:48-11297,runattr,,,configname,General,
+General-15-20240428-16:41:48-11297,runattr,,,datetime,20240428-16:41:48,
+General-15-20240428-16:41:48-11297,runattr,,,datetimef,20240428-164148,
+General-15-20240428-16:41:48-11297,runattr,,,experiment,General,
+General-15-20240428-16:41:48-11297,runattr,,,inifile,omnetpp.ini,
+General-15-20240428-16:41:48-11297,runattr,,,iterationvars,$0=false,
+General-15-20240428-16:41:48-11297,runattr,,,iterationvarsd,false,
+General-15-20240428-16:41:48-11297,runattr,,,iterationvarsf,false-,
+General-15-20240428-16:41:48-11297,runattr,,,measurement,$0=false,
+General-15-20240428-16:41:48-11297,runattr,,,network,Supermarket,
+General-15-20240428-16:41:48-11297,runattr,,,processid,11297,
+General-15-20240428-16:41:48-11297,runattr,,,repetition,5,
+General-15-20240428-16:41:48-11297,runattr,,,replication,#5,
+General-15-20240428-16:41:48-11297,runattr,,,resultdir,results,
+General-15-20240428-16:41:48-11297,runattr,,,runnumber,15,
+General-15-20240428-16:41:48-11297,runattr,,,seedset,5,
+General-15-20240428-16:41:48-11297,config,,,network,Supermarket,
+General-15-20240428-16:41:48-11297,config,,,repeat,10,
+General-15-20240428-16:41:48-11297,config,,,seed-set,5,
+General-15-20240428-16:41:48-11297,config,,,num-rngs,10,
+General-15-20240428-16:41:48-11297,config,,,**.use_random_strategy,false,
+General-16-20240428-16:41:48-11318,runattr,,,configname,General,
+General-16-20240428-16:41:48-11318,runattr,,,datetime,20240428-16:41:48,
+General-16-20240428-16:41:48-11318,runattr,,,datetimef,20240428-164148,
+General-16-20240428-16:41:48-11318,runattr,,,experiment,General,
+General-16-20240428-16:41:48-11318,runattr,,,inifile,omnetpp.ini,
+General-16-20240428-16:41:48-11318,runattr,,,iterationvars,$0=false,
+General-16-20240428-16:41:48-11318,runattr,,,iterationvarsd,false,
+General-16-20240428-16:41:48-11318,runattr,,,iterationvarsf,false-,
+General-16-20240428-16:41:48-11318,runattr,,,measurement,$0=false,
+General-16-20240428-16:41:48-11318,runattr,,,network,Supermarket,
+General-16-20240428-16:41:48-11318,runattr,,,processid,11318,
+General-16-20240428-16:41:48-11318,runattr,,,repetition,6,
+General-16-20240428-16:41:48-11318,runattr,,,replication,#6,
+General-16-20240428-16:41:48-11318,runattr,,,resultdir,results,
+General-16-20240428-16:41:48-11318,runattr,,,runnumber,16,
+General-16-20240428-16:41:48-11318,runattr,,,seedset,6,
+General-16-20240428-16:41:48-11318,config,,,network,Supermarket,
+General-16-20240428-16:41:48-11318,config,,,repeat,10,
+General-16-20240428-16:41:48-11318,config,,,seed-set,6,
+General-16-20240428-16:41:48-11318,config,,,num-rngs,10,
+General-16-20240428-16:41:48-11318,config,,,**.use_random_strategy,false,
+General-17-20240428-16:41:49-11318,runattr,,,configname,General,
+General-17-20240428-16:41:49-11318,runattr,,,datetime,20240428-16:41:49,
+General-17-20240428-16:41:49-11318,runattr,,,datetimef,20240428-164149,
+General-17-20240428-16:41:49-11318,runattr,,,experiment,General,
+General-17-20240428-16:41:49-11318,runattr,,,inifile,omnetpp.ini,
+General-17-20240428-16:41:49-11318,runattr,,,iterationvars,$0=false,
+General-17-20240428-16:41:49-11318,runattr,,,iterationvarsd,false,
+General-17-20240428-16:41:49-11318,runattr,,,iterationvarsf,false-,
+General-17-20240428-16:41:49-11318,runattr,,,measurement,$0=false,
+General-17-20240428-16:41:49-11318,runattr,,,network,Supermarket,
+General-17-20240428-16:41:49-11318,runattr,,,processid,11318,
+General-17-20240428-16:41:49-11318,runattr,,,repetition,7,
+General-17-20240428-16:41:49-11318,runattr,,,replication,#7,
+General-17-20240428-16:41:49-11318,runattr,,,resultdir,results,
+General-17-20240428-16:41:49-11318,runattr,,,runnumber,17,
+General-17-20240428-16:41:49-11318,runattr,,,seedset,7,
+General-17-20240428-16:41:49-11318,config,,,network,Supermarket,
+General-17-20240428-16:41:49-11318,config,,,repeat,10,
+General-17-20240428-16:41:49-11318,config,,,seed-set,7,
+General-17-20240428-16:41:49-11318,config,,,num-rngs,10,
+General-17-20240428-16:41:49-11318,config,,,**.use_random_strategy,false,
+General-18-20240428-16:41:49-11318,runattr,,,configname,General,
+General-18-20240428-16:41:49-11318,runattr,,,datetime,20240428-16:41:49,
+General-18-20240428-16:41:49-11318,runattr,,,datetimef,20240428-164149,
+General-18-20240428-16:41:49-11318,runattr,,,experiment,General,
+General-18-20240428-16:41:49-11318,runattr,,,inifile,omnetpp.ini,
+General-18-20240428-16:41:49-11318,runattr,,,iterationvars,$0=false,
+General-18-20240428-16:41:49-11318,runattr,,,iterationvarsd,false,
+General-18-20240428-16:41:49-11318,runattr,,,iterationvarsf,false-,
+General-18-20240428-16:41:49-11318,runattr,,,measurement,$0=false,
+General-18-20240428-16:41:49-11318,runattr,,,network,Supermarket,
+General-18-20240428-16:41:49-11318,runattr,,,processid,11318,
+General-18-20240428-16:41:49-11318,runattr,,,repetition,8,
+General-18-20240428-16:41:49-11318,runattr,,,replication,#8,
+General-18-20240428-16:41:49-11318,runattr,,,resultdir,results,
+General-18-20240428-16:41:49-11318,runattr,,,runnumber,18,
+General-18-20240428-16:41:49-11318,runattr,,,seedset,8,
+General-18-20240428-16:41:49-11318,config,,,network,Supermarket,
+General-18-20240428-16:41:49-11318,config,,,repeat,10,
+General-18-20240428-16:41:49-11318,config,,,seed-set,8,
+General-18-20240428-16:41:49-11318,config,,,num-rngs,10,
+General-18-20240428-16:41:49-11318,config,,,**.use_random_strategy,false,
+General-19-20240428-16:41:49-11318,runattr,,,configname,General,
+General-19-20240428-16:41:49-11318,runattr,,,datetime,20240428-16:41:49,
+General-19-20240428-16:41:49-11318,runattr,,,datetimef,20240428-164149,
+General-19-20240428-16:41:49-11318,runattr,,,experiment,General,
+General-19-20240428-16:41:49-11318,runattr,,,inifile,omnetpp.ini,
+General-19-20240428-16:41:49-11318,runattr,,,iterationvars,$0=false,
+General-19-20240428-16:41:49-11318,runattr,,,iterationvarsd,false,
+General-19-20240428-16:41:49-11318,runattr,,,iterationvarsf,false-,
+General-19-20240428-16:41:49-11318,runattr,,,measurement,$0=false,
+General-19-20240428-16:41:49-11318,runattr,,,network,Supermarket,
+General-19-20240428-16:41:49-11318,runattr,,,processid,11318,
+General-19-20240428-16:41:49-11318,runattr,,,repetition,9,
+General-19-20240428-16:41:49-11318,runattr,,,replication,#9,
+General-19-20240428-16:41:49-11318,runattr,,,resultdir,results,
+General-19-20240428-16:41:49-11318,runattr,,,runnumber,19,
+General-19-20240428-16:41:49-11318,runattr,,,seedset,9,
+General-19-20240428-16:41:49-11318,config,,,network,Supermarket,
+General-19-20240428-16:41:49-11318,config,,,repeat,10,
+General-19-20240428-16:41:49-11318,config,,,seed-set,9,
+General-19-20240428-16:41:49-11318,config,,,num-rngs,10,
+General-19-20240428-16:41:49-11318,config,,,**.use_random_strategy,false,
+General-0-20240428-16:41:48-11296,runattr,,,configname,General,
+General-0-20240428-16:41:48-11296,runattr,,,datetime,20240428-16:41:48,
+General-0-20240428-16:41:48-11296,runattr,,,datetimef,20240428-164148,
+General-0-20240428-16:41:48-11296,runattr,,,experiment,General,
+General-0-20240428-16:41:48-11296,runattr,,,inifile,omnetpp.ini,
+General-0-20240428-16:41:48-11296,runattr,,,iterationvars,$0=true,
+General-0-20240428-16:41:48-11296,runattr,,,iterationvarsd,true,
+General-0-20240428-16:41:48-11296,runattr,,,iterationvarsf,true-,
+General-0-20240428-16:41:48-11296,runattr,,,measurement,$0=true,
+General-0-20240428-16:41:48-11296,runattr,,,network,Supermarket,
+General-0-20240428-16:41:48-11296,runattr,,,processid,11296,
+General-0-20240428-16:41:48-11296,runattr,,,repetition,0,
+General-0-20240428-16:41:48-11296,runattr,,,replication,#0,
+General-0-20240428-16:41:48-11296,runattr,,,resultdir,results,
+General-0-20240428-16:41:48-11296,runattr,,,runnumber,0,
+General-0-20240428-16:41:48-11296,runattr,,,seedset,0,
+General-0-20240428-16:41:48-11296,config,,,network,Supermarket,
+General-0-20240428-16:41:48-11296,config,,,repeat,10,
+General-0-20240428-16:41:48-11296,config,,,seed-set,0,
+General-0-20240428-16:41:48-11296,config,,,num-rngs,10,
+General-0-20240428-16:41:48-11296,config,,,**.use_random_strategy,true,
+General-1-20240428-16:41:48-11296,runattr,,,configname,General,
+General-1-20240428-16:41:48-11296,runattr,,,datetime,20240428-16:41:48,
+General-1-20240428-16:41:48-11296,runattr,,,datetimef,20240428-164148,
+General-1-20240428-16:41:48-11296,runattr,,,experiment,General,
+General-1-20240428-16:41:48-11296,runattr,,,inifile,omnetpp.ini,
+General-1-20240428-16:41:48-11296,runattr,,,iterationvars,$0=true,
+General-1-20240428-16:41:48-11296,runattr,,,iterationvarsd,true,
+General-1-20240428-16:41:48-11296,runattr,,,iterationvarsf,true-,
+General-1-20240428-16:41:48-11296,runattr,,,measurement,$0=true,
+General-1-20240428-16:41:48-11296,runattr,,,network,Supermarket,
+General-1-20240428-16:41:48-11296,runattr,,,processid,11296,
+General-1-20240428-16:41:48-11296,runattr,,,repetition,1,
+General-1-20240428-16:41:48-11296,runattr,,,replication,#1,
+General-1-20240428-16:41:48-11296,runattr,,,resultdir,results,
+General-1-20240428-16:41:48-11296,runattr,,,runnumber,1,
+General-1-20240428-16:41:48-11296,runattr,,,seedset,1,
+General-1-20240428-16:41:48-11296,config,,,network,Supermarket,
+General-1-20240428-16:41:48-11296,config,,,repeat,10,
+General-1-20240428-16:41:48-11296,config,,,seed-set,1,
+General-1-20240428-16:41:48-11296,config,,,num-rngs,10,
+General-1-20240428-16:41:48-11296,config,,,**.use_random_strategy,true,
+General-2-20240428-16:41:48-11296,runattr,,,configname,General,
+General-2-20240428-16:41:48-11296,runattr,,,datetime,20240428-16:41:48,
+General-2-20240428-16:41:48-11296,runattr,,,datetimef,20240428-164148,
+General-2-20240428-16:41:48-11296,runattr,,,experiment,General,
+General-2-20240428-16:41:48-11296,runattr,,,inifile,omnetpp.ini,
+General-2-20240428-16:41:48-11296,runattr,,,iterationvars,$0=true,
+General-2-20240428-16:41:48-11296,runattr,,,iterationvarsd,true,
+General-2-20240428-16:41:48-11296,runattr,,,iterationvarsf,true-,
+General-2-20240428-16:41:48-11296,runattr,,,measurement,$0=true,
+General-2-20240428-16:41:48-11296,runattr,,,network,Supermarket,
+General-2-20240428-16:41:48-11296,runattr,,,processid,11296,
+General-2-20240428-16:41:48-11296,runattr,,,repetition,2,
+General-2-20240428-16:41:48-11296,runattr,,,replication,#2,
+General-2-20240428-16:41:48-11296,runattr,,,resultdir,results,
+General-2-20240428-16:41:48-11296,runattr,,,runnumber,2,
+General-2-20240428-16:41:48-11296,runattr,,,seedset,2,
+General-2-20240428-16:41:48-11296,config,,,network,Supermarket,
+General-2-20240428-16:41:48-11296,config,,,repeat,10,
+General-2-20240428-16:41:48-11296,config,,,seed-set,2,
+General-2-20240428-16:41:48-11296,config,,,num-rngs,10,
+General-2-20240428-16:41:48-11296,config,,,**.use_random_strategy,true,
+General-3-20240428-16:41:49-11296,runattr,,,configname,General,
+General-3-20240428-16:41:49-11296,runattr,,,datetime,20240428-16:41:49,
+General-3-20240428-16:41:49-11296,runattr,,,datetimef,20240428-164149,
+General-3-20240428-16:41:49-11296,runattr,,,experiment,General,
+General-3-20240428-16:41:49-11296,runattr,,,inifile,omnetpp.ini,
+General-3-20240428-16:41:49-11296,runattr,,,iterationvars,$0=true,
+General-3-20240428-16:41:49-11296,runattr,,,iterationvarsd,true,
+General-3-20240428-16:41:49-11296,runattr,,,iterationvarsf,true-,
+General-3-20240428-16:41:49-11296,runattr,,,measurement,$0=true,
+General-3-20240428-16:41:49-11296,runattr,,,network,Supermarket,
+General-3-20240428-16:41:49-11296,runattr,,,processid,11296,
+General-3-20240428-16:41:49-11296,runattr,,,repetition,3,
+General-3-20240428-16:41:49-11296,runattr,,,replication,#3,
+General-3-20240428-16:41:49-11296,runattr,,,resultdir,results,
+General-3-20240428-16:41:49-11296,runattr,,,runnumber,3,
+General-3-20240428-16:41:49-11296,runattr,,,seedset,3,
+General-3-20240428-16:41:49-11296,config,,,network,Supermarket,
+General-3-20240428-16:41:49-11296,config,,,repeat,10,
+General-3-20240428-16:41:49-11296,config,,,seed-set,3,
+General-3-20240428-16:41:49-11296,config,,,num-rngs,10,
+General-3-20240428-16:41:49-11296,config,,,**.use_random_strategy,true,
+General-4-20240428-16:41:48-11295,runattr,,,configname,General,
+General-4-20240428-16:41:48-11295,runattr,,,datetime,20240428-16:41:48,
+General-4-20240428-16:41:48-11295,runattr,,,datetimef,20240428-164148,
+General-4-20240428-16:41:48-11295,runattr,,,experiment,General,
+General-4-20240428-16:41:48-11295,runattr,,,inifile,omnetpp.ini,
+General-4-20240428-16:41:48-11295,runattr,,,iterationvars,$0=true,
+General-4-20240428-16:41:48-11295,runattr,,,iterationvarsd,true,
+General-4-20240428-16:41:48-11295,runattr,,,iterationvarsf,true-,
+General-4-20240428-16:41:48-11295,runattr,,,measurement,$0=true,
+General-4-20240428-16:41:48-11295,runattr,,,network,Supermarket,
+General-4-20240428-16:41:48-11295,runattr,,,processid,11295,
+General-4-20240428-16:41:48-11295,runattr,,,repetition,4,
+General-4-20240428-16:41:48-11295,runattr,,,replication,#4,
+General-4-20240428-16:41:48-11295,runattr,,,resultdir,results,
+General-4-20240428-16:41:48-11295,runattr,,,runnumber,4,
+General-4-20240428-16:41:48-11295,runattr,,,seedset,4,
+General-4-20240428-16:41:48-11295,config,,,network,Supermarket,
+General-4-20240428-16:41:48-11295,config,,,repeat,10,
+General-4-20240428-16:41:48-11295,config,,,seed-set,4,
+General-4-20240428-16:41:48-11295,config,,,num-rngs,10,
+General-4-20240428-16:41:48-11295,config,,,**.use_random_strategy,true,
+General-5-20240428-16:41:48-11295,runattr,,,configname,General,
+General-5-20240428-16:41:48-11295,runattr,,,datetime,20240428-16:41:48,
+General-5-20240428-16:41:48-11295,runattr,,,datetimef,20240428-164148,
+General-5-20240428-16:41:48-11295,runattr,,,experiment,General,
+General-5-20240428-16:41:48-11295,runattr,,,inifile,omnetpp.ini,
+General-5-20240428-16:41:48-11295,runattr,,,iterationvars,$0=true,
+General-5-20240428-16:41:48-11295,runattr,,,iterationvarsd,true,
+General-5-20240428-16:41:48-11295,runattr,,,iterationvarsf,true-,
+General-5-20240428-16:41:48-11295,runattr,,,measurement,$0=true,
+General-5-20240428-16:41:48-11295,runattr,,,network,Supermarket,
+General-5-20240428-16:41:48-11295,runattr,,,processid,11295,
+General-5-20240428-16:41:48-11295,runattr,,,repetition,5,
+General-5-20240428-16:41:48-11295,runattr,,,replication,#5,
+General-5-20240428-16:41:48-11295,runattr,,,resultdir,results,
+General-5-20240428-16:41:48-11295,runattr,,,runnumber,5,
+General-5-20240428-16:41:48-11295,runattr,,,seedset,5,
+General-5-20240428-16:41:48-11295,config,,,network,Supermarket,
+General-5-20240428-16:41:48-11295,config,,,repeat,10,
+General-5-20240428-16:41:48-11295,config,,,seed-set,5,
+General-5-20240428-16:41:48-11295,config,,,num-rngs,10,
+General-5-20240428-16:41:48-11295,config,,,**.use_random_strategy,true,
+General-6-20240428-16:41:48-11295,runattr,,,configname,General,
+General-6-20240428-16:41:48-11295,runattr,,,datetime,20240428-16:41:48,
+General-6-20240428-16:41:48-11295,runattr,,,datetimef,20240428-164148,
+General-6-20240428-16:41:48-11295,runattr,,,experiment,General,
+General-6-20240428-16:41:48-11295,runattr,,,inifile,omnetpp.ini,
+General-6-20240428-16:41:48-11295,runattr,,,iterationvars,$0=true,
+General-6-20240428-16:41:48-11295,runattr,,,iterationvarsd,true,
+General-6-20240428-16:41:48-11295,runattr,,,iterationvarsf,true-,
+General-6-20240428-16:41:48-11295,runattr,,,measurement,$0=true,
+General-6-20240428-16:41:48-11295,runattr,,,network,Supermarket,
+General-6-20240428-16:41:48-11295,runattr,,,processid,11295,
+General-6-20240428-16:41:48-11295,runattr,,,repetition,6,
+General-6-20240428-16:41:48-11295,runattr,,,replication,#6,
+General-6-20240428-16:41:48-11295,runattr,,,resultdir,results,
+General-6-20240428-16:41:48-11295,runattr,,,runnumber,6,
+General-6-20240428-16:41:48-11295,runattr,,,seedset,6,
+General-6-20240428-16:41:48-11295,config,,,network,Supermarket,
+General-6-20240428-16:41:48-11295,config,,,repeat,10,
+General-6-20240428-16:41:48-11295,config,,,seed-set,6,
+General-6-20240428-16:41:48-11295,config,,,num-rngs,10,
+General-6-20240428-16:41:48-11295,config,,,**.use_random_strategy,true,
+General-7-20240428-16:41:49-11295,runattr,,,configname,General,
+General-7-20240428-16:41:49-11295,runattr,,,datetime,20240428-16:41:49,
+General-7-20240428-16:41:49-11295,runattr,,,datetimef,20240428-164149,
+General-7-20240428-16:41:49-11295,runattr,,,experiment,General,
+General-7-20240428-16:41:49-11295,runattr,,,inifile,omnetpp.ini,
+General-7-20240428-16:41:49-11295,runattr,,,iterationvars,$0=true,
+General-7-20240428-16:41:49-11295,runattr,,,iterationvarsd,true,
+General-7-20240428-16:41:49-11295,runattr,,,iterationvarsf,true-,
+General-7-20240428-16:41:49-11295,runattr,,,measurement,$0=true,
+General-7-20240428-16:41:49-11295,runattr,,,network,Supermarket,
+General-7-20240428-16:41:49-11295,runattr,,,processid,11295,
+General-7-20240428-16:41:49-11295,runattr,,,repetition,7,
+General-7-20240428-16:41:49-11295,runattr,,,replication,#7,
+General-7-20240428-16:41:49-11295,runattr,,,resultdir,results,
+General-7-20240428-16:41:49-11295,runattr,,,runnumber,7,
+General-7-20240428-16:41:49-11295,runattr,,,seedset,7,
+General-7-20240428-16:41:49-11295,config,,,network,Supermarket,
+General-7-20240428-16:41:49-11295,config,,,repeat,10,
+General-7-20240428-16:41:49-11295,config,,,seed-set,7,
+General-7-20240428-16:41:49-11295,config,,,num-rngs,10,
+General-7-20240428-16:41:49-11295,config,,,**.use_random_strategy,true,
+General-8-20240428-16:41:48-11298,runattr,,,configname,General,
+General-8-20240428-16:41:48-11298,runattr,,,datetime,20240428-16:41:48,
+General-8-20240428-16:41:48-11298,runattr,,,datetimef,20240428-164148,
+General-8-20240428-16:41:48-11298,runattr,,,experiment,General,
+General-8-20240428-16:41:48-11298,runattr,,,inifile,omnetpp.ini,
+General-8-20240428-16:41:48-11298,runattr,,,iterationvars,$0=true,
+General-8-20240428-16:41:48-11298,runattr,,,iterationvarsd,true,
+General-8-20240428-16:41:48-11298,runattr,,,iterationvarsf,true-,
+General-8-20240428-16:41:48-11298,runattr,,,measurement,$0=true,
+General-8-20240428-16:41:48-11298,runattr,,,network,Supermarket,
+General-8-20240428-16:41:48-11298,runattr,,,processid,11298,
+General-8-20240428-16:41:48-11298,runattr,,,repetition,8,
+General-8-20240428-16:41:48-11298,runattr,,,replication,#8,
+General-8-20240428-16:41:48-11298,runattr,,,resultdir,results,
+General-8-20240428-16:41:48-11298,runattr,,,runnumber,8,
+General-8-20240428-16:41:48-11298,runattr,,,seedset,8,
+General-8-20240428-16:41:48-11298,config,,,network,Supermarket,
+General-8-20240428-16:41:48-11298,config,,,repeat,10,
+General-8-20240428-16:41:48-11298,config,,,seed-set,8,
+General-8-20240428-16:41:48-11298,config,,,num-rngs,10,
+General-8-20240428-16:41:48-11298,config,,,**.use_random_strategy,true,
+General-9-20240428-16:41:48-11298,runattr,,,configname,General,
+General-9-20240428-16:41:48-11298,runattr,,,datetime,20240428-16:41:48,
+General-9-20240428-16:41:48-11298,runattr,,,datetimef,20240428-164148,
+General-9-20240428-16:41:48-11298,runattr,,,experiment,General,
+General-9-20240428-16:41:48-11298,runattr,,,inifile,omnetpp.ini,
+General-9-20240428-16:41:48-11298,runattr,,,iterationvars,$0=true,
+General-9-20240428-16:41:48-11298,runattr,,,iterationvarsd,true,
+General-9-20240428-16:41:48-11298,runattr,,,iterationvarsf,true-,
+General-9-20240428-16:41:48-11298,runattr,,,measurement,$0=true,
+General-9-20240428-16:41:48-11298,runattr,,,network,Supermarket,
+General-9-20240428-16:41:48-11298,runattr,,,processid,11298,
+General-9-20240428-16:41:48-11298,runattr,,,repetition,9,
+General-9-20240428-16:41:48-11298,runattr,,,replication,#9,
+General-9-20240428-16:41:48-11298,runattr,,,resultdir,results,
+General-9-20240428-16:41:48-11298,runattr,,,runnumber,9,
+General-9-20240428-16:41:48-11298,runattr,,,seedset,9,
+General-9-20240428-16:41:48-11298,config,,,network,Supermarket,
+General-9-20240428-16:41:48-11298,config,,,repeat,10,
+General-9-20240428-16:41:48-11298,config,,,seed-set,9,
+General-9-20240428-16:41:48-11298,config,,,num-rngs,10,
+General-9-20240428-16:41:48-11298,config,,,**.use_random_strategy,true,
+General-10-20240428-16:41:48-11298,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,3.5481231660364
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-10-20240428-16:41:48-11298,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,29.64948016985
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-10-20240428-16:41:48-11298,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,4.8809933000598
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-10-20240428-16:41:48-11298,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,18.643672577837
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-10-20240428-16:41:48-11298,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,7.3606509732796
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-10-20240428-16:41:48-11298,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,18.271028626724
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-10-20240428-16:41:48-11298,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,13.538922071604
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-10-20240428-16:41:48-11298,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,16.948736899129
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-10-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-10-20240428-16:41:48-11298,scalar,Supermarket,custTotalWaitingTime:sum,,,19433.41491268
+General-10-20240428-16:41:48-11298,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-10-20240428-16:41:48-11298,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-10-20240428-16:41:48-11298,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-10-20240428-16:41:48-11298,scalar,Supermarket,custMeanWaitingTime:mean,,,19.43341491268
+General-10-20240428-16:41:48-11298,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-10-20240428-16:41:48-11298,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-10-20240428-16:41:48-11298,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-11-20240428-16:41:48-11298,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,3.8027342615131
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-11-20240428-16:41:48-11298,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,27.621624116938
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-11-20240428-16:41:48-11298,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,5.1440201862078
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-11-20240428-16:41:48-11298,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,19.791267228793
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-11-20240428-16:41:48-11298,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,7.2584714082053
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-11-20240428-16:41:48-11298,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,16.05497911554
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-11-20240428-16:41:48-11298,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,13.894236517334
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-11-20240428-16:41:48-11298,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,15.840402713142
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-11-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-11-20240428-16:41:48-11298,scalar,Supermarket,custTotalWaitingTime:sum,,,18741.279186768
+General-11-20240428-16:41:48-11298,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-11-20240428-16:41:48-11298,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-11-20240428-16:41:48-11298,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-11-20240428-16:41:48-11298,scalar,Supermarket,custMeanWaitingTime:mean,,,18.741279186768
+General-11-20240428-16:41:48-11298,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-11-20240428-16:41:48-11298,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-11-20240428-16:41:48-11298,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-12-20240428-16:41:48-11297,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,3.8134027309931
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-12-20240428-16:41:48-11297,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,35.188027670757
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-12-20240428-16:41:48-11297,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,4.6959236975346
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-12-20240428-16:41:48-11297,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,22.007015598924
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-12-20240428-16:41:48-11297,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,6.858506128137
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-12-20240428-16:41:48-11297,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,17.241159928364
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-12-20240428-16:41:48-11297,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,10.534599913018
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-12-20240428-16:41:48-11297,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,15.844265488644
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-12-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-12-20240428-16:41:48-11297,scalar,Supermarket,custTotalWaitingTime:sum,,,20185.17294528
+General-12-20240428-16:41:48-11297,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-12-20240428-16:41:48-11297,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-12-20240428-16:41:48-11297,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-12-20240428-16:41:48-11297,scalar,Supermarket,custMeanWaitingTime:mean,,,20.18517294528
+General-12-20240428-16:41:48-11297,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-12-20240428-16:41:48-11297,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-12-20240428-16:41:48-11297,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-13-20240428-16:41:48-11297,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,3.882655930289
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-13-20240428-16:41:48-11297,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,29.666222198721
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-13-20240428-16:41:48-11297,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,4.5649754671386
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-13-20240428-16:41:48-11297,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,18.183291254993
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-13-20240428-16:41:48-11297,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,7.5008236218121
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-13-20240428-16:41:48-11297,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,17.26296824307
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-13-20240428-16:41:48-11297,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,12.674214314392
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-13-20240428-16:41:48-11297,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,16.851735837377
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-13-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-13-20240428-16:41:48-11297,scalar,Supermarket,custTotalWaitingTime:sum,,,18957.96762081
+General-13-20240428-16:41:48-11297,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-13-20240428-16:41:48-11297,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-13-20240428-16:41:48-11297,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-13-20240428-16:41:48-11297,scalar,Supermarket,custMeanWaitingTime:mean,,,18.95796762081
+General-13-20240428-16:41:48-11297,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-13-20240428-16:41:48-11297,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-13-20240428-16:41:48-11297,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-14-20240428-16:41:48-11297,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,4.0120351220537
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-14-20240428-16:41:48-11297,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,31.851505311664
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-14-20240428-16:41:48-11297,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,4.9308702692903
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-14-20240428-16:41:48-11297,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,19.388712117112
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-14-20240428-16:41:48-11297,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,7.3171999324079
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-14-20240428-16:41:48-11297,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,15.839667560893
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-14-20240428-16:41:48-11297,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,12.200678813554
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-14-20240428-16:41:48-11297,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,16.746856712933
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-14-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-14-20240428-16:41:48-11297,scalar,Supermarket,custTotalWaitingTime:sum,,,19274.350957369
+General-14-20240428-16:41:48-11297,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-14-20240428-16:41:48-11297,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-14-20240428-16:41:48-11297,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-14-20240428-16:41:48-11297,scalar,Supermarket,custMeanWaitingTime:mean,,,19.274350957369
+General-14-20240428-16:41:48-11297,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-14-20240428-16:41:48-11297,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-14-20240428-16:41:48-11297,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-15-20240428-16:41:48-11297,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,3.7747978129015
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-15-20240428-16:41:48-11297,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,24.492438905913
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-15-20240428-16:41:48-11297,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,4.913294504832
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-15-20240428-16:41:48-11297,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,20.368069855253
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-15-20240428-16:41:48-11297,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,7.7565260323489
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-15-20240428-16:41:48-11297,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,16.420558631164
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-15-20240428-16:41:48-11297,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,12.824784399834
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-15-20240428-16:41:48-11297,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,15.277541072222
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-15-20240428-16:41:48-11297,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-15-20240428-16:41:48-11297,scalar,Supermarket,custTotalWaitingTime:sum,,,18664.296632508
+General-15-20240428-16:41:48-11297,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-15-20240428-16:41:48-11297,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-15-20240428-16:41:48-11297,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-15-20240428-16:41:48-11297,scalar,Supermarket,custMeanWaitingTime:mean,,,18.664296632508
+General-15-20240428-16:41:48-11297,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-15-20240428-16:41:48-11297,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-15-20240428-16:41:48-11297,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-16-20240428-16:41:48-11318,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,3.8268168598095
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-16-20240428-16:41:48-11318,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,28.362979599321
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-16-20240428-16:41:48-11318,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,5.0570149473847
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-16-20240428-16:41:48-11318,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,19.451870154188
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-16-20240428-16:41:48-11318,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,7.4858276630209
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-16-20240428-16:41:48-11318,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,16.146680766453
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-16-20240428-16:41:48-11318,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,13.61114095087
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-16-20240428-16:41:48-11318,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,15.357917988452
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-16-20240428-16:41:48-11318,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-16-20240428-16:41:48-11318,scalar,Supermarket,custTotalWaitingTime:sum,,,18883.658077903
+General-16-20240428-16:41:48-11318,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-16-20240428-16:41:48-11318,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-16-20240428-16:41:48-11318,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-16-20240428-16:41:48-11318,scalar,Supermarket,custMeanWaitingTime:mean,,,18.883658077903
+General-16-20240428-16:41:48-11318,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-16-20240428-16:41:48-11318,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-16-20240428-16:41:48-11318,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-17-20240428-16:41:49-11318,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,3.6345304248361
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-17-20240428-16:41:49-11318,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,27.821313277133
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-17-20240428-16:41:49-11318,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,4.9445722663217
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-17-20240428-16:41:49-11318,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,20.646582294835
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-17-20240428-16:41:49-11318,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,7.1363268136404
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-17-20240428-16:41:49-11318,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,16.743217799336
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-17-20240428-16:41:49-11318,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,12.495622829891
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-17-20240428-16:41:49-11318,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,16.282643197574
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-17-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-17-20240428-16:41:49-11318,scalar,Supermarket,custTotalWaitingTime:sum,,,19305.287017799
+General-17-20240428-16:41:49-11318,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-17-20240428-16:41:49-11318,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-17-20240428-16:41:49-11318,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-17-20240428-16:41:49-11318,scalar,Supermarket,custMeanWaitingTime:mean,,,19.305287017799
+General-17-20240428-16:41:49-11318,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-17-20240428-16:41:49-11318,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-17-20240428-16:41:49-11318,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-18-20240428-16:41:49-11318,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,3.8829559979807
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-18-20240428-16:41:49-11318,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,29.689146219956
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-18-20240428-16:41:49-11318,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,4.975081546064
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-18-20240428-16:41:49-11318,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,20.729522811715
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-18-20240428-16:41:49-11318,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,6.742194507873
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-18-20240428-16:41:49-11318,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,16.218447532889
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-18-20240428-16:41:49-11318,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,12.162772625241
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-18-20240428-16:41:49-11318,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,16.367216041927
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-18-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-18-20240428-16:41:49-11318,scalar,Supermarket,custTotalWaitingTime:sum,,,19241.352605714
+General-18-20240428-16:41:49-11318,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-18-20240428-16:41:49-11318,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-18-20240428-16:41:49-11318,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-18-20240428-16:41:49-11318,scalar,Supermarket,custMeanWaitingTime:mean,,,19.241352605714
+General-18-20240428-16:41:49-11318,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-18-20240428-16:41:49-11318,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-18-20240428-16:41:49-11318,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-19-20240428-16:41:49-11318,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,3.9924016739298
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-19-20240428-16:41:49-11318,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,29.252309685926
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-19-20240428-16:41:49-11318,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,5.0089406511771
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-19-20240428-16:41:49-11318,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,19.431582120738
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-19-20240428-16:41:49-11318,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,7.2292895851773
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-19-20240428-16:41:49-11318,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,16.175538509566
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-19-20240428-16:41:49-11318,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,13.320159770663
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-19-20240428-16:41:49-11318,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,17.670462706981
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-19-20240428-16:41:49-11318,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-19-20240428-16:41:49-11318,scalar,Supermarket,custTotalWaitingTime:sum,,,19208.570249048
+General-19-20240428-16:41:49-11318,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-19-20240428-16:41:49-11318,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-19-20240428-16:41:49-11318,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-19-20240428-16:41:49-11318,scalar,Supermarket,custMeanWaitingTime:mean,,,19.208570249048
+General-19-20240428-16:41:49-11318,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-19-20240428-16:41:49-11318,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-19-20240428-16:41:49-11318,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-0-20240428-16:41:48-11296,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,25.519504584005
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-0-20240428-16:41:48-11296,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,58.203092550208
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-0-20240428-16:41:48-11296,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,16.819397719302
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-0-20240428-16:41:48-11296,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,51.836436444212
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-0-20240428-16:41:48-11296,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,19.72479970165
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-0-20240428-16:41:48-11296,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,76.496901118621
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-0-20240428-16:41:48-11296,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,21.307320410531
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-0-20240428-16:41:48-11296,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,53.581160681526
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-0-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-0-20240428-16:41:48-11296,scalar,Supermarket,custTotalWaitingTime:sum,,,42854.762976152
+General-0-20240428-16:41:48-11296,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-0-20240428-16:41:48-11296,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-0-20240428-16:41:48-11296,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-0-20240428-16:41:48-11296,scalar,Supermarket,custMeanWaitingTime:mean,,,42.854762976152
+General-0-20240428-16:41:48-11296,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-0-20240428-16:41:48-11296,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-0-20240428-16:41:48-11296,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-1-20240428-16:41:48-11296,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,17.21347570226
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-1-20240428-16:41:48-11296,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,49.634331709011
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-1-20240428-16:41:48-11296,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,19.111432337294
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-1-20240428-16:41:48-11296,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,36.42481020105
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-1-20240428-16:41:48-11296,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,20.777318687996
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-1-20240428-16:41:48-11296,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,65.190012052828
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-1-20240428-16:41:48-11296,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,17.906764307639
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-1-20240428-16:41:48-11296,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,62.490038106714
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-1-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-1-20240428-16:41:48-11296,scalar,Supermarket,custTotalWaitingTime:sum,,,42590.099960833
+General-1-20240428-16:41:48-11296,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-1-20240428-16:41:48-11296,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-1-20240428-16:41:48-11296,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-1-20240428-16:41:48-11296,scalar,Supermarket,custMeanWaitingTime:mean,,,42.590099960833
+General-1-20240428-16:41:48-11296,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-1-20240428-16:41:48-11296,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-1-20240428-16:41:48-11296,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-2-20240428-16:41:48-11296,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,22.84617857789
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-2-20240428-16:41:48-11296,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,80.717561831034
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-2-20240428-16:41:48-11296,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,21.179117561568
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-2-20240428-16:41:48-11296,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,61.161276171543
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-2-20240428-16:41:48-11296,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,21.157544988359
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-2-20240428-16:41:48-11296,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,40.942050260194
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-2-20240428-16:41:48-11296,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,20.089411518326
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-2-20240428-16:41:48-11296,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,51.083985876777
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-2-20240428-16:41:48-11296,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-2-20240428-16:41:48-11296,scalar,Supermarket,custTotalWaitingTime:sum,,,41984.352811325
+General-2-20240428-16:41:48-11296,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-2-20240428-16:41:48-11296,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-2-20240428-16:41:48-11296,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-2-20240428-16:41:48-11296,scalar,Supermarket,custMeanWaitingTime:mean,,,41.984352811325
+General-2-20240428-16:41:48-11296,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-2-20240428-16:41:48-11296,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-2-20240428-16:41:48-11296,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-3-20240428-16:41:49-11296,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,21.731583071644
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-3-20240428-16:41:49-11296,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,64.728894458565
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-3-20240428-16:41:49-11296,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,20.293698923783
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-3-20240428-16:41:49-11296,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,91.675531356994
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-3-20240428-16:41:49-11296,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,22.38624231146
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-3-20240428-16:41:49-11296,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,47.404949593321
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-3-20240428-16:41:49-11296,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,22.906622480159
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-3-20240428-16:41:49-11296,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,62.333430964672
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-3-20240428-16:41:49-11296,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-3-20240428-16:41:49-11296,scalar,Supermarket,custTotalWaitingTime:sum,,,40812.396832161
+General-3-20240428-16:41:49-11296,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-3-20240428-16:41:49-11296,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-3-20240428-16:41:49-11296,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-3-20240428-16:41:49-11296,scalar,Supermarket,custMeanWaitingTime:mean,,,40.812396832161
+General-3-20240428-16:41:49-11296,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-3-20240428-16:41:49-11296,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-3-20240428-16:41:49-11296,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-4-20240428-16:41:48-11295,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,17.474023483646
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-4-20240428-16:41:48-11295,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,50.495834838071
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-4-20240428-16:41:48-11295,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,21.637485577433
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-4-20240428-16:41:48-11295,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,59.167596628379
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-4-20240428-16:41:48-11295,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,19.995278920495
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-4-20240428-16:41:48-11295,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,56.381150298484
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-4-20240428-16:41:48-11295,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,18.206401610138
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-4-20240428-16:41:48-11295,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,57.244179159149
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-4-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-4-20240428-16:41:48-11295,scalar,Supermarket,custTotalWaitingTime:sum,,,35823.639931042
+General-4-20240428-16:41:48-11295,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-4-20240428-16:41:48-11295,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-4-20240428-16:41:48-11295,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-4-20240428-16:41:48-11295,scalar,Supermarket,custMeanWaitingTime:mean,,,35.823639931042
+General-4-20240428-16:41:48-11295,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-4-20240428-16:41:48-11295,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-4-20240428-16:41:48-11295,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-5-20240428-16:41:48-11295,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,22.219516146719
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-5-20240428-16:41:48-11295,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,48.376249369892
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-5-20240428-16:41:48-11295,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,22.169218745602
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-5-20240428-16:41:48-11295,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,36.361232020118
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-5-20240428-16:41:48-11295,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,17.741786033752
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-5-20240428-16:41:48-11295,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,43.025932044623
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-5-20240428-16:41:48-11295,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,15.401982212735
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-5-20240428-16:41:48-11295,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,79.738034946914
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-5-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-5-20240428-16:41:48-11295,scalar,Supermarket,custTotalWaitingTime:sum,,,37919.111855517
+General-5-20240428-16:41:48-11295,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-5-20240428-16:41:48-11295,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-5-20240428-16:41:48-11295,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-5-20240428-16:41:48-11295,scalar,Supermarket,custMeanWaitingTime:mean,,,37.919111855517
+General-5-20240428-16:41:48-11295,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-5-20240428-16:41:48-11295,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-5-20240428-16:41:48-11295,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-6-20240428-16:41:48-11295,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,17.191462221664
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-6-20240428-16:41:48-11295,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,58.04133892202
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-6-20240428-16:41:48-11295,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,16.896517322196
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-6-20240428-16:41:48-11295,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,45.865482874334
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-6-20240428-16:41:48-11295,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,21.60226510142
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-6-20240428-16:41:48-11295,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,46.58665909572
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-6-20240428-16:41:48-11295,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,20.894293735872
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-6-20240428-16:41:48-11295,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,48.69810653452
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-6-20240428-16:41:48-11295,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-6-20240428-16:41:48-11295,scalar,Supermarket,custTotalWaitingTime:sum,,,39279.046607166
+General-6-20240428-16:41:48-11295,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-6-20240428-16:41:48-11295,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-6-20240428-16:41:48-11295,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-6-20240428-16:41:48-11295,scalar,Supermarket,custMeanWaitingTime:mean,,,39.279046607166
+General-6-20240428-16:41:48-11295,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-6-20240428-16:41:48-11295,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-6-20240428-16:41:48-11295,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-7-20240428-16:41:49-11295,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,21.71132354696
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-7-20240428-16:41:49-11295,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,56.373005603583
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-7-20240428-16:41:49-11295,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,19.433821028201
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-7-20240428-16:41:49-11295,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,54.885451382619
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-7-20240428-16:41:49-11295,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,20.741876858546
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-7-20240428-16:41:49-11295,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,58.565848187246
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-7-20240428-16:41:49-11295,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,15.444779460685
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-7-20240428-16:41:49-11295,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,81.561742794251
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-7-20240428-16:41:49-11295,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-7-20240428-16:41:49-11295,scalar,Supermarket,custTotalWaitingTime:sum,,,40766.117052198
+General-7-20240428-16:41:49-11295,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-7-20240428-16:41:49-11295,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-7-20240428-16:41:49-11295,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-7-20240428-16:41:49-11295,scalar,Supermarket,custMeanWaitingTime:mean,,,40.766117052198
+General-7-20240428-16:41:49-11295,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-7-20240428-16:41:49-11295,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-7-20240428-16:41:49-11295,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-8-20240428-16:41:48-11298,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,18.587112571986
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-8-20240428-16:41:48-11298,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,75.296457846165
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-8-20240428-16:41:48-11298,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,22.73327346576
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-8-20240428-16:41:48-11298,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,58.883919375772
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-8-20240428-16:41:48-11298,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,18.322821836383
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-8-20240428-16:41:48-11298,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,49.222618704187
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-8-20240428-16:41:48-11298,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,19.454703306929
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-8-20240428-16:41:48-11298,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,56.504708740545
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-8-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-8-20240428-16:41:48-11298,scalar,Supermarket,custTotalWaitingTime:sum,,,38827.563332407
+General-8-20240428-16:41:48-11298,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-8-20240428-16:41:48-11298,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-8-20240428-16:41:48-11298,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-8-20240428-16:41:48-11298,scalar,Supermarket,custMeanWaitingTime:mean,,,38.827563332407
+General-8-20240428-16:41:48-11298,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-8-20240428-16:41:48-11298,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-8-20240428-16:41:48-11298,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-9-20240428-16:41:48-11298,scalar,Supermarket.cashiers[0],idleTimePerCashier:mean,,,19.710875848302
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,recordingmode,mean,
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,source,updateIdleTime,
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-9-20240428-16:41:48-11298,scalar,Supermarket.cashiers[0],serviceTimePerCashier:mean,,,78.90227521524
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,recordingmode,mean,
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,source,updateServiceTime,
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[0],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-9-20240428-16:41:48-11298,scalar,Supermarket.cashiers[1],idleTimePerCashier:mean,,,20.199805096628
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,recordingmode,mean,
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,source,updateIdleTime,
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-9-20240428-16:41:48-11298,scalar,Supermarket.cashiers[1],serviceTimePerCashier:mean,,,75.249260451805
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,recordingmode,mean,
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,source,updateServiceTime,
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[1],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-9-20240428-16:41:48-11298,scalar,Supermarket.cashiers[2],idleTimePerCashier:mean,,,20.86454409852
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,recordingmode,mean,
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,source,updateIdleTime,
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-9-20240428-16:41:48-11298,scalar,Supermarket.cashiers[2],serviceTimePerCashier:mean,,,53.4294940545
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,recordingmode,mean,
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,source,updateServiceTime,
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[2],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-9-20240428-16:41:48-11298,scalar,Supermarket.cashiers[3],idleTimePerCashier:mean,,,16.696274403014
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,recordingmode,mean,
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,source,updateIdleTime,
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],idleTimePerCashier:mean,title,"IdleTimePerCashier, mean",
+General-9-20240428-16:41:48-11298,scalar,Supermarket.cashiers[3],serviceTimePerCashier:mean,,,56.415449903105
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,recordingmode,mean,
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,source,updateServiceTime,
+General-9-20240428-16:41:48-11298,attr,Supermarket.cashiers[3],serviceTimePerCashier:mean,title,"ServiceTimePerCashier, mean",
+General-9-20240428-16:41:48-11298,scalar,Supermarket,custTotalWaitingTime:sum,,,39703.744123639
+General-9-20240428-16:41:48-11298,attr,Supermarket,custTotalWaitingTime:sum,recordingmode,sum,
+General-9-20240428-16:41:48-11298,attr,Supermarket,custTotalWaitingTime:sum,source,customerFinished,
+General-9-20240428-16:41:48-11298,attr,Supermarket,custTotalWaitingTime:sum,title,"cust total waiting time, sum",
+General-9-20240428-16:41:48-11298,scalar,Supermarket,custMeanWaitingTime:mean,,,39.703744123639
+General-9-20240428-16:41:48-11298,attr,Supermarket,custMeanWaitingTime:mean,recordingmode,mean,
+General-9-20240428-16:41:48-11298,attr,Supermarket,custMeanWaitingTime:mean,source,customerFinished,
+General-9-20240428-16:41:48-11298,attr,Supermarket,custMeanWaitingTime:mean,title,"Cust mean waiting time, mean",
+General-10-20240428-16:41:48-11298,param,Supermarket.generator,typename,,,"""Generator"""
+General-10-20240428-16:41:48-11298,param,Supermarket.generator,min_item_count,,,1
+General-10-20240428-16:41:48-11298,param,Supermarket.generator,max_item_count,,,25
+General-10-20240428-16:41:48-11298,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-10-20240428-16:41:48-11298,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-10-20240428-16:41:48-11298,param,Supermarket.generator,rounds,,,1000
+General-10-20240428-16:41:48-11298,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-10-20240428-16:41:48-11298,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-10-20240428-16:41:48-11298,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-10-20240428-16:41:48-11298,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-10-20240428-16:41:48-11298,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-10-20240428-16:41:48-11298,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-10-20240428-16:41:48-11298,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-10-20240428-16:41:48-11298,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-10-20240428-16:41:48-11298,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-10-20240428-16:41:48-11298,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-10-20240428-16:41:48-11298,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-10-20240428-16:41:48-11298,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-10-20240428-16:41:48-11298,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-10-20240428-16:41:48-11298,param,Supermarket.balancer,cashier_count,,,4
+General-10-20240428-16:41:48-11298,param,Supermarket.balancer,use_random_strategy,,,false
+General-10-20240428-16:41:48-11298,param,Supermarket,typename,,,"""Supermarket"""
+General-10-20240428-16:41:48-11298,param,Supermarket,cashier_count,,,4
+General-11-20240428-16:41:48-11298,param,Supermarket.generator,typename,,,"""Generator"""
+General-11-20240428-16:41:48-11298,param,Supermarket.generator,min_item_count,,,1
+General-11-20240428-16:41:48-11298,param,Supermarket.generator,max_item_count,,,25
+General-11-20240428-16:41:48-11298,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-11-20240428-16:41:48-11298,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-11-20240428-16:41:48-11298,param,Supermarket.generator,rounds,,,1000
+General-11-20240428-16:41:48-11298,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-11-20240428-16:41:48-11298,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-11-20240428-16:41:48-11298,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-11-20240428-16:41:48-11298,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-11-20240428-16:41:48-11298,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-11-20240428-16:41:48-11298,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-11-20240428-16:41:48-11298,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-11-20240428-16:41:48-11298,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-11-20240428-16:41:48-11298,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-11-20240428-16:41:48-11298,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-11-20240428-16:41:48-11298,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-11-20240428-16:41:48-11298,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-11-20240428-16:41:48-11298,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-11-20240428-16:41:48-11298,param,Supermarket.balancer,cashier_count,,,4
+General-11-20240428-16:41:48-11298,param,Supermarket.balancer,use_random_strategy,,,false
+General-11-20240428-16:41:48-11298,param,Supermarket,typename,,,"""Supermarket"""
+General-11-20240428-16:41:48-11298,param,Supermarket,cashier_count,,,4
+General-12-20240428-16:41:48-11297,param,Supermarket.generator,typename,,,"""Generator"""
+General-12-20240428-16:41:48-11297,param,Supermarket.generator,min_item_count,,,1
+General-12-20240428-16:41:48-11297,param,Supermarket.generator,max_item_count,,,25
+General-12-20240428-16:41:48-11297,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-12-20240428-16:41:48-11297,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-12-20240428-16:41:48-11297,param,Supermarket.generator,rounds,,,1000
+General-12-20240428-16:41:48-11297,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-12-20240428-16:41:48-11297,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-12-20240428-16:41:48-11297,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-12-20240428-16:41:48-11297,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-12-20240428-16:41:48-11297,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-12-20240428-16:41:48-11297,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-12-20240428-16:41:48-11297,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-12-20240428-16:41:48-11297,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-12-20240428-16:41:48-11297,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-12-20240428-16:41:48-11297,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-12-20240428-16:41:48-11297,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-12-20240428-16:41:48-11297,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-12-20240428-16:41:48-11297,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-12-20240428-16:41:48-11297,param,Supermarket.balancer,cashier_count,,,4
+General-12-20240428-16:41:48-11297,param,Supermarket.balancer,use_random_strategy,,,false
+General-12-20240428-16:41:48-11297,param,Supermarket,typename,,,"""Supermarket"""
+General-12-20240428-16:41:48-11297,param,Supermarket,cashier_count,,,4
+General-13-20240428-16:41:48-11297,param,Supermarket.generator,typename,,,"""Generator"""
+General-13-20240428-16:41:48-11297,param,Supermarket.generator,min_item_count,,,1
+General-13-20240428-16:41:48-11297,param,Supermarket.generator,max_item_count,,,25
+General-13-20240428-16:41:48-11297,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-13-20240428-16:41:48-11297,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-13-20240428-16:41:48-11297,param,Supermarket.generator,rounds,,,1000
+General-13-20240428-16:41:48-11297,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-13-20240428-16:41:48-11297,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-13-20240428-16:41:48-11297,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-13-20240428-16:41:48-11297,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-13-20240428-16:41:48-11297,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-13-20240428-16:41:48-11297,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-13-20240428-16:41:48-11297,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-13-20240428-16:41:48-11297,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-13-20240428-16:41:48-11297,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-13-20240428-16:41:48-11297,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-13-20240428-16:41:48-11297,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-13-20240428-16:41:48-11297,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-13-20240428-16:41:48-11297,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-13-20240428-16:41:48-11297,param,Supermarket.balancer,cashier_count,,,4
+General-13-20240428-16:41:48-11297,param,Supermarket.balancer,use_random_strategy,,,false
+General-13-20240428-16:41:48-11297,param,Supermarket,typename,,,"""Supermarket"""
+General-13-20240428-16:41:48-11297,param,Supermarket,cashier_count,,,4
+General-14-20240428-16:41:48-11297,param,Supermarket.generator,typename,,,"""Generator"""
+General-14-20240428-16:41:48-11297,param,Supermarket.generator,min_item_count,,,1
+General-14-20240428-16:41:48-11297,param,Supermarket.generator,max_item_count,,,25
+General-14-20240428-16:41:48-11297,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-14-20240428-16:41:48-11297,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-14-20240428-16:41:48-11297,param,Supermarket.generator,rounds,,,1000
+General-14-20240428-16:41:48-11297,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-14-20240428-16:41:48-11297,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-14-20240428-16:41:48-11297,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-14-20240428-16:41:48-11297,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-14-20240428-16:41:48-11297,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-14-20240428-16:41:48-11297,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-14-20240428-16:41:48-11297,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-14-20240428-16:41:48-11297,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-14-20240428-16:41:48-11297,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-14-20240428-16:41:48-11297,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-14-20240428-16:41:48-11297,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-14-20240428-16:41:48-11297,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-14-20240428-16:41:48-11297,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-14-20240428-16:41:48-11297,param,Supermarket.balancer,cashier_count,,,4
+General-14-20240428-16:41:48-11297,param,Supermarket.balancer,use_random_strategy,,,false
+General-14-20240428-16:41:48-11297,param,Supermarket,typename,,,"""Supermarket"""
+General-14-20240428-16:41:48-11297,param,Supermarket,cashier_count,,,4
+General-15-20240428-16:41:48-11297,param,Supermarket.generator,typename,,,"""Generator"""
+General-15-20240428-16:41:48-11297,param,Supermarket.generator,min_item_count,,,1
+General-15-20240428-16:41:48-11297,param,Supermarket.generator,max_item_count,,,25
+General-15-20240428-16:41:48-11297,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-15-20240428-16:41:48-11297,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-15-20240428-16:41:48-11297,param,Supermarket.generator,rounds,,,1000
+General-15-20240428-16:41:48-11297,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-15-20240428-16:41:48-11297,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-15-20240428-16:41:48-11297,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-15-20240428-16:41:48-11297,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-15-20240428-16:41:48-11297,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-15-20240428-16:41:48-11297,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-15-20240428-16:41:48-11297,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-15-20240428-16:41:48-11297,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-15-20240428-16:41:48-11297,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-15-20240428-16:41:48-11297,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-15-20240428-16:41:48-11297,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-15-20240428-16:41:48-11297,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-15-20240428-16:41:48-11297,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-15-20240428-16:41:48-11297,param,Supermarket.balancer,cashier_count,,,4
+General-15-20240428-16:41:48-11297,param,Supermarket.balancer,use_random_strategy,,,false
+General-15-20240428-16:41:48-11297,param,Supermarket,typename,,,"""Supermarket"""
+General-15-20240428-16:41:48-11297,param,Supermarket,cashier_count,,,4
+General-16-20240428-16:41:48-11318,param,Supermarket.generator,typename,,,"""Generator"""
+General-16-20240428-16:41:48-11318,param,Supermarket.generator,min_item_count,,,1
+General-16-20240428-16:41:48-11318,param,Supermarket.generator,max_item_count,,,25
+General-16-20240428-16:41:48-11318,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-16-20240428-16:41:48-11318,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-16-20240428-16:41:48-11318,param,Supermarket.generator,rounds,,,1000
+General-16-20240428-16:41:48-11318,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-16-20240428-16:41:48-11318,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-16-20240428-16:41:48-11318,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-16-20240428-16:41:48-11318,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-16-20240428-16:41:48-11318,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-16-20240428-16:41:48-11318,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-16-20240428-16:41:48-11318,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-16-20240428-16:41:48-11318,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-16-20240428-16:41:48-11318,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-16-20240428-16:41:48-11318,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-16-20240428-16:41:48-11318,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-16-20240428-16:41:48-11318,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-16-20240428-16:41:48-11318,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-16-20240428-16:41:48-11318,param,Supermarket.balancer,cashier_count,,,4
+General-16-20240428-16:41:48-11318,param,Supermarket.balancer,use_random_strategy,,,false
+General-16-20240428-16:41:48-11318,param,Supermarket,typename,,,"""Supermarket"""
+General-16-20240428-16:41:48-11318,param,Supermarket,cashier_count,,,4
+General-17-20240428-16:41:49-11318,param,Supermarket.generator,typename,,,"""Generator"""
+General-17-20240428-16:41:49-11318,param,Supermarket.generator,min_item_count,,,1
+General-17-20240428-16:41:49-11318,param,Supermarket.generator,max_item_count,,,25
+General-17-20240428-16:41:49-11318,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-17-20240428-16:41:49-11318,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-17-20240428-16:41:49-11318,param,Supermarket.generator,rounds,,,1000
+General-17-20240428-16:41:49-11318,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-17-20240428-16:41:49-11318,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-17-20240428-16:41:49-11318,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-17-20240428-16:41:49-11318,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-17-20240428-16:41:49-11318,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-17-20240428-16:41:49-11318,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-17-20240428-16:41:49-11318,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-17-20240428-16:41:49-11318,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-17-20240428-16:41:49-11318,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-17-20240428-16:41:49-11318,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-17-20240428-16:41:49-11318,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-17-20240428-16:41:49-11318,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-17-20240428-16:41:49-11318,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-17-20240428-16:41:49-11318,param,Supermarket.balancer,cashier_count,,,4
+General-17-20240428-16:41:49-11318,param,Supermarket.balancer,use_random_strategy,,,false
+General-17-20240428-16:41:49-11318,param,Supermarket,typename,,,"""Supermarket"""
+General-17-20240428-16:41:49-11318,param,Supermarket,cashier_count,,,4
+General-18-20240428-16:41:49-11318,param,Supermarket.generator,typename,,,"""Generator"""
+General-18-20240428-16:41:49-11318,param,Supermarket.generator,min_item_count,,,1
+General-18-20240428-16:41:49-11318,param,Supermarket.generator,max_item_count,,,25
+General-18-20240428-16:41:49-11318,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-18-20240428-16:41:49-11318,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-18-20240428-16:41:49-11318,param,Supermarket.generator,rounds,,,1000
+General-18-20240428-16:41:49-11318,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-18-20240428-16:41:49-11318,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-18-20240428-16:41:49-11318,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-18-20240428-16:41:49-11318,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-18-20240428-16:41:49-11318,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-18-20240428-16:41:49-11318,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-18-20240428-16:41:49-11318,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-18-20240428-16:41:49-11318,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-18-20240428-16:41:49-11318,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-18-20240428-16:41:49-11318,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-18-20240428-16:41:49-11318,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-18-20240428-16:41:49-11318,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-18-20240428-16:41:49-11318,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-18-20240428-16:41:49-11318,param,Supermarket.balancer,cashier_count,,,4
+General-18-20240428-16:41:49-11318,param,Supermarket.balancer,use_random_strategy,,,false
+General-18-20240428-16:41:49-11318,param,Supermarket,typename,,,"""Supermarket"""
+General-18-20240428-16:41:49-11318,param,Supermarket,cashier_count,,,4
+General-19-20240428-16:41:49-11318,param,Supermarket.generator,typename,,,"""Generator"""
+General-19-20240428-16:41:49-11318,param,Supermarket.generator,min_item_count,,,1
+General-19-20240428-16:41:49-11318,param,Supermarket.generator,max_item_count,,,25
+General-19-20240428-16:41:49-11318,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-19-20240428-16:41:49-11318,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-19-20240428-16:41:49-11318,param,Supermarket.generator,rounds,,,1000
+General-19-20240428-16:41:49-11318,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-19-20240428-16:41:49-11318,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-19-20240428-16:41:49-11318,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-19-20240428-16:41:49-11318,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-19-20240428-16:41:49-11318,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-19-20240428-16:41:49-11318,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-19-20240428-16:41:49-11318,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-19-20240428-16:41:49-11318,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-19-20240428-16:41:49-11318,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-19-20240428-16:41:49-11318,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-19-20240428-16:41:49-11318,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-19-20240428-16:41:49-11318,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-19-20240428-16:41:49-11318,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-19-20240428-16:41:49-11318,param,Supermarket.balancer,cashier_count,,,4
+General-19-20240428-16:41:49-11318,param,Supermarket.balancer,use_random_strategy,,,false
+General-19-20240428-16:41:49-11318,param,Supermarket,typename,,,"""Supermarket"""
+General-19-20240428-16:41:49-11318,param,Supermarket,cashier_count,,,4
+General-0-20240428-16:41:48-11296,param,Supermarket.generator,typename,,,"""Generator"""
+General-0-20240428-16:41:48-11296,param,Supermarket.generator,min_item_count,,,1
+General-0-20240428-16:41:48-11296,param,Supermarket.generator,max_item_count,,,25
+General-0-20240428-16:41:48-11296,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-0-20240428-16:41:48-11296,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-0-20240428-16:41:48-11296,param,Supermarket.generator,rounds,,,1000
+General-0-20240428-16:41:48-11296,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-0-20240428-16:41:48-11296,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-0-20240428-16:41:48-11296,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-0-20240428-16:41:48-11296,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-0-20240428-16:41:48-11296,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-0-20240428-16:41:48-11296,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-0-20240428-16:41:48-11296,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-0-20240428-16:41:48-11296,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-0-20240428-16:41:48-11296,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-0-20240428-16:41:48-11296,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-0-20240428-16:41:48-11296,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-0-20240428-16:41:48-11296,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-0-20240428-16:41:48-11296,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-0-20240428-16:41:48-11296,param,Supermarket.balancer,cashier_count,,,4
+General-0-20240428-16:41:48-11296,param,Supermarket.balancer,use_random_strategy,,,true
+General-0-20240428-16:41:48-11296,param,Supermarket,typename,,,"""Supermarket"""
+General-0-20240428-16:41:48-11296,param,Supermarket,cashier_count,,,4
+General-1-20240428-16:41:48-11296,param,Supermarket.generator,typename,,,"""Generator"""
+General-1-20240428-16:41:48-11296,param,Supermarket.generator,min_item_count,,,1
+General-1-20240428-16:41:48-11296,param,Supermarket.generator,max_item_count,,,25
+General-1-20240428-16:41:48-11296,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-1-20240428-16:41:48-11296,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-1-20240428-16:41:48-11296,param,Supermarket.generator,rounds,,,1000
+General-1-20240428-16:41:48-11296,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-1-20240428-16:41:48-11296,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-1-20240428-16:41:48-11296,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-1-20240428-16:41:48-11296,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-1-20240428-16:41:48-11296,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-1-20240428-16:41:48-11296,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-1-20240428-16:41:48-11296,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-1-20240428-16:41:48-11296,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-1-20240428-16:41:48-11296,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-1-20240428-16:41:48-11296,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-1-20240428-16:41:48-11296,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-1-20240428-16:41:48-11296,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-1-20240428-16:41:48-11296,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-1-20240428-16:41:48-11296,param,Supermarket.balancer,cashier_count,,,4
+General-1-20240428-16:41:48-11296,param,Supermarket.balancer,use_random_strategy,,,true
+General-1-20240428-16:41:48-11296,param,Supermarket,typename,,,"""Supermarket"""
+General-1-20240428-16:41:48-11296,param,Supermarket,cashier_count,,,4
+General-2-20240428-16:41:48-11296,param,Supermarket.generator,typename,,,"""Generator"""
+General-2-20240428-16:41:48-11296,param,Supermarket.generator,min_item_count,,,1
+General-2-20240428-16:41:48-11296,param,Supermarket.generator,max_item_count,,,25
+General-2-20240428-16:41:48-11296,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-2-20240428-16:41:48-11296,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-2-20240428-16:41:48-11296,param,Supermarket.generator,rounds,,,1000
+General-2-20240428-16:41:48-11296,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-2-20240428-16:41:48-11296,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-2-20240428-16:41:48-11296,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-2-20240428-16:41:48-11296,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-2-20240428-16:41:48-11296,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-2-20240428-16:41:48-11296,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-2-20240428-16:41:48-11296,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-2-20240428-16:41:48-11296,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-2-20240428-16:41:48-11296,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-2-20240428-16:41:48-11296,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-2-20240428-16:41:48-11296,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-2-20240428-16:41:48-11296,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-2-20240428-16:41:48-11296,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-2-20240428-16:41:48-11296,param,Supermarket.balancer,cashier_count,,,4
+General-2-20240428-16:41:48-11296,param,Supermarket.balancer,use_random_strategy,,,true
+General-2-20240428-16:41:48-11296,param,Supermarket,typename,,,"""Supermarket"""
+General-2-20240428-16:41:48-11296,param,Supermarket,cashier_count,,,4
+General-3-20240428-16:41:49-11296,param,Supermarket.generator,typename,,,"""Generator"""
+General-3-20240428-16:41:49-11296,param,Supermarket.generator,min_item_count,,,1
+General-3-20240428-16:41:49-11296,param,Supermarket.generator,max_item_count,,,25
+General-3-20240428-16:41:49-11296,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-3-20240428-16:41:49-11296,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-3-20240428-16:41:49-11296,param,Supermarket.generator,rounds,,,1000
+General-3-20240428-16:41:49-11296,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-3-20240428-16:41:49-11296,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-3-20240428-16:41:49-11296,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-3-20240428-16:41:49-11296,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-3-20240428-16:41:49-11296,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-3-20240428-16:41:49-11296,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-3-20240428-16:41:49-11296,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-3-20240428-16:41:49-11296,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-3-20240428-16:41:49-11296,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-3-20240428-16:41:49-11296,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-3-20240428-16:41:49-11296,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-3-20240428-16:41:49-11296,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-3-20240428-16:41:49-11296,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-3-20240428-16:41:49-11296,param,Supermarket.balancer,cashier_count,,,4
+General-3-20240428-16:41:49-11296,param,Supermarket.balancer,use_random_strategy,,,true
+General-3-20240428-16:41:49-11296,param,Supermarket,typename,,,"""Supermarket"""
+General-3-20240428-16:41:49-11296,param,Supermarket,cashier_count,,,4
+General-4-20240428-16:41:48-11295,param,Supermarket.generator,typename,,,"""Generator"""
+General-4-20240428-16:41:48-11295,param,Supermarket.generator,min_item_count,,,1
+General-4-20240428-16:41:48-11295,param,Supermarket.generator,max_item_count,,,25
+General-4-20240428-16:41:48-11295,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-4-20240428-16:41:48-11295,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-4-20240428-16:41:48-11295,param,Supermarket.generator,rounds,,,1000
+General-4-20240428-16:41:48-11295,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-4-20240428-16:41:48-11295,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-4-20240428-16:41:48-11295,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-4-20240428-16:41:48-11295,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-4-20240428-16:41:48-11295,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-4-20240428-16:41:48-11295,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-4-20240428-16:41:48-11295,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-4-20240428-16:41:48-11295,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-4-20240428-16:41:48-11295,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-4-20240428-16:41:48-11295,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-4-20240428-16:41:48-11295,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-4-20240428-16:41:48-11295,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-4-20240428-16:41:48-11295,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-4-20240428-16:41:48-11295,param,Supermarket.balancer,cashier_count,,,4
+General-4-20240428-16:41:48-11295,param,Supermarket.balancer,use_random_strategy,,,true
+General-4-20240428-16:41:48-11295,param,Supermarket,typename,,,"""Supermarket"""
+General-4-20240428-16:41:48-11295,param,Supermarket,cashier_count,,,4
+General-5-20240428-16:41:48-11295,param,Supermarket.generator,typename,,,"""Generator"""
+General-5-20240428-16:41:48-11295,param,Supermarket.generator,min_item_count,,,1
+General-5-20240428-16:41:48-11295,param,Supermarket.generator,max_item_count,,,25
+General-5-20240428-16:41:48-11295,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-5-20240428-16:41:48-11295,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-5-20240428-16:41:48-11295,param,Supermarket.generator,rounds,,,1000
+General-5-20240428-16:41:48-11295,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-5-20240428-16:41:48-11295,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-5-20240428-16:41:48-11295,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-5-20240428-16:41:48-11295,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-5-20240428-16:41:48-11295,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-5-20240428-16:41:48-11295,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-5-20240428-16:41:48-11295,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-5-20240428-16:41:48-11295,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-5-20240428-16:41:48-11295,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-5-20240428-16:41:48-11295,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-5-20240428-16:41:48-11295,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-5-20240428-16:41:48-11295,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-5-20240428-16:41:48-11295,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-5-20240428-16:41:48-11295,param,Supermarket.balancer,cashier_count,,,4
+General-5-20240428-16:41:48-11295,param,Supermarket.balancer,use_random_strategy,,,true
+General-5-20240428-16:41:48-11295,param,Supermarket,typename,,,"""Supermarket"""
+General-5-20240428-16:41:48-11295,param,Supermarket,cashier_count,,,4
+General-6-20240428-16:41:48-11295,param,Supermarket.generator,typename,,,"""Generator"""
+General-6-20240428-16:41:48-11295,param,Supermarket.generator,min_item_count,,,1
+General-6-20240428-16:41:48-11295,param,Supermarket.generator,max_item_count,,,25
+General-6-20240428-16:41:48-11295,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-6-20240428-16:41:48-11295,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-6-20240428-16:41:48-11295,param,Supermarket.generator,rounds,,,1000
+General-6-20240428-16:41:48-11295,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-6-20240428-16:41:48-11295,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-6-20240428-16:41:48-11295,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-6-20240428-16:41:48-11295,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-6-20240428-16:41:48-11295,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-6-20240428-16:41:48-11295,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-6-20240428-16:41:48-11295,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-6-20240428-16:41:48-11295,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-6-20240428-16:41:48-11295,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-6-20240428-16:41:48-11295,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-6-20240428-16:41:48-11295,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-6-20240428-16:41:48-11295,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-6-20240428-16:41:48-11295,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-6-20240428-16:41:48-11295,param,Supermarket.balancer,cashier_count,,,4
+General-6-20240428-16:41:48-11295,param,Supermarket.balancer,use_random_strategy,,,true
+General-6-20240428-16:41:48-11295,param,Supermarket,typename,,,"""Supermarket"""
+General-6-20240428-16:41:48-11295,param,Supermarket,cashier_count,,,4
+General-7-20240428-16:41:49-11295,param,Supermarket.generator,typename,,,"""Generator"""
+General-7-20240428-16:41:49-11295,param,Supermarket.generator,min_item_count,,,1
+General-7-20240428-16:41:49-11295,param,Supermarket.generator,max_item_count,,,25
+General-7-20240428-16:41:49-11295,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-7-20240428-16:41:49-11295,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-7-20240428-16:41:49-11295,param,Supermarket.generator,rounds,,,1000
+General-7-20240428-16:41:49-11295,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-7-20240428-16:41:49-11295,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-7-20240428-16:41:49-11295,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-7-20240428-16:41:49-11295,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-7-20240428-16:41:49-11295,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-7-20240428-16:41:49-11295,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-7-20240428-16:41:49-11295,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-7-20240428-16:41:49-11295,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-7-20240428-16:41:49-11295,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-7-20240428-16:41:49-11295,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-7-20240428-16:41:49-11295,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-7-20240428-16:41:49-11295,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-7-20240428-16:41:49-11295,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-7-20240428-16:41:49-11295,param,Supermarket.balancer,cashier_count,,,4
+General-7-20240428-16:41:49-11295,param,Supermarket.balancer,use_random_strategy,,,true
+General-7-20240428-16:41:49-11295,param,Supermarket,typename,,,"""Supermarket"""
+General-7-20240428-16:41:49-11295,param,Supermarket,cashier_count,,,4
+General-8-20240428-16:41:48-11298,param,Supermarket.generator,typename,,,"""Generator"""
+General-8-20240428-16:41:48-11298,param,Supermarket.generator,min_item_count,,,1
+General-8-20240428-16:41:48-11298,param,Supermarket.generator,max_item_count,,,25
+General-8-20240428-16:41:48-11298,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-8-20240428-16:41:48-11298,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-8-20240428-16:41:48-11298,param,Supermarket.generator,rounds,,,1000
+General-8-20240428-16:41:48-11298,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-8-20240428-16:41:48-11298,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-8-20240428-16:41:48-11298,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-8-20240428-16:41:48-11298,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-8-20240428-16:41:48-11298,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-8-20240428-16:41:48-11298,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-8-20240428-16:41:48-11298,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-8-20240428-16:41:48-11298,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-8-20240428-16:41:48-11298,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-8-20240428-16:41:48-11298,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-8-20240428-16:41:48-11298,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-8-20240428-16:41:48-11298,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-8-20240428-16:41:48-11298,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-8-20240428-16:41:48-11298,param,Supermarket.balancer,cashier_count,,,4
+General-8-20240428-16:41:48-11298,param,Supermarket.balancer,use_random_strategy,,,true
+General-8-20240428-16:41:48-11298,param,Supermarket,typename,,,"""Supermarket"""
+General-8-20240428-16:41:48-11298,param,Supermarket,cashier_count,,,4
+General-9-20240428-16:41:48-11298,param,Supermarket.generator,typename,,,"""Generator"""
+General-9-20240428-16:41:48-11298,param,Supermarket.generator,min_item_count,,,1
+General-9-20240428-16:41:48-11298,param,Supermarket.generator,max_item_count,,,25
+General-9-20240428-16:41:48-11298,param,Supermarket.generator,min_customer_spawn_time,,,5
+General-9-20240428-16:41:48-11298,param,Supermarket.generator,max_customer_spawn_time,,,6
+General-9-20240428-16:41:48-11298,param,Supermarket.generator,rounds,,,1000
+General-9-20240428-16:41:48-11298,param,Supermarket.cashiers[0],typename,,,"""Cashier"""
+General-9-20240428-16:41:48-11298,param,Supermarket.cashiers[0],min_time_per_item,,,0.5
+General-9-20240428-16:41:48-11298,param,Supermarket.cashiers[0],max_time_per_item,,,2
+General-9-20240428-16:41:48-11298,param,Supermarket.cashiers[1],typename,,,"""Cashier"""
+General-9-20240428-16:41:48-11298,param,Supermarket.cashiers[1],min_time_per_item,,,0.5
+General-9-20240428-16:41:48-11298,param,Supermarket.cashiers[1],max_time_per_item,,,2
+General-9-20240428-16:41:48-11298,param,Supermarket.cashiers[2],typename,,,"""Cashier"""
+General-9-20240428-16:41:48-11298,param,Supermarket.cashiers[2],min_time_per_item,,,0.5
+General-9-20240428-16:41:48-11298,param,Supermarket.cashiers[2],max_time_per_item,,,2
+General-9-20240428-16:41:48-11298,param,Supermarket.cashiers[3],typename,,,"""Cashier"""
+General-9-20240428-16:41:48-11298,param,Supermarket.cashiers[3],min_time_per_item,,,0.5
+General-9-20240428-16:41:48-11298,param,Supermarket.cashiers[3],max_time_per_item,,,2
+General-9-20240428-16:41:48-11298,param,Supermarket.balancer,typename,,,"""Balancer"""
+General-9-20240428-16:41:48-11298,param,Supermarket.balancer,cashier_count,,,4
+General-9-20240428-16:41:48-11298,param,Supermarket.balancer,use_random_strategy,,,true
+General-9-20240428-16:41:48-11298,param,Supermarket,typename,,,"""Supermarket"""
+General-9-20240428-16:41:48-11298,param,Supermarket,cashier_count,,,4

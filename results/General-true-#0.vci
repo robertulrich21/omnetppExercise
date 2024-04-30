@@ -1,0 +1,41 @@
+file 1912 1714493757                                            
+version 3
+run General-0-20240430-18:12:25-6016
+attr configname General
+attr datetime 20240430-18:12:25
+attr datetimef 20240430-181225
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars $0=true
+attr iterationvarsd true
+attr iterationvarsf true-
+attr measurement $0=true
+attr network Supermarket
+attr processid 6016
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network Supermarket
+config repeat 10
+config seed-set 0
+config num-rngs 10
+config **.use_random_strategy true
+
+vector 0 Supermarket queueSizeOverTime:vector ETV
+attr recordingmode vector
+attr source updateQueue
+attr title queueSizeOverTime
+vector 1 Supermarket customerWaitingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source customerFinished
+attr title "cust waiting time"
+0	836 204 7 62 5.548813502304 31.23053200927 9 0 2 7 9
+1	1040 146 50 62 26.791661192778 31.23053200927 4 2.943983272998 21.468422713108 51.634355376823 847.42482789188
+0	1186 69 69 83 33.868568527512 39.054900872055 3 0 1 2 2
+1	1255 35 78 78 38.956236537662 38.956236537662 1 5.08766801015 5.08766801015 5.08766801015 25.884365781504
+0	1290 359 92 176 44.671834870707 82.722075048136 15 0 2 13 19
+1	1649 262 100 162 47.557456961251 77.646080684499 7 2.885622090544 26.170084990444 79.046998329115 1297.1437219487
+
