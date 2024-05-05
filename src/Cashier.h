@@ -18,7 +18,6 @@
 #include <omnetpp.h>
 #include "Customer_m.h"
 using namespace omnetpp;
-static double total;
 class Cashier : public cSimpleModule {
 private:
     cQueue* queue;
