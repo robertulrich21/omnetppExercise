@@ -15,8 +15,10 @@ simple Generator{
 	parameters:	    
 	    int min_item_count = default(1);
         int max_item_count = default(25);
-      	double min_customer_spawn_time = default(5.0);
-      	double max_customer_spawn_time = default(6.0);
+      	double min_customer_spawn_time @unit(s) = default(5.0s);
+      	double max_customer_spawn_time @unit(s) = default(6.0s);
+      	volatile double customer_spawn_time @unit(s) = uniform(min_customer_spawn_time,max_customer_spawn_time,5);
+      	
       	int rounds = default(1000);
 	    @display("i=block/source");
 	

@@ -28,6 +28,7 @@ public:
 
 private:
     long customer_count = 0;
+    cMessage *selfMessage;
 };
 Define_Module(Generator);
 

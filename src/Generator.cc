@@ -16,23 +16,26 @@
 #include "Generator.h"
 
 Generator::Generator() {
-    // TODO Auto-generated constructor stub
+    selfMessage = nullptr;
 
 }
 
 Generator::~Generator() {
-    // TODO Auto-generated destructor stub
+    cancelAndDelete(selfMessage);
 }
 
 void Generator::initialize(){
 
-    cMessage* selfMsg = new cMessage("self Message",0);
     WATCH(customer_count);
-    scheduleAt(uniform((double)par("min_customer_spawn_time"),(double)(par("max_customer_spawn_time")),5),selfMsg);
+
+    // relocated spawn time distribution to ned file
+    selfMessage = new cMessage("self Message",0);
+    // scheduleAt(uniform((double)par("min_customer_spawn_time"),(double)(par("max_customer_spawn_time")),5),selfMessage);
+    scheduleAt(simTime() + par("customer_spawn_time"), selfMessage);
 }
 
 void Generator::handleMessage(cMessage* msg){
-    if(msg->getKind() == 0){
+    if(msg == selfMessage){
         // generate Customer
         Customer* cst = new Customer("customer",1);
         //generate items
@@ -43,12 +46,16 @@ void Generator::handleMessage(cMessage* msg){
         customer_count++;
 
         //Self message runs 1000 times
-        if(customer_count < (long)par("rounds")){
-            cMessage* m = new cMessage(*msg);
-            simtime_t time = uniform((double)par("min_customer_spawn_time"),(double)(par("max_customer_spawn_time")));
-            scheduleAt(simTime()+time,m);
-            EV << "next customer appear in: " << time <<std::endl;
+        if(customer_count >= (long)par("rounds")){
+            return;
         }
+
+        // shouldnt this be also rng channel 5?
+        //simtime_t time = uniform((double)par("min_customer_spawn_time"),(double)(par("max_customer_spawn_time")));
+        simtime_t time = par("customer_spawn_time");
+        scheduleAt(simTime() + time, selfMessage);
+        EV << "next customer appear in: " << time <<std::endl;
+
 
     }
 
