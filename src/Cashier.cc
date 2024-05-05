@@ -17,11 +17,12 @@
 
 Cashier::Cashier() {
 
-
+    selfMessage = nullptr;
 }
 
 Cashier::~Cashier() {
-    // TODO Auto-generated destructor stub
+    cancelAndDelete(selfMessage);
+    delete queue;
 }
 
 void Cashier::initialize() {
@@ -46,7 +47,7 @@ void Cashier::initialize() {
 }
 void Cashier::handleMessage(cMessage *msg){
     // if msg is a self message, update customer queue and stats
-    if (msg->getKind() == 0){
+    if (msg == selfMessage){
         if(queue->getLength() > 0){
             if (isIdle){
                 isIdle = false;
@@ -60,22 +61,23 @@ void Cashier::handleMessage(cMessage *msg){
             //take item from customer
             if(cst->getItems() >0){
                 cst->setItems(cst->getItems()-1);
-                cMessage* m = new cMessage(*selfMessage);
-                scheduleAt(simTime()+uniform((simtime_t)par("min_time_per_item"),(simtime_t)par("max_time_per_item"),3),m);
+                scheduleAt(simTime()+uniform((simtime_t)par("min_time_per_item"),(simtime_t)par("max_time_per_item"),3), selfMessage);
             }
             else{
                 // if no item left, update stats
                 bubble("Customer finished");
 
-                queue->pop();
-
-                simtime_t waitingTime =simTime()-cst->getWaitingTime();
+                simtime_t waitingTime = simTime() - cst->getWaitingTime();
                 emit(finished_signal,(waitingTime));
-                emit(update_queue, queue->length());
+                emit(update_queue, queue->getLength());
 
-                //cast self message
-                cMessage* m = new cMessage(*selfMessage);
-                scheduleAt(simTime(),m);
+
+                cObject *front = queue->pop();
+                // message could also be sent out through a gate but we currently don't have one
+                delete front;
+
+                // send new self message so a new customer is drawn
+                scheduleAt(simTime(),selfMessage);
             }
         }
         //If the customer queue is empty go into idle mode
@@ -93,11 +95,12 @@ void Cashier::handleMessage(cMessage *msg){
 
         Customer* cst = check_and_cast<Customer *>(msg);
         if(queue->getLength() == 0){
-            cMessage* m = new cMessage(*selfMessage);
-            scheduleAt(simTime()+uniform((double)par("min_time_per_item"),(double)par("max_time_per_item"),2),m);
+            scheduleAt(simTime()+uniform((double)par("min_time_per_item"),(double)par("max_time_per_item"),2),selfMessage);
         }
         queue->insert(cst);
-        emit(update_queue, queue->length());
+
+        // the queue size is potentially measured wrong since the emit only happens when new customers come in is this intended?
+        emit(update_queue, queue->getLength());
 
     }
 
