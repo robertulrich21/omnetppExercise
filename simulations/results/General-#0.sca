@@ -1,0 +1,30 @@
+version 3
+run General-0-20240516-15:42:19-13797
+attr configname General
+attr datetime 20240516-15:42:19
+attr datetimef 20240516-154219
+attr experiment General
+attr inifile mM1.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network MM1
+attr processid 13797
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network MM1
+
+par MM1.producer typename "\"task2.simulations.Producer\""
+par MM1.producer interArrivalTime 0.795875s
+attr unit s
+par MM1.queue typename "\"task2.simulations.Queue\""
+par MM1.serviceUnit typename "\"task2.simulations.ServiceUnit\""
+par MM1.serviceUnit interServiceTime 0.89856s
+attr unit s
+par MM1.sink typename "\"task2.simulations.Sink\""
+par MM1 typename "\"task2.simulations.MM1\""
+
