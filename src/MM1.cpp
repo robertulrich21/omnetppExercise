@@ -1,6 +1,11 @@
 
 #include <omnetpp.h>
 #include "TracedMessage_m.h"
+#include <tuple>
+#include <string>
+#include <vector>
+#include <deque>
+#include "Eieruhr.h"
 
 using namespace omnetpp;
 
@@ -47,6 +52,7 @@ void Producer::handleMessage(cMessage *msg)
     send(produced, gate("out"));
 
     simtime_t interArrivalTime = par("interArrivalTime");
+
     scheduleAt(simTime() + interArrivalTime, msg);
 }
 
@@ -59,43 +65,102 @@ public:
     Queue();
     ~Queue();
     virtual void initialize() override;
+    virtual void finish() override;
     virtual void handleMessage(cMessage *msg) override;
+    virtual void refreshDisplay() const override;
     bool isEmpty();
 
 private:
-    cQueue *queue;
+    std::deque<std::tuple<TracedMessage *, simtime_t>> queue;
     bool requested = false;
+    simtime_t lastMessageArrivalTime;
+    simtime_t queueFillStatusChangedTime;
+
+    simsignal_t queueInterArrivalTime;
+    simsignal_t queueWaitingTime;
+    simsignal_t queueFillLevel;
+
+    simsignal_t queueEmptyTime;
+    simsignal_t queueNonEmptyTime;
 };
 
 Define_Module(Queue);
 
 Queue::Queue()
 {
-    queue = nullptr;
 }
 
 Queue::~Queue()
 {
-    while (!queue->isEmpty()){
-        delete queue->pop();
+    while (!queue.empty()){
+        std::tuple<TracedMessage *, simtime_t> tuple = queue.front();
+        delete std::get<TracedMessage *>(tuple);
+        queue.pop_front();
     }
-    delete queue;
+    queue.clear();
 
 }
 
 void Queue::initialize()
 {
-    queue = new cQueue();
+    lastMessageArrivalTime = -1;
+    queueFillStatusChangedTime = simTime();
+
+    queueInterArrivalTime = registerSignal("queueInterArrivalTime");
+    queueWaitingTime = registerSignal("queueWaitingTime");
+    queueFillLevel = registerSignal("queueFillLevel");
+
+
+    queueEmptyTime = registerSignal("queueEmptyTime");
+    queueNonEmptyTime = registerSignal("queueNonEmptyTime");
+
+    GET_EIERUHR()->registerGate(this->gate("eieruhrIn"));
+
+    queue.clear();
+
+
+}
+
+void Queue::finish(){
+    // add the missing queue empty time
+    emit(queue.empty() ? queueEmptyTime : queueNonEmptyTime, simTime() - queueFillStatusChangedTime);
+
 }
 
 void Queue::handleMessage(cMessage *msg)
 {
+    // handle the regular Message from the Eieruhr
+    if(msg->arrivedOn("eieruhrIn") && msg->getKind() == EIERUHR_KIND){
+
+        emit(queueFillLevel, queue.size());
+        delete msg;
+        return;
+    }
+
     if(msg->getKind() == REQUEST_KIND){
-        if(queue->isEmpty()){
+        if(queue.empty()){
             requested = true;
         } else{
-            cMessage *mmsg = check_and_cast<cMessage *>(queue->pop());
+            //TODO Duplicate code!!!
+            std::tuple<TracedMessage *, simtime_t> messageWithTime = queue.front();
+            queue.pop_front();
+            TracedMessage *mmsg = std::get<0>(messageWithTime);
+            // calculate waiting time
+            simtime_t queueEnterTime = std::get<1>(messageWithTime);
+            simtime_t queueLeaveTime = simTime();
+            EV << "queueWaitingTime" << queueLeaveTime - queueEnterTime << " enter: "<< queueEnterTime << " leave: " << queueLeaveTime;
+            emit(queueWaitingTime, queueLeaveTime - queueEnterTime);
+
             send(mmsg, gate("out"));
+
+            //if queue is empty
+            if (queue.empty()){
+            // emit time that was empty
+            // save timestamp for full duration
+
+                emit(queueNonEmptyTime, simTime() - queueFillStatusChangedTime);
+                queueFillStatusChangedTime = simTime();
+            }
         }
         delete msg;
         return;
@@ -103,22 +168,44 @@ void Queue::handleMessage(cMessage *msg)
 
 
     TracedMessage * tracedMsg = check_and_cast<TracedMessage *>(msg);
-    queue->insert(tracedMsg);
+
+    // record inter arrival time
+    simtime_t currentMessageArrivalTime = tracedMsg->getArrivalTime();
+    if (lastMessageArrivalTime != -1){
+        emit(queueInterArrivalTime, lastMessageArrivalTime - currentMessageArrivalTime);
+    }
+    lastMessageArrivalTime = currentMessageArrivalTime;
+
+
+    queue.push_back(std::tuple<TracedMessage *, simtime_t>(tracedMsg, currentMessageArrivalTime));
 
     if(requested){
         requested = false;
 
-        cMessage *mmsg = check_and_cast<cMessage *>(queue->pop());
+        std::tuple<TracedMessage *, simtime_t> messageWithTime = queue.front();
+
+        queue.pop_front();
+        TracedMessage *mmsg = std::get<0>(messageWithTime);
+
+        // calculate waiting time
+        simtime_t queueEnterTime = std::get<1>(messageWithTime);
+        simtime_t queueLeaveTime = simTime();
+        EV << "queueWaitingTime" << queueLeaveTime - queueEnterTime;
+        emit(queueWaitingTime, queueLeaveTime - queueEnterTime);
+
         send(mmsg, gate("out"));
+    } else if(queue.size() == 1) {
+        // the queue was empty but is not anymore
+        emit(queueEmptyTime, simTime() - queueFillStatusChangedTime);
+        queueFillStatusChangedTime = simTime();
 
     }
-    // do stuff for enabling the consuming eg
 }
 
-bool Queue::isEmpty()
-{
-    return queue->isEmpty();
-
+void Queue::refreshDisplay () const{
+    char buf[40];
+    sprintf(buf, "Queue length: %lu", queue.size());
+    getDisplayString().setTagArg("t", 0, buf);
 }
 
 
@@ -132,6 +219,10 @@ public:
 private:
     TracedMessage *servicedMessage;
     cMessage *delayMessage;
+    simtime_t messageArrivalTime;
+
+    simsignal_t serviceUnitWaitingTime;
+    simsignal_t serviceUnitFillLevel;
 };
 
 Define_Module(ServiceUnit);
@@ -153,12 +244,27 @@ void ServiceUnit::initialize()
     delayMessage = new cMessage("delayMessage");
     cMessage *request = new cMessage("", REQUEST_KIND);
     send(request, gate("requestOut"));
+    serviceUnitWaitingTime = registerSignal("serviceUnitWaitingTime");
+    serviceUnitFillLevel = registerSignal("serviceUnitFillLevel");
+
+    GET_EIERUHR()->registerGate(this->gate("eieruhrIn"));
 }
 
 void ServiceUnit::handleMessage(cMessage *msg)
 {
+    // handle the regular Message from the Eieruhr
+    if(msg->arrivedOn("eieruhrIn") && msg->getKind() == EIERUHR_KIND){
+
+        emit(serviceUnitFillLevel, (unsigned int)(delayMessage->isScheduled() ? 1 : 0));
+        delete msg;
+        return;
+    }
+
     if(msg == delayMessage){
         send(servicedMessage, gate("out"));
+        servicedMessage = nullptr;
+
+        emit(serviceUnitWaitingTime, msg->getArrivalTime() - messageArrivalTime);
 
         cMessage *request = new cMessage("", REQUEST_KIND);
         send(request, gate("requestOut"));
@@ -166,6 +272,8 @@ void ServiceUnit::handleMessage(cMessage *msg)
     }
 
     simtime_t interServiceTime = par("interServiceTime");
+
+    messageArrivalTime = msg->getArrivalTime();
 
     servicedMessage = check_and_cast<TracedMessage *>(msg);
     scheduleAt(simTime() + interServiceTime, delayMessage);
@@ -188,4 +296,3 @@ void Sink::handleMessage(cMessage *msg){
 
     delete mmsg;
 }
-
