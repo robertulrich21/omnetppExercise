@@ -52,6 +52,7 @@ void Producer::handleMessage(cMessage *msg)
     send(produced, gate("out"));
 
     simtime_t interArrivalTime = par("interArrivalTime");
+    EV << interArrivalTime<<endl;
 
     scheduleAt(simTime() + interArrivalTime, msg);
 }
@@ -172,7 +173,7 @@ void Queue::handleMessage(cMessage *msg)
     // record inter arrival time
     simtime_t currentMessageArrivalTime = tracedMsg->getArrivalTime();
     if (lastMessageArrivalTime != -1){
-        emit(queueInterArrivalTime, lastMessageArrivalTime - currentMessageArrivalTime);
+        emit(queueInterArrivalTime, currentMessageArrivalTime - lastMessageArrivalTime);
     }
     lastMessageArrivalTime = currentMessageArrivalTime;
 

@@ -3,7 +3,8 @@ package task2.simulations;
 simple Producer
 {
     parameters:
-        double interArrivalTime @unit(s) = default(exponential(1s));
+        double betaProducer @unit(s) = default(1s);
+        volatile double interArrivalTime @unit(s) = default(exponential(betaProducer,1));
         @display("i=block/source");
         
         
@@ -26,7 +27,7 @@ simple Queue
     
     @statistic[meanQueueInterArrivalTime](title="meanQueueInterArrivalTime";source=queueInterArrivalTime;record=mean);
 	@statistic[meanQueueWaitingTime](title="meanQueueWaitingTime";source=queueWaitingTime;record=mean);
-	@statistic[meanQueueFillLevel](title="meanQueueFillLevel";source=queueFillLevel;record=mean);
+	@statistic[meanQueueFillLevel](title="meanQueueFillLevel";source=queueFillLevel;record=mean,vector);
 	
 	@statistic[totalQueueEmptyTime](title="totalQueueEmptyTime";source=queueEmptyTime;record=sum);
 	@statistic[totalQueueNonEmptyTime](title="totalQueueNonEmptyTime";source=queueNonEmptyTime;record=sum);
@@ -46,7 +47,8 @@ simple ServiceUnit
 {
     
     parameters:
-        double interServiceTime @unit(s) = default(exponential(1s));    
+        double betaServiceUnit @unit(s) = default(1s);
+        volatile double interServiceTime @unit(s) = default(exponential(betaServiceUnit,2));    
         @display("i=block/filter");
         
         @signal[serviceUnitWaitingTime](type=simtime_t);
