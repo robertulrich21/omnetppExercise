@@ -4,9 +4,25 @@ from matplotlib import pyplot as plot
 from typing import List, Tuple
 import os
 from collections import defaultdict
-import argparse
 
-results = defaultdict(defaultdict)
+
+results_sca = defaultdict()
+results_vec = pd.DataFrame()
+parameter_values_str = []
+allMetrics = ["totalQueueNonEmptyTime:sum", "totalQueueEmptyTime:sum", "meanQueueFillLevel:mean", "meanQueueWaitingTime:mean", "meanQueueInterArrivalTime:mean", "meanServiceUnitFillLevel:mean", "meanServiceUnitWaitingTime:mean"]
+# generates all parametervalues to generate file names
+for i in range(1, 11):
+    for j in range(0, 10):
+            
+        # 10 does not have fractions
+        if(i == 10 and j != 0):
+                continue
+            
+        n = str(i)
+        if j != 0:
+            n += "." + str(j)
+        parameter_values_str.append(n)
+
 
 def generate_csv(path: str, csv_filename: str,filter:List[Tuple[str, str]]) -> None:
     
@@ -27,98 +43,42 @@ def generate_csv(path: str, csv_filename: str,filter:List[Tuple[str, str]]) -> N
     print(f"opp_scavetool export {filter_str} {path} -F CSV-S -o {csv_filename}")
     os.system(f"opp_scavetool export {filter_str} {path} -F CSV-S -o {csv_filename}")
 
-def filter_csv() -> tuple[list, list]:
 
-    df = pd.read_csv("out.csv")
-    custWaitingTimePerCashier =  list()
-    index = list()
-    i  = 0
-    while True:
-        filter_df = pd.to_numeric( df['value'])
-        if filter_df.empty: 
-            break
-        custWaitingTimePerCashier.append( filter_df.mean())
-        index.append(i)
-        i+=1
-
-
-    return index, custWaitingTimePerCashier
-
-    
-
-def iterate_over_n():
-    for i in range(1, 11):
-        for j in range(0, 10):
-            
-            # 10 does not have fracrions
-            if(i == 10 and j != 0):
-                continue
-            
-            n = str(i)
-            if j != 0:
-                n += "." + str(j)
-            
-            evaluate_for_fixed_n(n)
-            
-            
-            
-
-def evaluate_for_fixed_n(n: str):
-    allMetrics = ["totalQueueNonEmptyTime:sum", "totalQueueEmptyTime:sum", "meanQueueFillLevel:mean", "meanQueueWaitingTime:mean", "meanQueueInterArrivalTime:mean", "meanServiceUnitFillLevel:mean", "meanServiceUnitWaitingTime:mean"]
+def evaluate_scalar_data(n):
     for elem in allMetrics:
-        n_float = float(n)
-        os.system("pwd")
-        generate_csv(f"simulations/results/General-N={n}-#*.sca", f"csv/out{n}.csv", [("name", elem)])  
-        df = pd.read_csv(f"csv/out{n}.csv")
+        generate_csv(f"simulations/results/General-N={n}-#*.sca", f"csv/{elem}_par:{n}_sca.csv", [("name", elem)])  
+        df = pd.read_csv(f"csv/{elem}_par:{n}_sca.csv")
         filter_df = pd.to_numeric( df['value'])
-        print(filter_df.mean())
-        results[elem][n] = filter_df.mean()
+        results_sca[elem] = filter_df.mean()    
+
+def evaluate_vector_data(n):
+    generate_csv(f"simulations/results/General-N={n}-#*.vec", f"csv/meanQueueFillLevel{n}_vec.csv", [("name", "meanQueueFillLevel:vector")])  
+    df = pd.read_csv(f"csv/meanQueueFillLevel{n}_vec.csv")
+    results_vec.insert(0, 'Time',df[df.columns[0]])
+    d = pd.DataFrame()
+    for i in range(1,len(df.columns),2):
+        d = d.assign(i=df[df.columns[i]])
+    results_vec.insert(1,'Values', d.mean(axis=1))
+        
+def show_all_scalar_data():
+
+    x = list(range(0, len(allMetrics)))
+    plot.xticks(x, allMetrics)
+    for counter, m in zip(x,allMetrics):
+        plot.bar(counter,results_sca[m])
+    plot.show()
     
-
-def main():
-    iterate_over_n()
-    # evaluate_for_fixed_n("1.1")
-    # evaluate_for_fixed_n("9")
-    print(results)
-    pass
-
-def process_scalar_data():
-    allMetrics = ["serviceTimePerCashier:sum", "idleTimePerCashier:sum","custTotalWaitingTime:sum", "custMeanWaitingTime:mean"]
-    for index, name in zip(range(len(allMetrics)),allMetrics): 
-        plot.figure(index)
-        plot.title(name)
-
-        generate_csv("results/*true*.sca", "out.csv", [("name", name)])
-        index, data = filter_csv()
-        bar_width = 0.25
-            
-        plot.bar(index,data, label="use random strategy", width=bar_width)
-            
-        generate_csv("results/*false*.sca", "out.csv", [("name", name)])
-        index, data = filter_csv()
-        plot.bar([e+bar_width for e in index ] ,data, label="use smallest queue first", width=bar_width)
-            
-        plot.legend()
+def show_vector_data():
+    plot.plot(results_vec['Time'], results_vec['Values'], linestyle='-')
     plot.show()
 
-def process_vector_data():
-    
-    allMetrics = ["queueSizeOverTime:vector", "customerWaitingTime:vector"]
-    for index, name in zip(range(len(allMetrics)),allMetrics): 
-        plot.figure(index)
-        plot.title(name)
 
-        generate_csv("results/*true*.vec", "out.csv", [("name", name)])
-        
-        generate_csv("results/*false*.vec", "out.csv", [("name", name)])
-     
     
+def main():
+    evaluate_scalar_data("1.2")
+    show_all_scalar_data()
+    evaluate_vector_data("1.2")
+    show_vector_data()
     
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
-    
-    
-    
-    
-
-    
