@@ -6,7 +6,7 @@ import os
 from collections import defaultdict
 
 
-results_sca = defaultdict()
+results_sca = defaultdict(defaultdict)
 results_vec = pd.DataFrame()
 parameter_values_str = []
 allMetrics = ["totalQueueNonEmptyTime:sum", "totalQueueEmptyTime:sum", "meanQueueFillLevel:mean", "meanQueueWaitingTime:mean", "meanQueueInterArrivalTime:mean", "meanServiceUnitFillLevel:mean", "meanServiceUnitWaitingTime:mean"]
@@ -44,12 +44,13 @@ def generate_csv(path: str, csv_filename: str,filter:List[Tuple[str, str]]) -> N
     os.system(f"opp_scavetool export {filter_str} {path} -F CSV-S -o {csv_filename}")
 
 
-def evaluate_scalar_data(n):
-    for elem in allMetrics:
-        generate_csv(f"simulations/results/General-N={n}-#*.sca", f"csv/{elem}_par:{n}_sca.csv", [("name", elem)])  
-        df = pd.read_csv(f"csv/{elem}_par:{n}_sca.csv")
-        filter_df = pd.to_numeric( df['value'])
-        results_sca[elem] = filter_df.mean()    
+def evaluate_scalar_data():
+    for n in parameter_values_str:
+        for elem in allMetrics:
+            generate_csv(f"simulations/results/General-N={n}-#*.sca", f"csv/{elem}_par:{n}_sca.csv", [("name", elem)])  
+            df = pd.read_csv(f"csv/{elem}_par:{n}_sca.csv")
+            filter_df = pd.to_numeric( df['value'])
+            results_sca[elem][n] = filter_df.mean()    
 
 def evaluate_vector_data(n):
     generate_csv(f"simulations/results/General-N={n}-#*.vec", f"csv/meanQueueFillLevel{n}_vec.csv", [("name", "meanQueueFillLevel:vector")])  
@@ -60,12 +61,11 @@ def evaluate_vector_data(n):
         d = d.assign(i=df[df.columns[i]])
     results_vec.insert(1,'Values', d.mean(axis=1))
         
-def show_all_scalar_data():
-
+def show_all_scalar_data(n):   
     x = list(range(0, len(allMetrics)))
     plot.xticks(x, allMetrics)
     for counter, m in zip(x,allMetrics):
-        plot.bar(counter,results_sca[m])
+        plot.bar(counter,results_sca[m][n])
     plot.show()
     
 def show_vector_data():
@@ -75,8 +75,8 @@ def show_vector_data():
 
     
 def main():
-    evaluate_scalar_data("1.2")
-    show_all_scalar_data()
+    evaluate_scalar_data()
+    show_all_scalar_data("1.2")
     evaluate_vector_data("1.2")
     show_vector_data()
     
