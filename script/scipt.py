@@ -43,17 +43,20 @@ def generate_csv(path: str, csv_filename: str,filter:List[Tuple[str, str]]) -> N
     print(f"opp_scavetool export {filter_str} {path} -F CSV-S -o {csv_filename}")
     os.system(f"opp_scavetool export {filter_str} {path} -F CSV-S -o {csv_filename}")
 
+def generate_all_csv():
+      for n in parameter_values_str:
+        generate_csv(f"simulations/results/General-N={n}-#*.vec", f"csv/meanQueueFillLevel{n}_vec.csv", [("name", "meanQueueFillLevel:vector")])  
+        for elem in allMetrics:
+            generate_csv(f"simulations/results/General-N={n}-#*.sca", f"csv/{elem}_par:{n}_sca.csv", [("name", elem)])  
 
 def evaluate_scalar_data():
     for n in parameter_values_str:
         for elem in allMetrics:
-            generate_csv(f"simulations/results/General-N={n}-#*.sca", f"csv/{elem}_par:{n}_sca.csv", [("name", elem)])  
             df = pd.read_csv(f"csv/{elem}_par:{n}_sca.csv")
             filter_df = pd.to_numeric( df['value'])
             results_sca[elem][n] = filter_df.mean()    
 
 def evaluate_vector_data(n):
-    generate_csv(f"simulations/results/General-N={n}-#*.vec", f"csv/meanQueueFillLevel{n}_vec.csv", [("name", "meanQueueFillLevel:vector")])  
     df = pd.read_csv(f"csv/meanQueueFillLevel{n}_vec.csv")
     results_vec.insert(0, 'Time',df[df.columns[0]])
     d = pd.DataFrame()
@@ -69,16 +72,94 @@ def show_all_scalar_data(n):
     plot.show()
     
 def show_vector_data():
+    #task3.1
     plot.plot(results_vec['Time'], results_vec['Values'], linestyle='-')
+    plot.title("Task 3.1 - queue fill level vs. time ; par('interArrivalTime') = 1.2", fontsize=15)
+    plot.xlabel("time in seconds", fontsize=15)
+    plot.ylabel("queue fill level", fontsize=15)
+    
     plot.show()
 
+def show_task_3():
+    #task3.2
+    x = list()
+    y = list()
+    y_analytical = list()
+    for par in parameter_values_str:
+        
+        rho = (1.0/float(par))
+        if (rho != 1): 
+            x.append(results_sca["meanServiceUnitWaitingTime:mean"][par]/(results_sca["meanQueueInterArrivalTime:mean"][par]))
+            y.append(results_sca["meanQueueWaitingTime:mean"][par] + results_sca["meanServiceUnitWaitingTime:mean"][par])
+            y_analytical.append(1/(1-rho))
+        print(rho)
+            
+    #x,  y, y_analytical = zip(*sorted(zip(x, y, y_analytical)))
+        
+    plot.plot(x,y,label="Simulation")
+    plot.plot(x,y_analytical,label="analytical approach")
+    plot.xlabel("ρ = (1/meanQueueWaitingTime) / (1/meanServiceTime)", fontsize=15)
+    plot.ylabel("averageDelay = meanQueueTime + meanServiceUnitTime", fontsize=15)
+    plot.title("Task 3.2 - average delay vs. ρ", fontsize=15)
+    plot.legend()
+ 
+    
+    plot.show()
+    
+    #3.3
+    x = list()
+    y = list()
+    y_analytical = list()
+    for par in parameter_values_str:
+        x.append(1.0/(results_sca["meanQueueInterArrivalTime:mean"][par])/ (1.0/results_sca["meanServiceUnitWaitingTime:mean"][par]))
+        y.append(results_sca["totalQueueNonEmptyTime:sum"][par] / (results_sca["totalQueueNonEmptyTime:sum"][par] + results_sca["totalQueueEmptyTime:sum"][par]))
+        rho = (1.0/float(par))
+        y_analytical.append(rho)
+    
+    #x,  y, y_analytical = zip(*sorted(zip(x, y, y_analytical)))
 
+    plot.xlabel("ρ = (1/meanQueueWaitingTime) / (1/meanServiceTime)", fontsize=15)
+    plot.ylabel("averageQueueUtilization = sumTotalQueueNonEmptyTime / sumTotalTime", fontsize=15)
+    plot.title("Task 3.3 - average queue utilization vs. ρ", fontsize=15)
+    plot.plot(x,y, label="Simulation")
+    plot.plot(x,y_analytical, label="analytical approach")
+    plot.legend()   
+    plot.show()
+    
+    #3.4
+    x = list()
+    y = list()
+    y_analytical = list()
+    for par in parameter_values_str:
+        x.append(1.0/(results_sca["meanQueueInterArrivalTime:mean"][par])/ (1.0/results_sca["meanServiceUnitWaitingTime:mean"][par]))
+        y.append(results_sca["meanServiceUnitFillLevel:mean"][par] + results_sca["meanQueueFillLevel:mean"][par] )
+        rho = (1.0/float(par))
+        if (rho == 1):
+            x = x[:-1]
+            y = y[:-1]   
+        else:   
+            y_analytical.append(rho/(1-rho))
+    
+    #x,  y, y_analytical = zip(*sorted(zip(x, y, y_analytical)))
+
+
+    plot.xlabel("ρ = (1/meanQueueWaitingTime) / (1/meanServiceTime)", fontsize=15)
+    plot.ylabel("avergaeItemsInSystem=meanServiceFillLevel + meanQueueFillLevel", fontsize=15)
+    plot.plot(x,y,label="Simulation")
+    plot.plot(x,y_analytical,label="analytical approach")
+    plot.title("Task 3.4 - average number of items in the system vs. ρ", fontsize=15)
+ 
+    plot.legend()
+    plot.show()
+    
     
 def main():
+    #generate_all_csv()
     evaluate_scalar_data()
-    show_all_scalar_data("1.2")
+    #show_all_scalar_data("1.2")
     evaluate_vector_data("1.2")
     show_vector_data()
+    show_task_3()
     
 if __name__ == "__main__":
     main()
