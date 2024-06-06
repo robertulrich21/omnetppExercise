@@ -45,11 +45,20 @@ def generate_csv(path: str, csv_filename: str,filter:List[Tuple[str, str]]) -> N
     print(f"opp_scavetool export {filter_str} {path} -F CSV-S -o {csv_filename}")
     os.system(f"opp_scavetool export {filter_str} {path} -F CSV-S -o {csv_filename}")
 
-def generate_all_csv():
-      for n in parameter_values_str:
-        generate_csv(f"simulations/results/General-N={n}-#*.vec", f"csv/meanQueueFillLevel{n}_vec.csv", [("name", "meanQueueFillLevel:vector")])  
+def generate_all_csv(path_to_folder, force_recalc = False):
+    # check if csv folder exists if not create one
+    pathlib.Path(path_to_folder).mkdir(parents=True, exist_ok=True)
+
+    # run oppscavtool for all files that do not exist. If force_recalc = true then recalculate everything!    
+    for n in parameter_values_str:
+        if not os.path.isfile(f"{path_to_folder}/meanQueueFillLevel{n}_vec.csv") or force_recalc:
+            generate_csv(f"simulations/results/General-N={n}-#*.vec", f"{path_to_folder}/meanQueueFillLevel{n}_vec.csv", [("name", "meanQueueFillLevel:vector")])  
+
         for elem in allMetrics:
-            generate_csv(f"simulations/results/General-N={n}-#*.sca", f"csv/{elem}_par:{n}_sca.csv", [("name", elem)])  
+            if not os.path.isfile(f"{path_to_folder}/{elem}_par:{n}_sca.csv") or force_recalc:
+                generate_csv(f"simulations/results/General-N={n}-#*.sca", f"{path_to_folder}/{elem}_par:{n}_sca.csv", [("name", elem)])  
+
+
 
 def evaluate_scalar_data_per_run(path_to_folder):
 
