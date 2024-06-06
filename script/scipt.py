@@ -4,6 +4,8 @@ from matplotlib import pyplot as plot
 from typing import List, Tuple
 import os
 from collections import defaultdict
+import os.path
+import pathlib
 
 
 results_sca = defaultdict(defaultdict)
@@ -49,12 +51,57 @@ def generate_all_csv():
         for elem in allMetrics:
             generate_csv(f"simulations/results/General-N={n}-#*.sca", f"csv/{elem}_par:{n}_sca.csv", [("name", elem)])  
 
-def evaluate_scalar_data():
+def evaluate_scalar_data_per_run(path_to_folder):
+
+    # creates a list of metrics for every n
+    dataframes = {}
     for n in parameter_values_str:
+        total_df = pd.DataFrame()
+
         for elem in allMetrics:
-            df = pd.read_csv(f"csv/{elem}_par:{n}_sca.csv")
-            filter_df = pd.to_numeric( df['value'])
-            results_sca[elem][n] = filter_df.mean()    
+            df = pd.read_csv(f"{path_to_folder}/{elem}_par:{n}_sca.csv")
+
+            column_name = df['name'].iloc[0]
+            # remove all useless colums and rename the value column to the name of the value it stores!
+            df2 = df[["repetition", "value"]].rename({'repetition': 'id', 'value': column_name}, axis = 'columns')
+            
+            if total_df.empty:
+                total_df = df2
+            else:
+                # append column to dataframe
+                total_df = pd.merge(total_df, df2, on = 'id', how = 'inner')
+
+        dataframes[n] = total_df
+            # filter_df = pd.to_numeric( df['value'])
+            # results_sca[elem][n] = filter_df.mean()   
+    return dataframes
+    
+
+def evaluate_scalar_data_per_metric(path_to_folder):
+
+    # creates a list of metrics for every n
+    dataframes = {}
+    for elem in allMetrics:
+        total_df = pd.DataFrame()
+
+        for n in parameter_values_str:
+            df = pd.read_csv(f"{path_to_folder}/{elem}_par:{n}_sca.csv")
+
+            column_name = df['N'].iloc[0]
+            # remove all useless colums and rename the value column to the name of the value it stores!
+            df2 = df[["repetition", "value"]].rename({'repetition': 'id', 'value': column_name}, axis = 'columns')
+            
+            if total_df.empty:
+                total_df = df2
+            else:
+                # append column to dataframe
+                total_df = pd.merge(total_df, df2, on = 'id', how = 'inner') # really inefficient!!! making a big list would be better!!
+
+        dataframes[elem] = total_df
+
+    return dataframes
+
+
 
 def evaluate_vector_data(n):
     df = pd.read_csv(f"csv/meanQueueFillLevel{n}_vec.csv")
@@ -154,12 +201,25 @@ def show_task_3():
     
     
 def main():
-    #generate_all_csv()
-    evaluate_scalar_data()
+    generate_all_csv("csv/")
+
+    dataframes = evaluate_scalar_data_per_metric("csv/")
+
+    for i, df in dataframes.items():
+
+        sorted_df = df.drop('id', axis = 1)# .describe()
+        # sorted_df2 = df.drop('id', axis = 1)# .median()
+        print(sorted_df)
+        print(i)
+        # sorted_df.to_frame('data').boxplot(meanline=True, showmeans=True)
+        sorted_df.boxplot()
+        # sorted_df2.plot()
+        plot.show()
+
     #show_all_scalar_data("1.2")
-    evaluate_vector_data("1.2")
-    show_vector_data()
-    show_task_3()
+    #evaluate_vector_data("1.2")
+    #show_vector_data()
+    #show_task_3()
     
 if __name__ == "__main__":
     main()
