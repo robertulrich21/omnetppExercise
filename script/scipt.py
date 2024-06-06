@@ -98,7 +98,7 @@ def evaluate_scalar_data_per_metric(path_to_folder):
 
             column_name = df['N'].iloc[0]
             # remove all useless colums and rename the value column to the name of the value it stores!
-            df2 = df[["repetition", "value"]].rename({'repetition': 'id', 'value': column_name}, axis = 'columns')
+            df2 = df[["repetition", "value"]].rename({'repetition': 'id', 'value': float(column_name)}, axis = 'columns')
             
             if total_df.empty:
                 total_df = df2
@@ -207,28 +207,119 @@ def show_task_3():
  
     plot.legend()
     plot.show()
-    
+
+
+def add_combined_metrics(dataframes):
+    start = time.time()
+    for i, df in dataframes.items():
+        # add the metrics on every dataset
+
+        #1 roh for every datapoint
+        # roh = meanServiceUnitWaitingTime:mean / meanQueueInterArrivalTime:mean
+        df['roh'] = df['meanServiceUnitWaitingTime:mean'] / df['meanQueueInterArrivalTime:mean']
+        
+        #2 mean total waiting time
+        # average delay = meanQueueWaitingTime:mean + meanServiceUnitWaitingTime:mean
+        df['average_delay'] = df['meanQueueWaitingTime:mean'] + df['meanServiceUnitWaitingTime:mean']
+
+        #3 average queue utilization
+        # = 1 / (1 + totalQueueNonEmptyTime:sum / totalQueueNonEmptyTime:sum) 
+        df['average_queue_utilization'] = df['totalQueueNonEmptyTime:sum'] / (df['totalQueueEmptyTime:sum'] + df['totalQueueNonEmptyTime:sum'])
+
+        #4 average ammount of items in system
+        # meanServiceUnitFillLevel:mean  + meanQueueFillLevel:mean
+        df['average_item_in_system'] = df['meanServiceUnitFillLevel:mean'] + df['meanQueueFillLevel:mean']
+    print(f"the calc took {time.time() - start}")
+
     
 def main():
     generate_all_csv("csv/")
 
-    dataframes = evaluate_scalar_data_per_metric("csv/")
+    dataframes = evaluate_scalar_data_per_run("csv/")
+    add_combined_metrics(dataframes)
+    #print(dataframes)
+    
+    data = {}
+    data['roh'] = [x * 0.01 for x in range(0, 100)]
 
+    theoretical_values = pd.DataFrame(data)
+
+    theoretical_values['average_delay'] = 1 / (1 - theoretical_values['roh'])
+    theoretical_values['average_queue_utilization'] = theoretical_values['roh']
+    theoretical_values['average_item_in_system'] = theoretical_values['roh'] / (1 - theoretical_values['roh'])
+
+
+    # crazy scatterplot for all values
+    _, ax = plot.subplots()
     for i, df in dataframes.items():
+        df.plot(ax = ax, x='roh', y='average_delay', style='1')
 
-        sorted_df = df.drop('id', axis = 1)# .describe()
-        # sorted_df2 = df.drop('id', axis = 1)# .median()
-        print(sorted_df)
-        print(i)
-        # sorted_df.to_frame('data').boxplot(meanline=True, showmeans=True)
-        sorted_df.boxplot()
-        # sorted_df2.plot()
-        plot.show()
+    theoretical_values.plot(ax = ax, x='roh', y='average_delay')
+       
+    plot.show()
 
-    #show_all_scalar_data("1.2")
-    #evaluate_vector_data("1.2")
-    #show_vector_data()
-    #show_task_3()
+    _, ax = plot.subplots()
+    for i, df in dataframes.items():
+        df.plot(ax = ax, x='roh', y='average_queue_utilization', style='1')
+    theoretical_values.plot(ax = ax, x='roh', y='average_queue_utilization')
+
+    plot.show()
+
+    _, ax = plot.subplots()
+    for i, df in dataframes.items():
+        df.plot(ax = ax, x='roh', y='average_item_in_system', style='1')
+    theoretical_values.plot(ax = ax, x='roh', y='average_item_in_system')
+
+    plot.show()
+
+        
     
 if __name__ == "__main__":
     main()
+
+
+
+#
+#
+#sorted_df = df.drop('id', axis = 1)
+#        # mieser trick, dass man plots stapeln kann und dass mit roh indiyiert wird
+#        sorted_df.columns = sorted_df.columns.map(lambda x: 1 / float(x))
+#        tmpdf = sorted_df.mean()
+#        
+#        _, ax = plot.subplots()
+#        # sorted_df.boxplot(ax = ax)
+#        tmpdf.plot(ax = ax)
+#
+#        indecies = sorted_df.columns.values.tolist()
+#        df_dict = {}
+#        for rho in indecies:
+##            match i:
+##                case "totalQueueNonEmptyTime:sum":
+##
+##                case "totalQueueEmptyTime:sum":
+##
+##                case "meanQueueFillLevel:mean":
+##
+##                case "meanQueueWaitingTime:mean":
+##
+##                case "meanQueueInterArrivalTime:mean":
+##
+##                case "meanServiceUnitFillLevel:mean":
+##
+##                case "meanServiceUnitWaitingTime:mean":
+##
+#
+#            if rho == 1:
+#                continue
+#            # calculate theoretical value
+#            value = rho / (1 - rho)
+#            df_dict[rho] = value
+#        df_from_dict = pd.DataFrame(df_dict, index = [0])
+#        # print(df_from_dict)
+#        df_from_dict.mean().plot(ax = ax)
+#        plot.show()
+#
+#    #show_all_scalar_data("1.2")
+#    #evaluate_vector_data("1.2")
+#    #show_vector_data()
+#    #show_task_3()
