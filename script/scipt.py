@@ -6,6 +6,7 @@ import os
 from collections import defaultdict
 import os.path
 import pathlib
+import time
 
 
 results_sca = defaultdict(defaultdict)
@@ -210,7 +211,7 @@ def show_task_3():
 
 
 def add_combined_metrics(dataframes):
-    start = time.time()
+
     for i, df in dataframes.items():
         # add the metrics on every dataset
 
@@ -229,15 +230,37 @@ def add_combined_metrics(dataframes):
         #4 average ammount of items in system
         # meanServiceUnitFillLevel:mean  + meanQueueFillLevel:mean
         df['average_item_in_system'] = df['meanServiceUnitFillLevel:mean'] + df['meanQueueFillLevel:mean']
-    print(f"the calc took {time.time() - start}")
 
+
+def add_combined_metrics2(dataframes):
+    # print(dataframes)
+    # for i in allMetrics:
+    #     dataframes[i].sort_values('id', inplace = True) 
     
+    dataframes['roh'] = dataframes['meanServiceUnitWaitingTime:mean'] / dataframes['meanQueueInterArrivalTime:mean']
+    dataframes['roh']['id'] = dataframes[allMetrics[0]]['id']
+    dataframes['average_delay'] = dataframes['meanQueueWaitingTime:mean'] + dataframes['meanServiceUnitWaitingTime:mean']
+    dataframes['average_delay']['id'] = dataframes[allMetrics[0]]['id']
+    dataframes['average_queue_utilization'] = dataframes['totalQueueNonEmptyTime:sum'] / (dataframes['totalQueueEmptyTime:sum'] + dataframes['totalQueueNonEmptyTime:sum'])
+    dataframes['average_queue_utilization']['id'] = dataframes[allMetrics[0]]['id']
+    dataframes['average_item_in_system'] =  dataframes['meanServiceUnitFillLevel:mean'] + dataframes['meanQueueFillLevel:mean']
+    dataframes['average_item_in_system']['id'] = dataframes[allMetrics[0]]['id']
+
 def main():
     generate_all_csv("csv/")
 
-    dataframes = evaluate_scalar_data_per_run("csv/")
-    add_combined_metrics(dataframes)
-    #print(dataframes)
+    # dataframes = evaluate_scalar_data_per_run("csv/")
+    # add_combined_metrics(dataframes)
+    
+    # get any value from dict and apply describe to see all metrics
+    # tmpdf = next(iter(dataframes.values()))
+    # describe_metrics = tmpdf.describe().index.values.tolist()
+    # 
+    # combined_dataframes = {}
+    # for metric in describe_metrics:
+    
+    dataframes2 = evaluate_scalar_data_per_metric("csv/")
+    add_combined_metrics2(dataframes2)    
     
     data = {}
     data['roh'] = [x * 0.01 for x in range(0, 100)]
@@ -248,6 +271,32 @@ def main():
     theoretical_values['average_queue_utilization'] = theoretical_values['roh']
     theoretical_values['average_item_in_system'] = theoretical_values['roh'] / (1 - theoretical_values['roh'])
 
+    print(dataframes2['roh'])
+    roh_df = dataframes2['roh'].drop('id', axis = 1).describe().T
+    
+    print(roh_df)
+    
+    for i, df in dataframes2.items():
+        if i not in theoretical_values:
+            continue
+
+        
+        _, ax = plot.subplots()
+        
+        newdf = pd.merge(roh_df, df.describe().T, left_index=True, right_index=True, suffixes = ('_x', '_y'))
+        print(newdf)
+        newdf.plot(ax = ax, x='mean_x', y='mean_y', style='1')
+        if i in theoretical_values and i != 'roh':
+            theoretical_values.plot(ax = ax, x='roh', y=i)
+        ax.set_title(i)
+        plot.show()
+    
+        ax = df.drop('id', axis = 1).boxplot()
+        ax.set_title(i)
+        plot.show()
+    
+    return
+    
 
     # crazy scatterplot for all values
     _, ax = plot.subplots()
