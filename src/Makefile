@@ -1,5 +1,5 @@
 #
-# OMNeT++/OMNEST Makefile for task2
+# OMNeT++/OMNEST Makefile for nwsim_project
 #
 # This file was generated with the command:
 #  opp_makemake -f --deep
@@ -7,7 +7,7 @@
 
 # Name of target to be created (-o option)
 TARGET_DIR = .
-TARGET_NAME = task2$(D)
+TARGET_NAME = nwsim_project$(D)
 TARGET = $(TARGET_NAME)$(EXE_SUFFIX)
 TARGET_IMPLIB = $(TARGET_NAME)$(IMPLIB_SUFFIX)
 TARGET_IMPDEF = $(TARGET_NAME)$(IMPDEF_SUFFIX)
@@ -32,12 +32,12 @@ PROJECT_OUTPUT_DIR = ../out
 PROJECTRELATIVE_PATH = src
 O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 
-# Object files for local .cpp, .msg and .sm files
-OBJS = $O/MM1.o $O/TracedMessage_m.o
+# Object files for local .cc, .msg and .sm files
+OBJS = $O/Endpoint.o $O/Junction.o $O/Vehicle_m.o
 
 # Message files
 MSGFILES = \
-    TracedMessage.msg
+    Vehicle.msg
 
 # SM files
 SMFILES =
@@ -101,20 +101,20 @@ $O/$(TARGET): $(OBJS)  $(wildcard $(EXTRA_OBJS)) Makefile $(CONFIGFILE)
 
 # disabling all implicit rules
 .SUFFIXES :
-.PRECIOUS : %_m.h %_m.cpp
+.PRECIOUS : %_m.h %_m.cc
 
-$O/%.o: %.cpp $(COPTS_FILE) | msgheaders smheaders
+$O/%.o: %.cc $(COPTS_FILE) | msgheaders smheaders
 	@$(MKPATH) $(dir $@)
 	$(qecho) "$<"
 	$(Q)$(CXX) -c $(CXXFLAGS) $(COPTS) -o $@ $<
 
-%_m.cpp %_m.h: %.msg
+%_m.cc %_m.h: %.msg
 	$(qecho) MSGC: $<
-	$(Q)$(MSGC) -s _m.cpp -MD -MP -MF $O/$(basename $<)_m.h.d $(MSGCOPTS) $?
+	$(Q)$(MSGC) -s _m.cc -MD -MP -MF $O/$(basename $<)_m.h.d $(MSGCOPTS) $?
 
-%_sm.cpp %_sm.h: %.sm
+%_sm.cc %_sm.h: %.sm
 	$(qecho) SMC: $<
-	$(Q)$(SMC) -c++ -suffix cpp $(SMCOPTS) $?
+	$(Q)$(SMC) -c++ -suffix cc $(SMCOPTS) $?
 
 msgheaders: $(MSGFILES:.msg=_m.h)
 
@@ -124,7 +124,7 @@ clean:
 	$(qecho) Cleaning $(TARGET)
 	$(Q)-rm -rf $O
 	$(Q)-rm -f $(TARGET_FILES)
-	$(Q)-rm -f $(call opp_rwildcard, . , *_m.cpp *_m.h *_sm.cpp *_sm.h)
+	$(Q)-rm -f $(call opp_rwildcard, . , *_m.cc *_m.h *_sm.cc *_sm.h)
 
 cleanall:
 	$(Q)$(CLEANALL_COMMAND)

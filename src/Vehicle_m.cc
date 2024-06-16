@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by opp_msgtool 6.0 from TracedMessage.msg.
+// Generated file, do not edit! Created by opp_msgtool 6.0 from Vehicle.msg.
 //
 
 // Disable warnings about unused variables, empty switch stmts, etc:
@@ -28,7 +28,7 @@
 #include <sstream>
 #include <memory>
 #include <type_traits>
-#include "TracedMessage_m.h"
+#include "Vehicle_m.h"
 
 namespace omnetpp {
 
@@ -150,22 +150,22 @@ void doParsimUnpacking(omnetpp::cCommBuffer *, T& t)
 
 }  // namespace omnetpp
 
-Register_Class(TracedMessage)
+Register_Class(Vehicle)
 
-TracedMessage::TracedMessage(const char *name, short kind) : ::omnetpp::cMessage(name, kind)
+Vehicle::Vehicle(const char *name, short kind) : ::omnetpp::cMessage(name, kind)
 {
 }
 
-TracedMessage::TracedMessage(const TracedMessage& other) : ::omnetpp::cMessage(other)
+Vehicle::Vehicle(const Vehicle& other) : ::omnetpp::cMessage(other)
 {
     copy(other);
 }
 
-TracedMessage::~TracedMessage()
+Vehicle::~Vehicle()
 {
 }
 
-TracedMessage& TracedMessage::operator=(const TracedMessage& other)
+Vehicle& Vehicle::operator=(const Vehicle& other)
 {
     if (this == &other) return *this;
     ::omnetpp::cMessage::operator=(other);
@@ -173,71 +173,71 @@ TracedMessage& TracedMessage::operator=(const TracedMessage& other)
     return *this;
 }
 
-void TracedMessage::copy(const TracedMessage& other)
+void Vehicle::copy(const Vehicle& other)
 {
-    this->queueEnterTime = other.queueEnterTime;
-    this->queueLeaveTime = other.queueLeaveTime;
-    this->finishedTime = other.finishedTime;
+    this->srcEndpoint = other.srcEndpoint;
+    this->dstEndpoint = other.dstEndpoint;
+    this->vehNumber = other.vehNumber;
 }
 
-void TracedMessage::parsimPack(omnetpp::cCommBuffer *b) const
+void Vehicle::parsimPack(omnetpp::cCommBuffer *b) const
 {
     ::omnetpp::cMessage::parsimPack(b);
-    doParsimPacking(b,this->queueEnterTime);
-    doParsimPacking(b,this->queueLeaveTime);
-    doParsimPacking(b,this->finishedTime);
+    doParsimPacking(b,this->srcEndpoint);
+    doParsimPacking(b,this->dstEndpoint);
+    doParsimPacking(b,this->vehNumber);
 }
 
-void TracedMessage::parsimUnpack(omnetpp::cCommBuffer *b)
+void Vehicle::parsimUnpack(omnetpp::cCommBuffer *b)
 {
     ::omnetpp::cMessage::parsimUnpack(b);
-    doParsimUnpacking(b,this->queueEnterTime);
-    doParsimUnpacking(b,this->queueLeaveTime);
-    doParsimUnpacking(b,this->finishedTime);
+    doParsimUnpacking(b,this->srcEndpoint);
+    doParsimUnpacking(b,this->dstEndpoint);
+    doParsimUnpacking(b,this->vehNumber);
 }
 
-omnetpp::simtime_t TracedMessage::getQueueEnterTime() const
+const char * Vehicle::getSrcEndpoint() const
 {
-    return this->queueEnterTime;
+    return this->srcEndpoint.c_str();
 }
 
-void TracedMessage::setQueueEnterTime(omnetpp::simtime_t queueEnterTime)
+void Vehicle::setSrcEndpoint(const char * srcEndpoint)
 {
-    this->queueEnterTime = queueEnterTime;
+    this->srcEndpoint = srcEndpoint;
 }
 
-omnetpp::simtime_t TracedMessage::getQueueLeaveTime() const
+const char * Vehicle::getDstEndpoint() const
 {
-    return this->queueLeaveTime;
+    return this->dstEndpoint.c_str();
 }
 
-void TracedMessage::setQueueLeaveTime(omnetpp::simtime_t queueLeaveTime)
+void Vehicle::setDstEndpoint(const char * dstEndpoint)
 {
-    this->queueLeaveTime = queueLeaveTime;
+    this->dstEndpoint = dstEndpoint;
 }
 
-omnetpp::simtime_t TracedMessage::getFinishedTime() const
+unsigned int Vehicle::getVehNumber() const
 {
-    return this->finishedTime;
+    return this->vehNumber;
 }
 
-void TracedMessage::setFinishedTime(omnetpp::simtime_t finishedTime)
+void Vehicle::setVehNumber(unsigned int vehNumber)
 {
-    this->finishedTime = finishedTime;
+    this->vehNumber = vehNumber;
 }
 
-class TracedMessageDescriptor : public omnetpp::cClassDescriptor
+class VehicleDescriptor : public omnetpp::cClassDescriptor
 {
   private:
     mutable const char **propertyNames;
     enum FieldConstants {
-        FIELD_queueEnterTime,
-        FIELD_queueLeaveTime,
-        FIELD_finishedTime,
+        FIELD_srcEndpoint,
+        FIELD_dstEndpoint,
+        FIELD_vehNumber,
     };
   public:
-    TracedMessageDescriptor();
-    virtual ~TracedMessageDescriptor();
+    VehicleDescriptor();
+    virtual ~VehicleDescriptor();
 
     virtual bool doesSupport(omnetpp::cObject *obj) const override;
     virtual const char **getPropertyNames() const override;
@@ -263,24 +263,24 @@ class TracedMessageDescriptor : public omnetpp::cClassDescriptor
     virtual void setFieldStructValuePointer(omnetpp::any_ptr object, int field, int i, omnetpp::any_ptr ptr) const override;
 };
 
-Register_ClassDescriptor(TracedMessageDescriptor)
+Register_ClassDescriptor(VehicleDescriptor)
 
-TracedMessageDescriptor::TracedMessageDescriptor() : omnetpp::cClassDescriptor(omnetpp::opp_typename(typeid(TracedMessage)), "omnetpp::cMessage")
+VehicleDescriptor::VehicleDescriptor() : omnetpp::cClassDescriptor(omnetpp::opp_typename(typeid(Vehicle)), "omnetpp::cMessage")
 {
     propertyNames = nullptr;
 }
 
-TracedMessageDescriptor::~TracedMessageDescriptor()
+VehicleDescriptor::~VehicleDescriptor()
 {
     delete[] propertyNames;
 }
 
-bool TracedMessageDescriptor::doesSupport(omnetpp::cObject *obj) const
+bool VehicleDescriptor::doesSupport(omnetpp::cObject *obj) const
 {
-    return dynamic_cast<TracedMessage *>(obj)!=nullptr;
+    return dynamic_cast<Vehicle *>(obj)!=nullptr;
 }
 
-const char **TracedMessageDescriptor::getPropertyNames() const
+const char **VehicleDescriptor::getPropertyNames() const
 {
     if (!propertyNames) {
         static const char *names[] = {  nullptr };
@@ -291,19 +291,19 @@ const char **TracedMessageDescriptor::getPropertyNames() const
     return propertyNames;
 }
 
-const char *TracedMessageDescriptor::getProperty(const char *propertyName) const
+const char *VehicleDescriptor::getProperty(const char *propertyName) const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     return base ? base->getProperty(propertyName) : nullptr;
 }
 
-int TracedMessageDescriptor::getFieldCount() const
+int VehicleDescriptor::getFieldCount() const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     return base ? 3+base->getFieldCount() : 3;
 }
 
-unsigned int TracedMessageDescriptor::getFieldTypeFlags(int field) const
+unsigned int VehicleDescriptor::getFieldTypeFlags(int field) const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     if (base) {
@@ -312,14 +312,14 @@ unsigned int TracedMessageDescriptor::getFieldTypeFlags(int field) const
         field -= base->getFieldCount();
     }
     static unsigned int fieldTypeFlags[] = {
-        FD_ISEDITABLE,    // FIELD_queueEnterTime
-        FD_ISEDITABLE,    // FIELD_queueLeaveTime
-        FD_ISEDITABLE,    // FIELD_finishedTime
+        FD_ISEDITABLE,    // FIELD_srcEndpoint
+        FD_ISEDITABLE,    // FIELD_dstEndpoint
+        FD_ISEDITABLE,    // FIELD_vehNumber
     };
     return (field >= 0 && field < 3) ? fieldTypeFlags[field] : 0;
 }
 
-const char *TracedMessageDescriptor::getFieldName(int field) const
+const char *VehicleDescriptor::getFieldName(int field) const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     if (base) {
@@ -328,24 +328,24 @@ const char *TracedMessageDescriptor::getFieldName(int field) const
         field -= base->getFieldCount();
     }
     static const char *fieldNames[] = {
-        "queueEnterTime",
-        "queueLeaveTime",
-        "finishedTime",
+        "srcEndpoint",
+        "dstEndpoint",
+        "vehNumber",
     };
     return (field >= 0 && field < 3) ? fieldNames[field] : nullptr;
 }
 
-int TracedMessageDescriptor::findField(const char *fieldName) const
+int VehicleDescriptor::findField(const char *fieldName) const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     int baseIndex = base ? base->getFieldCount() : 0;
-    if (strcmp(fieldName, "queueEnterTime") == 0) return baseIndex + 0;
-    if (strcmp(fieldName, "queueLeaveTime") == 0) return baseIndex + 1;
-    if (strcmp(fieldName, "finishedTime") == 0) return baseIndex + 2;
+    if (strcmp(fieldName, "srcEndpoint") == 0) return baseIndex + 0;
+    if (strcmp(fieldName, "dstEndpoint") == 0) return baseIndex + 1;
+    if (strcmp(fieldName, "vehNumber") == 0) return baseIndex + 2;
     return base ? base->findField(fieldName) : -1;
 }
 
-const char *TracedMessageDescriptor::getFieldTypeString(int field) const
+const char *VehicleDescriptor::getFieldTypeString(int field) const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     if (base) {
@@ -354,14 +354,14 @@ const char *TracedMessageDescriptor::getFieldTypeString(int field) const
         field -= base->getFieldCount();
     }
     static const char *fieldTypeStrings[] = {
-        "omnetpp::simtime_t",    // FIELD_queueEnterTime
-        "omnetpp::simtime_t",    // FIELD_queueLeaveTime
-        "omnetpp::simtime_t",    // FIELD_finishedTime
+        "string",    // FIELD_srcEndpoint
+        "string",    // FIELD_dstEndpoint
+        "unsigned int",    // FIELD_vehNumber
     };
     return (field >= 0 && field < 3) ? fieldTypeStrings[field] : nullptr;
 }
 
-const char **TracedMessageDescriptor::getFieldPropertyNames(int field) const
+const char **VehicleDescriptor::getFieldPropertyNames(int field) const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     if (base) {
@@ -374,7 +374,7 @@ const char **TracedMessageDescriptor::getFieldPropertyNames(int field) const
     }
 }
 
-const char *TracedMessageDescriptor::getFieldProperty(int field, const char *propertyName) const
+const char *VehicleDescriptor::getFieldProperty(int field, const char *propertyName) const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     if (base) {
@@ -387,7 +387,7 @@ const char *TracedMessageDescriptor::getFieldProperty(int field, const char *pro
     }
 }
 
-int TracedMessageDescriptor::getFieldArraySize(omnetpp::any_ptr object, int field) const
+int VehicleDescriptor::getFieldArraySize(omnetpp::any_ptr object, int field) const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     if (base) {
@@ -395,13 +395,13 @@ int TracedMessageDescriptor::getFieldArraySize(omnetpp::any_ptr object, int fiel
             return base->getFieldArraySize(object, field);
         field -= base->getFieldCount();
     }
-    TracedMessage *pp = omnetpp::fromAnyPtr<TracedMessage>(object); (void)pp;
+    Vehicle *pp = omnetpp::fromAnyPtr<Vehicle>(object); (void)pp;
     switch (field) {
         default: return 0;
     }
 }
 
-void TracedMessageDescriptor::setFieldArraySize(omnetpp::any_ptr object, int field, int size) const
+void VehicleDescriptor::setFieldArraySize(omnetpp::any_ptr object, int field, int size) const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     if (base) {
@@ -411,13 +411,13 @@ void TracedMessageDescriptor::setFieldArraySize(omnetpp::any_ptr object, int fie
         }
         field -= base->getFieldCount();
     }
-    TracedMessage *pp = omnetpp::fromAnyPtr<TracedMessage>(object); (void)pp;
+    Vehicle *pp = omnetpp::fromAnyPtr<Vehicle>(object); (void)pp;
     switch (field) {
-        default: throw omnetpp::cRuntimeError("Cannot set array size of field %d of class 'TracedMessage'", field);
+        default: throw omnetpp::cRuntimeError("Cannot set array size of field %d of class 'Vehicle'", field);
     }
 }
 
-const char *TracedMessageDescriptor::getFieldDynamicTypeString(omnetpp::any_ptr object, int field, int i) const
+const char *VehicleDescriptor::getFieldDynamicTypeString(omnetpp::any_ptr object, int field, int i) const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     if (base) {
@@ -425,13 +425,13 @@ const char *TracedMessageDescriptor::getFieldDynamicTypeString(omnetpp::any_ptr 
             return base->getFieldDynamicTypeString(object,field,i);
         field -= base->getFieldCount();
     }
-    TracedMessage *pp = omnetpp::fromAnyPtr<TracedMessage>(object); (void)pp;
+    Vehicle *pp = omnetpp::fromAnyPtr<Vehicle>(object); (void)pp;
     switch (field) {
         default: return nullptr;
     }
 }
 
-std::string TracedMessageDescriptor::getFieldValueAsString(omnetpp::any_ptr object, int field, int i) const
+std::string VehicleDescriptor::getFieldValueAsString(omnetpp::any_ptr object, int field, int i) const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     if (base) {
@@ -439,16 +439,16 @@ std::string TracedMessageDescriptor::getFieldValueAsString(omnetpp::any_ptr obje
             return base->getFieldValueAsString(object,field,i);
         field -= base->getFieldCount();
     }
-    TracedMessage *pp = omnetpp::fromAnyPtr<TracedMessage>(object); (void)pp;
+    Vehicle *pp = omnetpp::fromAnyPtr<Vehicle>(object); (void)pp;
     switch (field) {
-        case FIELD_queueEnterTime: return simtime2string(pp->getQueueEnterTime());
-        case FIELD_queueLeaveTime: return simtime2string(pp->getQueueLeaveTime());
-        case FIELD_finishedTime: return simtime2string(pp->getFinishedTime());
+        case FIELD_srcEndpoint: return oppstring2string(pp->getSrcEndpoint());
+        case FIELD_dstEndpoint: return oppstring2string(pp->getDstEndpoint());
+        case FIELD_vehNumber: return ulong2string(pp->getVehNumber());
         default: return "";
     }
 }
 
-void TracedMessageDescriptor::setFieldValueAsString(omnetpp::any_ptr object, int field, int i, const char *value) const
+void VehicleDescriptor::setFieldValueAsString(omnetpp::any_ptr object, int field, int i, const char *value) const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     if (base) {
@@ -458,16 +458,16 @@ void TracedMessageDescriptor::setFieldValueAsString(omnetpp::any_ptr object, int
         }
         field -= base->getFieldCount();
     }
-    TracedMessage *pp = omnetpp::fromAnyPtr<TracedMessage>(object); (void)pp;
+    Vehicle *pp = omnetpp::fromAnyPtr<Vehicle>(object); (void)pp;
     switch (field) {
-        case FIELD_queueEnterTime: pp->setQueueEnterTime(string2simtime(value)); break;
-        case FIELD_queueLeaveTime: pp->setQueueLeaveTime(string2simtime(value)); break;
-        case FIELD_finishedTime: pp->setFinishedTime(string2simtime(value)); break;
-        default: throw omnetpp::cRuntimeError("Cannot set field %d of class 'TracedMessage'", field);
+        case FIELD_srcEndpoint: pp->setSrcEndpoint((value)); break;
+        case FIELD_dstEndpoint: pp->setDstEndpoint((value)); break;
+        case FIELD_vehNumber: pp->setVehNumber(string2ulong(value)); break;
+        default: throw omnetpp::cRuntimeError("Cannot set field %d of class 'Vehicle'", field);
     }
 }
 
-omnetpp::cValue TracedMessageDescriptor::getFieldValue(omnetpp::any_ptr object, int field, int i) const
+omnetpp::cValue VehicleDescriptor::getFieldValue(omnetpp::any_ptr object, int field, int i) const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     if (base) {
@@ -475,16 +475,16 @@ omnetpp::cValue TracedMessageDescriptor::getFieldValue(omnetpp::any_ptr object, 
             return base->getFieldValue(object,field,i);
         field -= base->getFieldCount();
     }
-    TracedMessage *pp = omnetpp::fromAnyPtr<TracedMessage>(object); (void)pp;
+    Vehicle *pp = omnetpp::fromAnyPtr<Vehicle>(object); (void)pp;
     switch (field) {
-        case FIELD_queueEnterTime: return pp->getQueueEnterTime().dbl();
-        case FIELD_queueLeaveTime: return pp->getQueueLeaveTime().dbl();
-        case FIELD_finishedTime: return pp->getFinishedTime().dbl();
-        default: throw omnetpp::cRuntimeError("Cannot return field %d of class 'TracedMessage' as cValue -- field index out of range?", field);
+        case FIELD_srcEndpoint: return pp->getSrcEndpoint();
+        case FIELD_dstEndpoint: return pp->getDstEndpoint();
+        case FIELD_vehNumber: return (omnetpp::intval_t)(pp->getVehNumber());
+        default: throw omnetpp::cRuntimeError("Cannot return field %d of class 'Vehicle' as cValue -- field index out of range?", field);
     }
 }
 
-void TracedMessageDescriptor::setFieldValue(omnetpp::any_ptr object, int field, int i, const omnetpp::cValue& value) const
+void VehicleDescriptor::setFieldValue(omnetpp::any_ptr object, int field, int i, const omnetpp::cValue& value) const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     if (base) {
@@ -494,16 +494,16 @@ void TracedMessageDescriptor::setFieldValue(omnetpp::any_ptr object, int field, 
         }
         field -= base->getFieldCount();
     }
-    TracedMessage *pp = omnetpp::fromAnyPtr<TracedMessage>(object); (void)pp;
+    Vehicle *pp = omnetpp::fromAnyPtr<Vehicle>(object); (void)pp;
     switch (field) {
-        case FIELD_queueEnterTime: pp->setQueueEnterTime(value.doubleValue()); break;
-        case FIELD_queueLeaveTime: pp->setQueueLeaveTime(value.doubleValue()); break;
-        case FIELD_finishedTime: pp->setFinishedTime(value.doubleValue()); break;
-        default: throw omnetpp::cRuntimeError("Cannot set field %d of class 'TracedMessage'", field);
+        case FIELD_srcEndpoint: pp->setSrcEndpoint(value.stringValue()); break;
+        case FIELD_dstEndpoint: pp->setDstEndpoint(value.stringValue()); break;
+        case FIELD_vehNumber: pp->setVehNumber(omnetpp::checked_int_cast<unsigned int>(value.intValue())); break;
+        default: throw omnetpp::cRuntimeError("Cannot set field %d of class 'Vehicle'", field);
     }
 }
 
-const char *TracedMessageDescriptor::getFieldStructName(int field) const
+const char *VehicleDescriptor::getFieldStructName(int field) const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     if (base) {
@@ -516,7 +516,7 @@ const char *TracedMessageDescriptor::getFieldStructName(int field) const
     };
 }
 
-omnetpp::any_ptr TracedMessageDescriptor::getFieldStructValuePointer(omnetpp::any_ptr object, int field, int i) const
+omnetpp::any_ptr VehicleDescriptor::getFieldStructValuePointer(omnetpp::any_ptr object, int field, int i) const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     if (base) {
@@ -524,13 +524,13 @@ omnetpp::any_ptr TracedMessageDescriptor::getFieldStructValuePointer(omnetpp::an
             return base->getFieldStructValuePointer(object, field, i);
         field -= base->getFieldCount();
     }
-    TracedMessage *pp = omnetpp::fromAnyPtr<TracedMessage>(object); (void)pp;
+    Vehicle *pp = omnetpp::fromAnyPtr<Vehicle>(object); (void)pp;
     switch (field) {
         default: return omnetpp::any_ptr(nullptr);
     }
 }
 
-void TracedMessageDescriptor::setFieldStructValuePointer(omnetpp::any_ptr object, int field, int i, omnetpp::any_ptr ptr) const
+void VehicleDescriptor::setFieldStructValuePointer(omnetpp::any_ptr object, int field, int i, omnetpp::any_ptr ptr) const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
     if (base) {
@@ -540,9 +540,9 @@ void TracedMessageDescriptor::setFieldStructValuePointer(omnetpp::any_ptr object
         }
         field -= base->getFieldCount();
     }
-    TracedMessage *pp = omnetpp::fromAnyPtr<TracedMessage>(object); (void)pp;
+    Vehicle *pp = omnetpp::fromAnyPtr<Vehicle>(object); (void)pp;
     switch (field) {
-        default: throw omnetpp::cRuntimeError("Cannot set field %d of class 'TracedMessage'", field);
+        default: throw omnetpp::cRuntimeError("Cannot set field %d of class 'Vehicle'", field);
     }
 }
 

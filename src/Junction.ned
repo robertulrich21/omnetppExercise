@@ -11,9 +11,17 @@
 // 
 // You should have received a copy of the GNU Lesser General Public License
 // along with this program.  If not, see http://www.gnu.org/licenses/.
-//
-message TracedMessage{
-	simtime_t queueEnterTime;
-	simtime_t queueLeaveTime;
-	simtime_t finishedTime;
+// 
+
+package nwsim_project;
+
+simple Junction
+{
+    parameters:
+        @display("i=block/routing");
+    gates:
+        inout north;
+        inout east;
+        inout south;
+        inout west;
 }

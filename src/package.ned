@@ -1,3 +1,3 @@
-package task2;
+package nwsim_project;
 
 @license(LGPL);
