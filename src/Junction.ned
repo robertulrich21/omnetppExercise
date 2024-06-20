@@ -19,6 +19,10 @@ simple Junction
 {
     parameters:
         @display("i=block/routing");
+        volatile double intersectionCrossingDurationStreight @unit(s) = default(4s);
+        volatile double intersectionCrossingDurationRight @unit(s) = default(4s);
+        volatile double intersectionCrossingDurationLeft @unit(s) = default(6s);
+        volatile double intersectionCrossingDurationTurn @unit(s) = default(6s);
     gates:
         inout north;
         inout east;

@@ -32,6 +32,7 @@ public:
 protected:
     virtual void initialize();
     virtual void handleMessage(cMessage* msg);
+    virtual void refreshDisplay() const override;
 private:
     enum Direction {
         NORTH = 0,

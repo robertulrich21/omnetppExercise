@@ -129,12 +129,14 @@ void Junction::updateLane(Direction direction){
     Vehicle *vehicle = vehiclequeue.at(direction).front();
 
     Direction outDir = getOutDirection(vehicle);
-    switch(getTurnDirection(direction, outDir)){
+    char turnDir = getTurnDirection(direction, outDir);
+    switch(turnDir){
     case 'L':
     case 'B':
         // if other lane is free otherwise block until awaken
         if(!laneMessage[inverseDirection]->isScheduled()){
-            simtime_t intersectionCrossingDuration = 1; // TODO define this constant!!
+            simtime_t intersectionCrossingDuration =
+                    turnDir == 'L' ? par("intersectionCrossingDurationLeft") : par("intersectionCrossingDurationTurn");
             scheduleAfter(intersectionCrossingDuration, laneMessage[inverseDirection]);// for this to work laneMessage2 must be handled before laneMessage0
             scheduleAfter(intersectionCrossingDuration, laneMessage[direction]);
             vehiclequeue.at(direction).pop();
@@ -144,7 +146,8 @@ void Junction::updateLane(Direction direction){
     case 'R':
     case 'S':
         // default behaviour send selfMessage and send the Vehicle on its way
-        simtime_t intersectionCrossingDuration = 1; // TODO define this constant!!
+        simtime_t intersectionCrossingDuration =
+                turnDir == 'R' ? par("intersectionCrossingDurationRight") : par("intersectionCrossingDurationStreight");
         scheduleAfter(intersectionCrossingDuration, laneMessage[direction]);
         vehiclequeue.at(direction).pop();
         sendDelayed(vehicle, intersectionCrossingDuration, directionToOutGate.at(outDir).c_str());
@@ -199,11 +202,11 @@ void Junction::handleMessage(cMessage* msg)
                 // turn light red, toggle greenDir and send for redPhase;
                 greenDir = !greenDir;
                 isgreen = false;
-                scheduleAfter(10, msg);
+                scheduleAfter(15, msg);
             } else{
                 // turn light green and send for greenphase
                 isgreen = true;
-                scheduleAfter(100, msg);
+                scheduleAfter(120, msg);
                 if(!selfMessage->isScheduled()) scheduleAfter(0, selfMessage);
             }
             return;
@@ -250,4 +253,43 @@ void Junction::handleMessage(cMessage* msg)
     if(!laneMessage[inDir]->isScheduled()){
         scheduleAfter(0, laneMessage[inDir]);
     }
+}
+
+void Junction::refreshDisplay() const{
+    cDisplayString &disp = getDisplayString();
+
+    if(isgreen){
+        disp.setTagArg("i", 1, "green");
+        if(greenDir){
+            disp.setTagArg("b", 0, "15");
+            disp.setTagArg("b", 1, "45");
+            disp.setTagArg("b", 2, "oval");
+            disp.setTagArg("b", 3, "green");
+        } else{
+            disp.setTagArg("b", 0, "45");
+            disp.setTagArg("b", 1, "15");
+            disp.setTagArg("b", 2, "oval");
+            disp.setTagArg("b", 3, "green");
+        }
+    } else {
+        disp.setTagArg("i", 1, "red");
+        disp.setTagArg("b", 0, "10");
+        disp.setTagArg("b", 1, "10");
+        disp.setTagArg("b", 2, "oval");
+        disp.setTagArg("b", 3, "green");
+    }
+
+
+    char scheduledLaneMessage[5];
+    for(int i = 0; i < 4; i++){
+        scheduledLaneMessage[i] = laneMessage[i]->isScheduled() ? 'x' : 'o';
+    }
+    scheduledLaneMessage[4] = '\0';
+    char buf[60];
+
+    sprintf(buf, "laneMessages: %s, QueueLengths: N:%lu, E:%lu, S:%lu, W:%lu", scheduledLaneMessage, vehiclequeue.at(NORTH).size(), vehiclequeue.at(EAST).size(), vehiclequeue.at(SOUTH).size(), vehiclequeue.at(WEST).size());
+
+    disp.setTagArg("t", 0, buf);
+
+
 }
