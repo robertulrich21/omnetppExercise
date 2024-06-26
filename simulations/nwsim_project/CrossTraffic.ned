@@ -18,11 +18,15 @@ package nwsim_project.simulations.nwsim_project;
 import ned.DelayChannel;
 import nwsim_project.Junction;
 import nwsim_project.Endpoint;
+import nwsim_project.Eieruhr;
 
 network CrossTraffic
 {
     @display("bgb=425,425");
     submodules:
+        Eieruhr: Eieruhr{
+            @display("p=350,350");
+        }
         JuncNW: Junction {
             @display("p=125,125");
         }
