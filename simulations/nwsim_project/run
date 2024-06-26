@@ -1,4 +1,4 @@
 #!/bin/sh
 cd `dirname $0`
-../../src/nwsim_project -n ..:../../src $*
-# for shared lib, use: opp_run -l ../../src/nwsim_project -n ..:../../src $*
+../../src/omnetppExercise -n ..:../../src $*
+# for shared lib, use: opp_run -l ../../src/omnetppExercise -n ..:../../src $*

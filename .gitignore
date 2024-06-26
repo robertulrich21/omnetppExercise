@@ -3,6 +3,8 @@ out/
 .settings/
 simulation/results/
 csv/
-src/nwsim_project_dbg
+
+src/omnetppExercise
+src/omnetppExercise_dbg
 simulations/nwsim_project/.qtenvrc
 src/task2_dbg
