@@ -52,6 +52,11 @@ private:
     std::queue<Vehicle *> vehiclequeueWest;
     std::map<Direction, std::queue<Vehicle *>> vehiclequeue;
 
+    simsignal_t lengtVehicleQueueNorth;
+    simsignal_t lengtVehicleQueueEast;
+    simsignal_t lengtVehicleQueueSouth;
+    simsignal_t lengtVehicleQueueWest;
+
     cMessage *selfMessage;
     cMessage *laneMessage[4];
 

@@ -40,6 +40,11 @@ void Endpoint::initialize()
         ASSERT(spawnOffset >= 0);
         scheduleAt(simTime() + spawnOffset, spawnTimer);
     }
+
+    totalTransitTime = registerSignal("totalTransitTime");
+    queueWaitingTime = registerSignal("queueWaitingTime");
+    drivingTime =      registerSignal("drivingTime");
+    hopCount =         registerSignal("hopCount");
 }
 
 void Endpoint::handleMessage(cMessage* msg)
@@ -53,6 +58,13 @@ void Endpoint::handleMessage(cMessage* msg)
     else if (dynamic_cast<Vehicle*>(msg)) {
         Vehicle* veh = dynamic_cast<Vehicle*>(msg);
         ASSERT(std::string(veh->getDstEndpoint()) == std::string(getName()));
+        veh->setTotalTransitTime(simTime() - veh->getEnterTime());
+
+        emit(totalTransitTime, veh->getTotalTransitTime());
+        emit(queueWaitingTime, veh->getQueueWaitingTime());
+        emit(drivingTime,      veh->getDrivingTime());
+        emit(hopCount,         veh->getHopCount());
+
         delete msg;
     }
 }
@@ -64,7 +76,16 @@ void Endpoint::spawnVehicle()
     veh->setSrcEndpoint(getName());
     std::string dstEndpoint = getDstEndpoint();
     veh->setDstEndpoint(dstEndpoint.c_str());
+
+
+    veh->setQueueExitTime(simTime());
+    veh->setEnterTime(simTime());
+    veh->setHopCount(0);
+    veh->setQueueWaitingTime(0);
+    veh->setDrivingTime(0);
+
     veh->setName(std::string("for " + dstEndpoint).c_str());
+
     send(veh, "conn$o");
 }
 

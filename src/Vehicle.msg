@@ -17,4 +17,17 @@ message Vehicle {
     string srcEndpoint;
     string dstEndpoint;
     unsigned int vehNumber;
+    
+    simtime_t enterTime;
+    simtime_t totalTransitTime;
+    
+    simtime_t queueEnterTime;
+    simtime_t queueWaitingTime;
+    
+    simtime_t queueExitTime;
+    simtime_t drivingTime;
+    
+    unsigned int hopCount;
+    
+    
 }

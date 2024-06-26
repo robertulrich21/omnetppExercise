@@ -12,7 +12,7 @@
 #include <vector>
 
 #define EIERUHR_KIND 196
-#define GET_EIERUHR() check_and_cast<Eieruhr *>(getSystemModule()->getSubmodule("eieruhr"))
+#define GET_EIERUHR(EIERUHR_NAME) check_and_cast<Eieruhr *>(getSystemModule()->getSubmodule(EIERUHR_NAME))
 
 using namespace omnetpp;
 

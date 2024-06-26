@@ -18,6 +18,7 @@
 #include <string>
 #include <queue>
 #include <utility>
+#include "Eieruhr.h"
 
 Define_Module(Junction);
 
@@ -140,6 +141,9 @@ void Junction::updateLane(Direction direction){
             scheduleAfter(intersectionCrossingDuration, laneMessage[inverseDirection]);// for this to work laneMessage2 must be handled before laneMessage0
             scheduleAfter(intersectionCrossingDuration, laneMessage[direction]);
             vehiclequeue.at(direction).pop();
+
+            vehicle->setQueueWaitingTime(vehicle->getQueueWaitingTime() + simTime() - vehicle->getQueueEnterTime());
+            vehicle->setQueueExitTime(simTime());
             sendDelayed(vehicle, intersectionCrossingDuration, directionToOutGate.at(outDir).c_str());
         }
         break;
@@ -150,6 +154,9 @@ void Junction::updateLane(Direction direction){
                 turnDir == 'R' ? par("intersectionCrossingDurationRight") : par("intersectionCrossingDurationStreight");
         scheduleAfter(intersectionCrossingDuration, laneMessage[direction]);
         vehiclequeue.at(direction).pop();
+
+        vehicle->setQueueWaitingTime(vehicle->getQueueWaitingTime() + simTime() - vehicle->getQueueEnterTime());
+        vehicle->setQueueExitTime(simTime());
         sendDelayed(vehicle, intersectionCrossingDuration, directionToOutGate.at(outDir).c_str());
         break;
     }
@@ -192,10 +199,29 @@ void Junction::initialize()
     isgreen = false;
     greenDir = false;
     scheduleAfter(0, trafficLightUpdate);
+
+    // register at eieruhr for regular notifications
+    GET_EIERUHR("Eieruhr")->registerGate(this->gate("EieruhrIn"));
+
+    lengtVehicleQueueNorth = registerSignal("lengtVehicleQueueNorth");
+    lengtVehicleQueueEast = registerSignal("lengtVehicleQueueEast");
+    lengtVehicleQueueSouth = registerSignal("lengtVehicleQueueSouth");
+    lengtVehicleQueueWest = registerSignal("lengtVehicleQueueWest");
 }
 
 void Junction::handleMessage(cMessage* msg)
 {
+    if(msg->arrivedOn("EieruhrIn") && msg->getKind() == EIERUHR_KIND){
+
+        emit(lengtVehicleQueueNorth, vehiclequeue.at(NORTH).size());
+        emit(lengtVehicleQueueEast , vehiclequeue.at(EAST) .size());
+        emit(lengtVehicleQueueSouth, vehiclequeue.at(SOUTH).size());
+        emit(lengtVehicleQueueWest , vehiclequeue.at(WEST ).size());
+
+        delete msg;
+        return;
+    }
+
     if(msg->getKind() == SELF_MESSAGE_KIND){
         if(msg == trafficLightUpdate){
             if(isgreen){
@@ -246,6 +272,11 @@ void Junction::handleMessage(cMessage* msg)
     }
     // insert new vehicle into corresponding queue
     Vehicle *vehicle = check_and_cast<Vehicle *>(msg);
+    vehicle->setDrivingTime(vehicle->getDrivingTime() + simTime() - vehicle->getQueueExitTime());
+    vehicle->setQueueEnterTime(simTime());
+
+    vehicle->setHopCount(vehicle->getHopCount() + 1);
+
     Direction inDir = inGateToDirection.at(std::string(vehicle->getArrivalGate()->getName()));
     vehiclequeue.at(inDir).push(vehicle);
     // notify lane that a vehicle has arrived

@@ -23,9 +23,21 @@ simple Junction
         volatile double intersectionCrossingDurationRight @unit(s) = default(4s);
         volatile double intersectionCrossingDurationLeft @unit(s) = default(6s);
         volatile double intersectionCrossingDurationTurn @unit(s) = default(6s);
+        
+        @signal[lengtVehicleQueueNorth](type=simtime_t);
+        @signal[lengtVehicleQueueEast] (type=simtime_t);
+        @signal[lengtVehicleQueueSouth](type=simtime_t);
+        @signal[lengtVehicleQueueWest] (type=simtime_t);
+        
+        @statistic[averageLengthVehicleQueueNorth](title="averageLengthVehicleQueueNorth";source=lengtVehicleQueueNorth;record=mean);
+        @statistic[averageLengthVehicleQueueEast] (title="averageLengthVehicleQueueEast" ;source=lengtVehicleQueueEast ;record=mean);
+        @statistic[averageLengthVehicleQueueSouth](title="averageLengthVehicleQueueSouth";source=lengtVehicleQueueSouth;record=mean);
+        @statistic[averageLengthVehicleQueueWest] (title="averageLengthVehicleQueueWest" ;source=lengtVehicleQueueWest ;record=mean);
     gates:
         inout north;
         inout east;
         inout south;
         inout west;
+        
+        input EieruhrIn @directIn;
 }

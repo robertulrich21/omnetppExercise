@@ -21,6 +21,19 @@ simple Endpoint
         @display("i=block/rxtx");
         volatile double spawnOffset @unit(s) = default(0s);
         volatile double spawnInterval @unit(s) = default(-1s);
+        
+        @signal[totalTransitTime](type=simtime_t);
+        @signal[queueWaitingTime] (type=simtime_t);
+        @signal[drivingTime](type=simtime_t);
+
+        @signal[hopCount](type=unsigned int);
+        
+        @statistic[totalTransitTime](title="drivingTime"     ;source=drivingTime     ;record=mean);
+        @statistic[queueWaitingTime](title="queueWaitingTime";source=queueWaitingTime;record=mean);
+        @statistic[drivingTime]     (title="drivingTime"     ;source=drivingTime     ;record=mean);
+        @statistic[hopCount]        (title="hopCount"        ;source=hopCount        ;record=mean);
+        
+        
         gates:
         inout conn;
 }

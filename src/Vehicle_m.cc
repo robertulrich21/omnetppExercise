@@ -178,6 +178,13 @@ void Vehicle::copy(const Vehicle& other)
     this->srcEndpoint = other.srcEndpoint;
     this->dstEndpoint = other.dstEndpoint;
     this->vehNumber = other.vehNumber;
+    this->enterTime = other.enterTime;
+    this->totalTransitTime = other.totalTransitTime;
+    this->queueEnterTime = other.queueEnterTime;
+    this->queueWaitingTime = other.queueWaitingTime;
+    this->queueExitTime = other.queueExitTime;
+    this->drivingTime = other.drivingTime;
+    this->hopCount = other.hopCount;
 }
 
 void Vehicle::parsimPack(omnetpp::cCommBuffer *b) const
@@ -186,6 +193,13 @@ void Vehicle::parsimPack(omnetpp::cCommBuffer *b) const
     doParsimPacking(b,this->srcEndpoint);
     doParsimPacking(b,this->dstEndpoint);
     doParsimPacking(b,this->vehNumber);
+    doParsimPacking(b,this->enterTime);
+    doParsimPacking(b,this->totalTransitTime);
+    doParsimPacking(b,this->queueEnterTime);
+    doParsimPacking(b,this->queueWaitingTime);
+    doParsimPacking(b,this->queueExitTime);
+    doParsimPacking(b,this->drivingTime);
+    doParsimPacking(b,this->hopCount);
 }
 
 void Vehicle::parsimUnpack(omnetpp::cCommBuffer *b)
@@ -194,6 +208,13 @@ void Vehicle::parsimUnpack(omnetpp::cCommBuffer *b)
     doParsimUnpacking(b,this->srcEndpoint);
     doParsimUnpacking(b,this->dstEndpoint);
     doParsimUnpacking(b,this->vehNumber);
+    doParsimUnpacking(b,this->enterTime);
+    doParsimUnpacking(b,this->totalTransitTime);
+    doParsimUnpacking(b,this->queueEnterTime);
+    doParsimUnpacking(b,this->queueWaitingTime);
+    doParsimUnpacking(b,this->queueExitTime);
+    doParsimUnpacking(b,this->drivingTime);
+    doParsimUnpacking(b,this->hopCount);
 }
 
 const char * Vehicle::getSrcEndpoint() const
@@ -226,6 +247,76 @@ void Vehicle::setVehNumber(unsigned int vehNumber)
     this->vehNumber = vehNumber;
 }
 
+omnetpp::simtime_t Vehicle::getEnterTime() const
+{
+    return this->enterTime;
+}
+
+void Vehicle::setEnterTime(omnetpp::simtime_t enterTime)
+{
+    this->enterTime = enterTime;
+}
+
+omnetpp::simtime_t Vehicle::getTotalTransitTime() const
+{
+    return this->totalTransitTime;
+}
+
+void Vehicle::setTotalTransitTime(omnetpp::simtime_t totalTransitTime)
+{
+    this->totalTransitTime = totalTransitTime;
+}
+
+omnetpp::simtime_t Vehicle::getQueueEnterTime() const
+{
+    return this->queueEnterTime;
+}
+
+void Vehicle::setQueueEnterTime(omnetpp::simtime_t queueEnterTime)
+{
+    this->queueEnterTime = queueEnterTime;
+}
+
+omnetpp::simtime_t Vehicle::getQueueWaitingTime() const
+{
+    return this->queueWaitingTime;
+}
+
+void Vehicle::setQueueWaitingTime(omnetpp::simtime_t queueWaitingTime)
+{
+    this->queueWaitingTime = queueWaitingTime;
+}
+
+omnetpp::simtime_t Vehicle::getQueueExitTime() const
+{
+    return this->queueExitTime;
+}
+
+void Vehicle::setQueueExitTime(omnetpp::simtime_t queueExitTime)
+{
+    this->queueExitTime = queueExitTime;
+}
+
+omnetpp::simtime_t Vehicle::getDrivingTime() const
+{
+    return this->drivingTime;
+}
+
+void Vehicle::setDrivingTime(omnetpp::simtime_t drivingTime)
+{
+    this->drivingTime = drivingTime;
+}
+
+unsigned int Vehicle::getHopCount() const
+{
+    return this->hopCount;
+}
+
+void Vehicle::setHopCount(unsigned int hopCount)
+{
+    this->hopCount = hopCount;
+}
+
 class VehicleDescriptor : public omnetpp::cClassDescriptor
 {
   private:
@@ -234,6 +325,13 @@ class VehicleDescriptor : public omnetpp::cClassDescriptor
         FIELD_srcEndpoint,
         FIELD_dstEndpoint,
         FIELD_vehNumber,
+        FIELD_enterTime,
+        FIELD_totalTransitTime,
+        FIELD_queueEnterTime,
+        FIELD_queueWaitingTime,
+        FIELD_queueExitTime,
+        FIELD_drivingTime,
+        FIELD_hopCount,
     };
   public:
     VehicleDescriptor();
@@ -300,7 +398,7 @@ const char *VehicleDescriptor::getProperty(const char *propertyName) const
 int VehicleDescriptor::getFieldCount() const
 {
     omnetpp::cClassDescriptor *base = getBaseClassDescriptor();
-    return base ? 3+base->getFieldCount() : 3;
+    return base ? 10+base->getFieldCount() : 10;
 }
 
 unsigned int VehicleDescriptor::getFieldTypeFlags(int field) const
@@ -315,8 +413,15 @@ unsigned int VehicleDescriptor::getFieldTypeFlags(int field) const
         FD_ISEDITABLE,    // FIELD_srcEndpoint
         FD_ISEDITABLE,    // FIELD_dstEndpoint
         FD_ISEDITABLE,    // FIELD_vehNumber
+        FD_ISEDITABLE,    // FIELD_enterTime
+        FD_ISEDITABLE,    // FIELD_totalTransitTime
+        FD_ISEDITABLE,    // FIELD_queueEnterTime
+        FD_ISEDITABLE,    // FIELD_queueWaitingTime
+        FD_ISEDITABLE,    // FIELD_queueExitTime
+        FD_ISEDITABLE,    // FIELD_drivingTime
+        FD_ISEDITABLE,    // FIELD_hopCount
     };
-    return (field >= 0 && field < 3) ? fieldTypeFlags[field] : 0;
+    return (field >= 0 && field < 10) ? fieldTypeFlags[field] : 0;
 }
 
 const char *VehicleDescriptor::getFieldName(int field) const
@@ -331,8 +436,15 @@ const char *VehicleDescriptor::getFieldName(int field) const
         "srcEndpoint",
         "dstEndpoint",
         "vehNumber",
+        "enterTime",
+        "totalTransitTime",
+        "queueEnterTime",
+        "queueWaitingTime",
+        "queueExitTime",
+        "drivingTime",
+        "hopCount",
     };
-    return (field >= 0 && field < 3) ? fieldNames[field] : nullptr;
+    return (field >= 0 && field < 10) ? fieldNames[field] : nullptr;
 }
 
 int VehicleDescriptor::findField(const char *fieldName) const
@@ -342,6 +454,13 @@ int VehicleDescriptor::findField(const char *fieldName) const
     if (strcmp(fieldName, "srcEndpoint") == 0) return baseIndex + 0;
     if (strcmp(fieldName, "dstEndpoint") == 0) return baseIndex + 1;
     if (strcmp(fieldName, "vehNumber") == 0) return baseIndex + 2;
+    if (strcmp(fieldName, "enterTime") == 0) return baseIndex + 3;
+    if (strcmp(fieldName, "totalTransitTime") == 0) return baseIndex + 4;
+    if (strcmp(fieldName, "queueEnterTime") == 0) return baseIndex + 5;
+    if (strcmp(fieldName, "queueWaitingTime") == 0) return baseIndex + 6;
+    if (strcmp(fieldName, "queueExitTime") == 0) return baseIndex + 7;
+    if (strcmp(fieldName, "drivingTime") == 0) return baseIndex + 8;
+    if (strcmp(fieldName, "hopCount") == 0) return baseIndex + 9;
     return base ? base->findField(fieldName) : -1;
 }
 
@@ -357,8 +476,15 @@ const char *VehicleDescriptor::getFieldTypeString(int field) const
         "string",    // FIELD_srcEndpoint
         "string",    // FIELD_dstEndpoint
         "unsigned int",    // FIELD_vehNumber
+        "omnetpp::simtime_t",    // FIELD_enterTime
+        "omnetpp::simtime_t",    // FIELD_totalTransitTime
+        "omnetpp::simtime_t",    // FIELD_queueEnterTime
+        "omnetpp::simtime_t",    // FIELD_queueWaitingTime
+        "omnetpp::simtime_t",    // FIELD_queueExitTime
+        "omnetpp::simtime_t",    // FIELD_drivingTime
+        "unsigned int",    // FIELD_hopCount
     };
-    return (field >= 0 && field < 3) ? fieldTypeStrings[field] : nullptr;
+    return (field >= 0 && field < 10) ? fieldTypeStrings[field] : nullptr;
 }
 
 const char **VehicleDescriptor::getFieldPropertyNames(int field) const
@@ -444,6 +570,13 @@ std::string VehicleDescriptor::getFieldValueAsString(omnetpp::any_ptr object, in
         case FIELD_srcEndpoint: return oppstring2string(pp->getSrcEndpoint());
         case FIELD_dstEndpoint: return oppstring2string(pp->getDstEndpoint());
         case FIELD_vehNumber: return ulong2string(pp->getVehNumber());
+        case FIELD_enterTime: return simtime2string(pp->getEnterTime());
+        case FIELD_totalTransitTime: return simtime2string(pp->getTotalTransitTime());
+        case FIELD_queueEnterTime: return simtime2string(pp->getQueueEnterTime());
+        case FIELD_queueWaitingTime: return simtime2string(pp->getQueueWaitingTime());
+        case FIELD_queueExitTime: return simtime2string(pp->getQueueExitTime());
+        case FIELD_drivingTime: return simtime2string(pp->getDrivingTime());
+        case FIELD_hopCount: return ulong2string(pp->getHopCount());
         default: return "";
     }
 }
@@ -463,6 +596,13 @@ void VehicleDescriptor::setFieldValueAsString(omnetpp::any_ptr object, int field
         case FIELD_srcEndpoint: pp->setSrcEndpoint((value)); break;
         case FIELD_dstEndpoint: pp->setDstEndpoint((value)); break;
         case FIELD_vehNumber: pp->setVehNumber(string2ulong(value)); break;
+        case FIELD_enterTime: pp->setEnterTime(string2simtime(value)); break;
+        case FIELD_totalTransitTime: pp->setTotalTransitTime(string2simtime(value)); break;
+        case FIELD_queueEnterTime: pp->setQueueEnterTime(string2simtime(value)); break;
+        case FIELD_queueWaitingTime: pp->setQueueWaitingTime(string2simtime(value)); break;
+        case FIELD_queueExitTime: pp->setQueueExitTime(string2simtime(value)); break;
+        case FIELD_drivingTime: pp->setDrivingTime(string2simtime(value)); break;
+        case FIELD_hopCount: pp->setHopCount(string2ulong(value)); break;
         default: throw omnetpp::cRuntimeError("Cannot set field %d of class 'Vehicle'", field);
     }
 }
@@ -480,6 +620,13 @@ omnetpp::cValue VehicleDescriptor::getFieldValue(omnetpp::any_ptr object, int fi
         case FIELD_srcEndpoint: return pp->getSrcEndpoint();
         case FIELD_dstEndpoint: return pp->getDstEndpoint();
         case FIELD_vehNumber: return (omnetpp::intval_t)(pp->getVehNumber());
+        case FIELD_enterTime: return pp->getEnterTime().dbl();
+        case FIELD_totalTransitTime: return pp->getTotalTransitTime().dbl();
+        case FIELD_queueEnterTime: return pp->getQueueEnterTime().dbl();
+        case FIELD_queueWaitingTime: return pp->getQueueWaitingTime().dbl();
+        case FIELD_queueExitTime: return pp->getQueueExitTime().dbl();
+        case FIELD_drivingTime: return pp->getDrivingTime().dbl();
+        case FIELD_hopCount: return (omnetpp::intval_t)(pp->getHopCount());
         default: throw omnetpp::cRuntimeError("Cannot return field %d of class 'Vehicle' as cValue -- field index out of range?", field);
     }
 }
@@ -499,6 +646,13 @@ void VehicleDescriptor::setFieldValue(omnetpp::any_ptr object, int field, int i,
         case FIELD_srcEndpoint: pp->setSrcEndpoint(value.stringValue()); break;
         case FIELD_dstEndpoint: pp->setDstEndpoint(value.stringValue()); break;
         case FIELD_vehNumber: pp->setVehNumber(omnetpp::checked_int_cast<unsigned int>(value.intValue())); break;
+        case FIELD_enterTime: pp->setEnterTime(value.doubleValue()); break;
+        case FIELD_totalTransitTime: pp->setTotalTransitTime(value.doubleValue()); break;
+        case FIELD_queueEnterTime: pp->setQueueEnterTime(value.doubleValue()); break;
+        case FIELD_queueWaitingTime: pp->setQueueWaitingTime(value.doubleValue()); break;
+        case FIELD_queueExitTime: pp->setQueueExitTime(value.doubleValue()); break;
+        case FIELD_drivingTime: pp->setDrivingTime(value.doubleValue()); break;
+        case FIELD_hopCount: pp->setHopCount(omnetpp::checked_int_cast<unsigned int>(value.intValue())); break;
         default: throw omnetpp::cRuntimeError("Cannot set field %d of class 'Vehicle'", field);
     }
 }

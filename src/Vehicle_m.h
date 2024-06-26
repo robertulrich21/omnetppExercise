@@ -25,6 +25,19 @@ class Vehicle;
  *     string srcEndpoint;
  *     string dstEndpoint;
  *     unsigned int vehNumber;
+ * 
+ *     simtime_t enterTime;
+ *     simtime_t totalTransitTime;
+ * 
+ *     simtime_t queueEnterTime;
+ *     simtime_t queueWaitingTime;
+ * 
+ *     simtime_t queueExitTime;
+ *     simtime_t drivingTime;
+ * 
+ *     unsigned int hopCount;
+ * 
+ * 
  * }
  * </pre>
  */
@@ -34,6 +47,13 @@ class Vehicle : public ::omnetpp::cMessage
     omnetpp::opp_string srcEndpoint;
     omnetpp::opp_string dstEndpoint;
     unsigned int vehNumber = 0;
+    omnetpp::simtime_t enterTime = SIMTIME_ZERO;
+    omnetpp::simtime_t totalTransitTime = SIMTIME_ZERO;
+    omnetpp::simtime_t queueEnterTime = SIMTIME_ZERO;
+    omnetpp::simtime_t queueWaitingTime = SIMTIME_ZERO;
+    omnetpp::simtime_t queueExitTime = SIMTIME_ZERO;
+    omnetpp::simtime_t drivingTime = SIMTIME_ZERO;
+    unsigned int hopCount = 0;
 
   private:
     void copy(const Vehicle& other);
@@ -58,6 +78,27 @@ class Vehicle : public ::omnetpp::cMessage
 
     virtual unsigned int getVehNumber() const;
     virtual void setVehNumber(unsigned int vehNumber);
+
+    virtual omnetpp::simtime_t getEnterTime() const;
+    virtual void setEnterTime(omnetpp::simtime_t enterTime);
+
+    virtual omnetpp::simtime_t getTotalTransitTime() const;
+    virtual void setTotalTransitTime(omnetpp::simtime_t totalTransitTime);
+
+    virtual omnetpp::simtime_t getQueueEnterTime() const;
+    virtual void setQueueEnterTime(omnetpp::simtime_t queueEnterTime);
+
+    virtual omnetpp::simtime_t getQueueWaitingTime() const;
+    virtual void setQueueWaitingTime(omnetpp::simtime_t queueWaitingTime);
+
+    virtual omnetpp::simtime_t getQueueExitTime() const;
+    virtual void setQueueExitTime(omnetpp::simtime_t queueExitTime);
+
+    virtual omnetpp::simtime_t getDrivingTime() const;
+    virtual void setDrivingTime(omnetpp::simtime_t drivingTime);
+
+    virtual unsigned int getHopCount() const;
+    virtual void setHopCount(unsigned int hopCount);
 };
 
 inline void doParsimPacking(omnetpp::cCommBuffer *b, const Vehicle& obj) {obj.parsimPack(b);}
