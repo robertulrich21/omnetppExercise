@@ -11,8 +11,13 @@ import time
 
 results_sca = defaultdict(defaultdict)
 results_vec = pd.DataFrame()
+
 parameter_values_str = []
-allMetrics = ["totalQueueNonEmptyTime:sum", "totalQueueEmptyTime:sum", "meanQueueFillLevel:mean", "meanQueueWaitingTime:mean", "meanQueueInterArrivalTime:mean", "meanServiceUnitFillLevel:mean", "meanServiceUnitWaitingTime:mean"]
+allJunctions = ["NE", "NW", "SE", "SW"]
+allJunctionMetrics = ["averageLengthVehicleQueueWest:mean", "averageLengthVehicleQueueSouth:mean", "averageLengthVehicleQueueEast:mean", "averageLengthVehicleQueueNorth:mean"]
+
+allEnds = ["NE", "EN", "NW", "WN", "SE", "ES", "SW", "WS"]
+allEndMetrics = ["hopCount:mean", "queueWaitingTime:mean", "totalTransitTime:mean", "drivingTime:mean"]
 # generates all parametervalues to generate file names
 for i in range(1, 11):
     for j in range(0, 10):
@@ -52,12 +57,15 @@ def generate_all_csv(path_to_folder, force_recalc = False):
 
     # run oppscavtool for all files that do not exist. If force_recalc = true then recalculate everything!    
     for n in parameter_values_str:
-        if not os.path.isfile(f"{path_to_folder}/meanQueueFillLevel{n}_vec.csv") or force_recalc:
-            generate_csv(f"simulations/results/General-N={n}-#*.vec", f"{path_to_folder}/meanQueueFillLevel{n}_vec.csv", [("name", "meanQueueFillLevel:vector")])  
+        for elem in allJunctionMetrics:
+            for position in allJunctions:
+                if not os.path.isfile(f"{path_to_folder}/Junc{position}_{elem}_par:{n}_sca.csv") or force_recalc:
+                    generate_csv(f"simulations/nwsim_project/results/General-N={n}-#*.vec", f"{path_to_folder}/{position}_{elem}_par:{n}_sca.csv", [("module", "*.Junc" + position), ("name", elem)])  
 
-        for elem in allMetrics:
-            if not os.path.isfile(f"{path_to_folder}/{elem}_par:{n}_sca.csv") or force_recalc:
-                generate_csv(f"simulations/results/General-N={n}-#*.sca", f"{path_to_folder}/{elem}_par:{n}_sca.csv", [("name", elem)])  
+        for elem in allEndMetrics:
+            for position in allEnds:
+                if not os.path.isfile(f"{path_to_folder}/End{position}_{elem}_par:{n}_sca.csv") or force_recalc:
+                    generate_csv(f"simulations/nwsim_project/results/General-N={n}-#*.sca", f"{path_to_folder}/End{position}_{elem}_par:{n}_sca.csv", [("module", "*.End" + position), ("name", elem)])  
 
 
 
